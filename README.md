@@ -136,7 +136,6 @@ dearborn-surveillance-map/
 │   ├── data/
 │   │   ├── cameras.json         # ALPR camera data
 │   │   ├── boundary.json        # Dearborn city boundary
-│   │   └── police.json          # Police station data
 │   └── styles/
 │       └── global.css           # Styles
 ├── .env.example
