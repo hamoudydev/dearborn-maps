@@ -1,7 +1,6 @@
 ---
 import cameraData from '../data/cameras.json';
 import boundaryData from '../data/boundary.json';
-import policeData from '../data/police.json';
 
 interface Props {
   mapboxToken: string;
@@ -79,26 +78,6 @@ features.forEach((f: any) => {
   </div>
 </div>
 
-<!-- Layer Toggles -->
-<div class="layer-toggles">
-  <h3>Layers</h3>
-  <label class="toggle-item">
-    <input type="checkbox" id="layer-alpr" checked />
-    <span class="toggle-dot alpr"></span>
-    <span>ALPR Cameras ({totalCameras})</span>
-  </label>
-  <label class="toggle-item">
-    <input type="checkbox" id="layer-police" checked />
-    <span class="toggle-dot police-station"></span>
-    <span>Police Stations ({policeData.features.length})</span>
-  </label>
-  <label class="toggle-item">
-    <input type="checkbox" id="layer-boundary" checked />
-    <span class="toggle-line"></span>
-    <span>City Boundary</span>
-  </label>
-</div>
-
 <!-- Legend -->
 <div class="legend">
   <h3>ALPR Operators</h3>
@@ -144,7 +123,7 @@ features.forEach((f: any) => {
   Data from <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors
 </div>
 
-<script is:inline define:vars={{ cameraData, mapboxToken, boundaryData, policeData }}>
+<script is:inline define:vars={{ cameraData, mapboxToken, boundaryData }}>
   const MAPBOX_TOKEN = mapboxToken;
   let map;
   let currentPopup = null;
@@ -500,24 +479,6 @@ features.forEach((f: any) => {
       // Direction indicators using a small triangle shape
       // We'll skip the icon for now since it requires a custom sprite
 
-      // Police stations layer
-      map.addSource('police', {
-        type: 'geojson',
-        data: policeData
-      });
-
-      map.addLayer({
-        id: 'police-points',
-        type: 'circle',
-        source: 'police',
-        paint: {
-          'circle-radius': ['interpolate', ['linear'], ['zoom'], 10, 6, 14, 12, 18, 16],
-          'circle-color': '#3b82f6',
-          'circle-stroke-width': 3,
-          'circle-stroke-color': '#1e3a8a',
-          'circle-opacity': 0.9
-        }
-      });
 
       // Click handlers for all layers
       map.on('click', 'camera-points', (e) => {
@@ -570,27 +531,6 @@ features.forEach((f: any) => {
 
     document.getElementById('close-table').addEventListener('click', () => {
       document.getElementById('data-table').classList.add('hidden');
-    });
-
-    // Layer toggle handlers
-    const layerMapping = {
-      'layer-alpr': ['camera-points', 'camera-wedges-fill', 'camera-wedges-outline'],
-      'layer-police': ['police-points'],
-      'layer-boundary': ['boundary-fill', 'boundary-line']
-    };
-
-    Object.entries(layerMapping).forEach(([toggleId, layers]) => {
-      const toggle = document.getElementById(toggleId);
-      if (toggle) {
-        toggle.addEventListener('change', (e) => {
-          const visibility = e.target.checked ? 'visible' : 'none';
-          layers.forEach(layerId => {
-            if (map && map.getLayer(layerId)) {
-              map.setLayoutProperty(layerId, 'visibility', visibility);
-            }
-          });
-        });
-      }
     });
   }
 

@@ -11,11 +11,9 @@ This project maps publicly documented surveillance cameras in the Dearborn, MI a
 ## Features
 
 - **Interactive Mapbox map** with dark theme
-- **78 ALPR cameras** with direction cones showing camera orientation
-- **6 Police stations** in the surrounding area
+- **ALPR cameras** with direction cones showing camera orientation
 - **Dearborn city boundary** overlay
 - **Filter & search** by operator, manufacturer
-- **Toggleable layers** - show/hide different data types
 - **Data table view** with fly-to functionality
 - **Mobile responsive** design
 - **Click popups** with camera details (operator, manufacturer, mount type, power source)
@@ -153,8 +151,7 @@ dearborn-surveillance-map/
 |-------|---------|
 | Red | Police department cameras |
 | Orange | Private operators (retail, HOA) |
-| Blue (dots) | University cameras |
-| Blue (large) | Police stations |
+| Blue (small) | University cameras |
 | Red dashed line | City boundary |
 
 ## Privacy & Purpose
