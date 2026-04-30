@@ -186,21 +186,9 @@ body.home-page {
   color: #666;
 }
 
-/* Race Selector */
+/* Race Selector (legacy - now in sidebar) */
 .race-selector {
-  position: fixed;
-  top: 4.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 15;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  background: rgba(0, 0, 0, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 8px;
-  padding: 0.5rem 1rem;
-  backdrop-filter: blur(10px);
+  display: none;
 }
 
 .race-selector label {
@@ -513,138 +501,339 @@ body.home-page {
   color: #888;
 }
 
-/* Controls Panel */
-.controls {
+/* Sidebar */
+.sidebar {
   position: fixed;
-  top: 5rem;
-  left: 1rem;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  max-width: 400px;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 15;
+  overflow-y: auto;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
 }
 
-.search-box {
-  position: relative;
+.sidebar-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.search-icon {
-  position: absolute;
-  left: 0.75rem;
-  width: 18px;
-  height: 18px;
-  color: #666;
-  pointer-events: none;
+.sidebar-header h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ff4444;
+  margin: 0;
 }
 
-.search-box input {
+.sidebar-close-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.sidebar-close-btn:hover {
+  color: #ff4444;
+}
+
+.sidebar-content {
+  padding: 1.25rem;
+}
+
+.sidebar-section {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-label {
+  display: block;
+  font-size: 0.7rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-select {
   width: 100%;
-  padding: 0.75rem 1rem 0.75rem 2.5rem;
-  background: rgba(0, 0, 0, 0.85);
+  padding: 0.625rem 0.875rem;
+  background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 8px;
   color: #fff;
   font-size: 0.875rem;
-  backdrop-filter: blur(10px);
-  transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.search-box input::placeholder {
-  color: #666;
-}
-
-.search-box input:focus {
-  outline: none;
-  border-color: #ff4444;
-  box-shadow: 0 0 0 3px rgba(255, 68, 68, 0.2);
-}
-
-.filter-row {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.filter-row select {
-  flex: 1;
-  padding: 0.5rem 0.75rem;
-  background: rgba(0, 0, 0, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 8px;
-  color: #fff;
-  font-size: 0.75rem;
-  backdrop-filter: blur(10px);
   cursor: pointer;
-  transition: border-color 0.2s;
+  transition: border-color 0.2s, background 0.2s;
 }
 
-.filter-row select:focus {
+.sidebar-select:focus {
   outline: none;
   border-color: #ff4444;
+  background: rgba(255, 255, 255, 0.08);
 }
 
-.filter-row select option {
+.sidebar-select option {
   background: #1a1a1a;
   color: #fff;
 }
 
-.btn-toggle {
+.sidebar-btn {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
-  background: rgba(0, 0, 0, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: rgba(255, 68, 68, 0.1);
+  border: 1px solid rgba(255, 68, 68, 0.3);
   border-radius: 8px;
+  color: #ff4444;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.sidebar-btn:hover {
+  background: rgba(255, 68, 68, 0.2);
+  border-color: #ff4444;
+}
+
+.sidebar-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.sidebar-toggle-btn {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 14;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
   color: #fff;
   cursor: pointer;
   backdrop-filter: blur(10px);
   transition: background 0.2s, border-color 0.2s;
 }
 
-.btn-toggle:hover {
+.sidebar-toggle-btn:hover {
   background: rgba(255, 68, 68, 0.2);
   border-color: #ff4444;
 }
 
-.btn-toggle svg {
-  width: 18px;
-  height: 18px;
+.sidebar-toggle-btn svg {
+  width: 24px;
+  height: 24px;
 }
 
-/* Stats Panel */
-.stats {
-  position: fixed;
-  bottom: 2rem;
-  left: 1rem;
-  z-index: 10;
+.stats-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+}
+
+.stat-item {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 0.25rem;
 }
 
-.stat-card {
-  background: rgba(0, 0, 0, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  padding: 0.75rem 1rem;
-  backdrop-filter: blur(10px);
-}
-
-.stat-card .label {
-  font-size: 0.7rem;
+.stat-label {
+  font-size: 0.65rem;
   color: #888;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
-.stat-card .value {
-  font-size: 1.5rem;
+.stat-value {
+  font-size: 1.75rem;
   font-weight: 700;
   color: #ff4444;
+}
+
+/* Legacy controls (removed - using sidebar now) */
+.controls {
+  display: none;
+}
+
+/* Election Sidebar Specific Styles */
+.election-sidebar {
+  width: 350px;
+}
+
+.compare-toggle-btn {
+  background: rgba(68, 170, 255, 0.1);
+  border-color: rgba(68, 170, 255, 0.3);
+  color: #44aaff;
+}
+
+.compare-toggle-btn:hover {
+  background: rgba(68, 170, 255, 0.2);
+  border-color: #44aaff;
+}
+
+.compare-toggle-btn.active {
+  background: rgba(68, 170, 255, 0.25);
+  border-color: #44aaff;
+  color: #44aaff;
+}
+
+.compare-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.compare-divider {
+  text-align: center;
+  color: #666;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.legend-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar .legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: #ddd;
+}
+
+.sidebar .legend-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.sidebar .legend-note {
+  font-size: 0.7rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.vote-totals-sidebar {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  padding: 0.75rem;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.vote-totals-sidebar .candidate-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.25rem;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.vote-totals-sidebar .candidate-name {
+  font-size: 0.8rem;
+  color: #ddd;
+}
+
+.vote-totals-sidebar .candidate-votes {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.vote-totals-sidebar .candidate-percentage {
+  font-size: 0.7rem;
+  color: #888;
+  margin-left: 0.5rem;
+}
+
+/* Hide old fixed-position legend on election map */
+.election-sidebar ~ #election-legend.legend {
+  display: none;
+}
+
+.sidebar .search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .search-icon {
+  position: absolute;
+  left: 0.75rem;
+  width: 16px;
+  height: 16px;
+  color: #666;
+  pointer-events: none;
+}
+
+.sidebar .search-box input {
+  width: 100%;
+  padding: 0.625rem 0.875rem 0.625rem 2.25rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.875rem;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.sidebar .search-box input::placeholder {
+  color: #666;
+}
+
+.sidebar .search-box input:focus {
+  outline: none;
+  border-color: #ff4444;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Legacy stats panel (removed - now in sidebar) */
+.stats {
+  display: none;
+}
+
+.stat-card {
+  display: none;
 }
 
 /* Vote Totals */
@@ -961,6 +1150,25 @@ body.home-page {
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
+  /* Sidebar mobile */
+  .sidebar {
+    transform: translateX(-100%);
+    width: 85%;
+    max-width: 320px;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar-close-btn {
+    display: flex;
+  }
+
+  .sidebar-toggle-btn {
+    display: flex;
+  }
+
   /* Move Mapbox controls to bottom right on mobile */
   .mapboxgl-ctrl-top-right {
     top: auto !important;
@@ -980,17 +1188,10 @@ body.home-page {
     font-size: 0.7rem;
   }
 
-  .race-selector {
-    top: 3.5rem;
-    padding: 0.4rem 0.75rem;
-  }
-
-  .race-selector label {
-    display: none;
-  }
-
-  .race-selector select {
-    font-size: 0.75rem;
+  /* Election sidebar mobile */
+  .election-sidebar {
+    width: 90%;
+    max-width: 350px;
   }
 
   .controls {

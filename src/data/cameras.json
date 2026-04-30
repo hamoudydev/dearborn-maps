@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "generator": "overpass-turbo",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2025-12-24T19:34:57Z",
+  "timestamp": "2026-04-30T20:01:58Z",
   "features": [
     {
       "type": "Feature",
@@ -1927,6 +1927,78 @@
         ]
       },
       "id": "node/13373314366"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "340",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic",
+        "@id": "node/12743742437"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2345609,
+          42.330159
+        ]
+      },
+      "id": "node/12743742437"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "240",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic",
+        "@id": "node/12743742441"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2171336,
+          42.3307794
+        ]
+      },
+      "id": "node/12743742441"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "camera:type": "fixed",
+        "direction": "356",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic",
+        "@id": "node/13745188301"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1950542,
+          42.3129657
+        ]
+      },
+      "id": "node/13745188301"
     }
   ]
 }

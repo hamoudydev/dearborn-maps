@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dearborn Heights",
+        "note": "Approximate boundary based on camera locations"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -83.3037432,
+              42.2611944
+            ],
+            [
+              -83.20854329999999,
+              42.2611944
+            ],
+            [
+              -83.20854329999999,
+              42.365998399999995
+            ],
+            [
+              -83.3037432,
+              42.365998399999995
+            ],
+            [
+              -83.3037432,
+              42.2611944
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

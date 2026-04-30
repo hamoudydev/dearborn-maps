@@ -1,0 +1,311 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-04-30T20:01:58Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "340",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Heights Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic",
+        "@id": "node/12724737461"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2700478,
+          42.2714686
+        ]
+      },
+      "id": "node/12724737461"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "20",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Heights Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic",
+        "@id": "node/12724737462"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2703217,
+          42.2715494
+        ]
+      },
+      "id": "node/12724737462"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "265",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Heights Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic",
+        "@id": "node/13014589626"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2745177,
+          42.3499386
+        ]
+      },
+      "id": "node/13014589626"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "camera:mount": "street_lamp",
+        "camera:type": "fixed",
+        "direction": "340",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Heights Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic",
+        "@id": "node/13014589629"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2613709,
+          42.3273827
+        ]
+      },
+      "id": "node/13014589629"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "190",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Heights Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic",
+        "@id": "node/13014589630"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2604668,
+          42.3380032
+        ]
+      },
+      "id": "node/13014589630"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "camera:direction": "160",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Heights Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic",
+        "@id": "node/13014589631"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2352282,
+          42.3352047
+        ]
+      },
+      "id": "node/13014589631"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "camera:direction": "330",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "note": "marked #8 FS",
+        "operator": "Dearborn Heights Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic",
+        "@id": "node/13014589632"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2937432,
+          42.3538338
+        ]
+      },
+      "id": "node/13014589632"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "175",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "note": "marked #9 FS",
+        "operator": "Dearborn Heights Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic",
+        "@id": "node/13016397048"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2319069,
+          42.2711944
+        ]
+      },
+      "id": "node/13016397048"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "camera:direction": "250",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Heights Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic",
+        "@id": "node/13016397049"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2185433,
+          42.2772875
+        ]
+      },
+      "id": "node/13016397049"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "camera:mount": "pole",
+        "camera:type": "fixed",
+        "direction": "230",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Heights Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic",
+        "@id": "node/13038318197"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2403233,
+          42.3287135
+        ]
+      },
+      "id": "node/13038318197"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "245",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Heights Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic",
+        "@id": "node/13104926485"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2730478,
+          42.3271649
+        ]
+      },
+      "id": "node/13104926485"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "205",
+        "electricity": "solar",
+        "fixme": "approximate location; survey again for exact placement",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Heights Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic",
+        "@id": "node/13373240668"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2744834,
+          42.3559984
+        ]
+      },
+      "id": "node/13373240668"
+    }
+  ]
+}

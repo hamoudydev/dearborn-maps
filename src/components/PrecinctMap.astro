@@ -21,70 +21,103 @@ const totalPrecincts = precinctData.features.length;
   </svg>
 </a>
 
-<!-- Race Selector -->
-<div class="race-selector">
-  <!-- Normal mode selector -->
-  <div id="normal-selector" class="selector-row">
-    <label>Select Race:</label>
-    <select id="race-select">
-      <option value="mayor">Mayor</option>
-      <option value="city_clerk">City Clerk</option>
-      <option value="city_council">City Council (Winner)</option>
-      <option value="city_council_candidate">City Council (By Candidate)</option>
-      <option value="proposal">Proposal 1</option>
-    </select>
-    <select id="candidate-select" class="hidden">
-      <option value="">Select Candidate...</option>
-    </select>
+<!-- Sidebar -->
+<div class="sidebar election-sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <h2>Election Results</h2>
+    <button id="sidebar-close" class="sidebar-close-btn" title="Close sidebar">×</button>
   </div>
 
-  <!-- Compare mode selectors -->
-  <div id="compare-selectors" class="compare-selectors hidden">
-    <div class="compare-item compare-item-1">
-      <label>Selection 1:</label>
-      <select id="compare-race-1">
+  <div class="sidebar-content">
+    <!-- Compare Mode Toggle -->
+    <div class="sidebar-section">
+      <button id="compare-toggle" class="sidebar-btn compare-toggle-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 18l6-6-6-6"></path>
+        </svg>
+        <span id="compare-toggle-text">Enable Compare Mode</span>
+      </button>
+    </div>
+
+    <!-- Normal Mode Selector -->
+    <div id="normal-selector" class="sidebar-section">
+      <label class="sidebar-label">Select Race</label>
+      <select id="race-select" class="sidebar-select">
         <option value="mayor">Mayor</option>
         <option value="city_clerk">City Clerk</option>
-        <option value="city_council_candidate">City Council</option>
+        <option value="city_council">City Council (Winner)</option>
+        <option value="city_council_candidate">City Council (By Candidate)</option>
         <option value="proposal">Proposal 1</option>
       </select>
-      <select id="compare-candidate-1">
-        <option value="">Select...</option>
-      </select>
+
+      <div id="candidate-select-wrapper" class="hidden">
+        <label class="sidebar-label">Select Candidate</label>
+        <select id="candidate-select" class="sidebar-select">
+          <option value="">Select Candidate...</option>
+        </select>
+      </div>
     </div>
-    <span class="compare-vs">vs</span>
-    <div class="compare-item compare-item-2">
-      <label>Selection 2:</label>
-      <select id="compare-race-2">
-        <option value="mayor">Mayor</option>
-        <option value="city_clerk">City Clerk</option>
-        <option value="city_council_candidate">City Council</option>
-        <option value="proposal">Proposal 1</option>
-      </select>
-      <select id="compare-candidate-2">
-        <option value="">Select...</option>
-      </select>
+
+    <!-- Compare Mode Selectors -->
+    <div id="compare-selectors" class="sidebar-section hidden">
+      <div class="compare-section">
+        <label class="sidebar-label">Selection 1</label>
+        <select id="compare-race-1" class="sidebar-select">
+          <option value="mayor">Mayor</option>
+          <option value="city_clerk">City Clerk</option>
+          <option value="city_council_candidate">City Council</option>
+          <option value="proposal">Proposal 1</option>
+        </select>
+        <select id="compare-candidate-1" class="sidebar-select">
+          <option value="">Select...</option>
+        </select>
+      </div>
+
+      <div class="compare-divider">
+        <span>VS</span>
+      </div>
+
+      <div class="compare-section">
+        <label class="sidebar-label">Selection 2</label>
+        <select id="compare-race-2" class="sidebar-select">
+          <option value="mayor">Mayor</option>
+          <option value="city_clerk">City Clerk</option>
+          <option value="city_council_candidate">City Council</option>
+          <option value="proposal">Proposal 1</option>
+        </select>
+        <select id="compare-candidate-2" class="sidebar-select">
+          <option value="">Select...</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Legend -->
+    <div class="sidebar-section" id="election-legend">
+      <label class="sidebar-label" id="legend-title">Mayor</label>
+      <div id="legend-items" class="legend-items">
+        <!-- Dynamically populated -->
+      </div>
+      <div class="legend-note">Click a precinct for details</div>
+    </div>
+
+    <!-- Vote Totals -->
+    <div class="sidebar-section" id="stats-panel">
+      <label class="sidebar-label">Vote Totals</label>
+      <div id="vote-totals" class="vote-totals-sidebar">
+        <!-- Dynamically populated with candidate vote totals -->
+      </div>
     </div>
   </div>
-
-  <button id="compare-toggle" class="compare-btn">Compare</button>
 </div>
 
-<!-- Stats Panel -->
-<div class="stats" id="stats-panel">
-  <div id="vote-totals" class="vote-totals">
-    <!-- Dynamically populated with candidate vote totals -->
-  </div>
-</div>
-
-<!-- Legend -->
-<div class="legend" id="election-legend">
-  <h3 id="legend-title">Mayor</h3>
-  <div id="legend-items">
-    <!-- Dynamically populated -->
-  </div>
-  <div class="legend-note">Click a precinct for details</div>
-</div>
+<!-- Sidebar Toggle Button (Mobile) -->
+<button id="sidebar-toggle" class="sidebar-toggle-btn" title="Show filters">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <line x1="4" y1="6" x2="20" y2="6"></line>
+    <line x1="4" y1="12" x2="20" y2="12"></line>
+    <line x1="4" y1="18" x2="20" y2="18"></line>
+  </svg>
+</button>
 
 <div class="attribution">
   Data from <a href="https://www.michigan.gov/sos" target="_blank">Michigan Secretary of State</a>
@@ -802,13 +835,14 @@ const totalPrecincts = precinctData.features.length;
     // Race selector (normal mode)
     raceSelect.addEventListener('change', (e) => {
       currentRace = e.target.value;
+      const candidateWrapper = document.getElementById('candidate-select-wrapper');
 
       if (currentRace === 'city_council_candidate') {
-        candidateSelect.classList.remove('hidden');
+        candidateWrapper.classList.remove('hidden');
         candidateSelect.value = '';
         selectedCandidate = null;
       } else {
-        candidateSelect.classList.add('hidden');
+        candidateWrapper.classList.add('hidden');
         selectedCandidate = null;
       }
 
@@ -828,15 +862,16 @@ const totalPrecincts = precinctData.features.length;
     });
 
     // Compare toggle
+    const compareToggleText = document.getElementById('compare-toggle-text');
     compareToggle.addEventListener('click', () => {
       compareMode = !compareMode;
       if (compareMode) {
-        compareToggle.textContent = 'Exit Compare';
+        compareToggleText.textContent = 'Disable Compare Mode';
         compareToggle.classList.add('active');
         normalSelector.classList.add('hidden');
         compareSelectors.classList.remove('hidden');
       } else {
-        compareToggle.textContent = 'Compare';
+        compareToggleText.textContent = 'Enable Compare Mode';
         compareToggle.classList.remove('active');
         normalSelector.classList.remove('hidden');
         compareSelectors.classList.add('hidden');
@@ -848,6 +883,23 @@ const totalPrecincts = precinctData.features.length;
       updateMapColors(currentRace);
       if (currentPopup) currentPopup.remove();
     });
+
+    // Sidebar toggle (mobile)
+    const sidebarToggle = document.getElementById('sidebar-toggle');
+    const sidebarClose = document.getElementById('sidebar-close');
+    const sidebar = document.getElementById('sidebar');
+
+    if (sidebarToggle) {
+      sidebarToggle.addEventListener('click', () => {
+        sidebar.classList.add('open');
+      });
+    }
+
+    if (sidebarClose) {
+      sidebarClose.addEventListener('click', () => {
+        sidebar.classList.remove('open');
+      });
+    }
 
     // Compare race 1 selector
     compareRace1.addEventListener('change', (e) => {
