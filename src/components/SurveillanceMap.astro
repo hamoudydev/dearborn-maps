@@ -69,6 +69,7 @@ features.forEach((f: any) => {
     <div class="sidebar-section">
       <label class="sidebar-label">City</label>
       <select id="city-filter" class="sidebar-select">
+        <option value="all">All Cities</option>
         <option value="dearborn">Dearborn</option>
         <option value="dearborn-heights">Dearborn Heights</option>
       </select>
@@ -193,15 +194,44 @@ features.forEach((f: any) => {
   const CITY_DATA = cityData;
   let map;
   let currentPopup = null;
-  let currentCity = 'dearborn';
+  let currentCity = 'all';
 
   // Get current city data
   function getCityData() {
+    if (currentCity === 'all') {
+      // Combine all cities
+      const allFeatures = [];
+      for (const city in CITY_DATA) {
+        allFeatures.push(...CITY_DATA[city].cameras.features);
+      }
+      return {
+        type: 'FeatureCollection',
+        features: allFeatures
+      };
+    }
     return CITY_DATA[currentCity].cameras;
   }
 
   function getBoundaryData() {
+    if (currentCity === 'all') {
+      // Combine all boundaries
+      const allFeatures = [];
+      for (const city in CITY_DATA) {
+        allFeatures.push(...CITY_DATA[city].boundary.features);
+      }
+      return {
+        type: 'FeatureCollection',
+        features: allFeatures
+      };
+    }
     return CITY_DATA[currentCity].boundary;
+  }
+
+  function getCityCenter() {
+    if (currentCity === 'all') {
+      return [-83.24, 42.31]; // Centered between both cities
+    }
+    return CITY_DATA[currentCity].center;
   }
 
   // Filter to ALPR cameras only
@@ -385,8 +415,8 @@ features.forEach((f: any) => {
     map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/dark-v11',
-      center: [-83.21, 42.32],
-      zoom: 12,
+      center: getCityCenter(),
+      zoom: currentCity === 'all' ? 11.5 : 12,
       pitch: 0
     });
 
@@ -572,8 +602,8 @@ features.forEach((f: any) => {
 
     // Update map center and boundary
     if (map) {
-      const cityInfo = CITY_DATA[city];
-      map.flyTo({ center: cityInfo.center, zoom: 12 });
+      const zoom = city === 'all' ? 11.5 : 12;
+      map.flyTo({ center: getCityCenter(), zoom: zoom });
 
       // Update boundary
       if (map.getSource('boundary')) {
