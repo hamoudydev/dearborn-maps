@@ -198,6 +198,11 @@ const { mapboxToken } = Astro.props;
     return ELECTIONS[sel.year]?.races[sel.race] || null;
   }
 
+  // Some views (e.g. Turnout) read better colored by one option than by "winner".
+  function defaultCandidate(sel) {
+    return getRace(sel)?.default_candidate || null;
+  }
+
   // Boundaries currently drawn. Comparing two years uses the coarser of their
   // boundaries so both sides cover the same area.
   function activeGeometry() {
@@ -457,14 +462,15 @@ const { mapboxToken } = Astro.props;
       const grand = sumVotes(totals);
       const avg = grand > 0 ? ((totals[current.candidate] || 0) / grand * 100).toFixed(1) : '0.0';
       const color = candidateColor(current, current.candidate);
+      const [hi, lo] = race.category === 'Turnout' ? ['Higher share', 'Lower share'] : ['High support', 'Low support'];
       items.innerHTML = `
         <div class="legend-item">
           <span class="legend-dot" style="background: ${adjustColorForMargin(color, 0.85)}"></span>
-          <span>High support</span>
+          <span>${hi}</span>
         </div>
         <div class="legend-item">
           <span class="legend-dot" style="background: ${adjustColorForMargin(color, 0.2)}"></span>
-          <span>Low support</span>
+          <span>${lo}</span>
         </div>
         <div class="legend-note" style="margin-top: 0.5rem;">Citywide: ${avg}% — ${escapeHtml(raceLabel(current))}</div>`;
       return;
@@ -686,14 +692,14 @@ const { mapboxToken } = Astro.props;
       const sel = getSel();
       sel.year = yearEl.value;
       sel.race = DEFAULT_RACE[sel.year] || Object.keys(ELECTIONS[sel.year].races)[0];
-      sel.candidate = null;
+      sel.candidate = defaultCandidate(sel);
       sync();
       refresh();
     });
     raceEl.addEventListener('change', () => {
       const sel = getSel();
       sel.race = raceEl.value;
-      sel.candidate = null;
+      sel.candidate = defaultCandidate(sel);
       fillCandidateSelect(candEl, sel, placeholder);
       refresh();
     });

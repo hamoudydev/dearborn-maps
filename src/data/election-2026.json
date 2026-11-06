@@ -9723,6 +9723,400 @@
      }
     }
    }
+  },
+  "turnout": {
+   "race_name": "Turnout",
+   "category": "Turnout",
+   "seats": 1,
+   "default_candidate": "Voted",
+   "candidates": [
+    "Voted",
+    "Did not vote"
+   ],
+   "colors": {
+    "Voted": "#14b8a6",
+    "Did not vote": "#6b7280"
+   },
+   "precincts": {
+    "1": {
+     "precinct_name": "Dearborn 1",
+     "registered_voters": 1990,
+     "ballots_cast": 1079,
+     "results": {
+      "Voted": 1079,
+      "Did not vote": 911
+     }
+    },
+    "2": {
+     "precinct_name": "Dearborn 2",
+     "registered_voters": 2132,
+     "ballots_cast": 965,
+     "results": {
+      "Voted": 965,
+      "Did not vote": 1167
+     }
+    },
+    "3": {
+     "precinct_name": "Dearborn 3",
+     "registered_voters": 2642,
+     "ballots_cast": 1349,
+     "results": {
+      "Voted": 1349,
+      "Did not vote": 1293
+     }
+    },
+    "4": {
+     "precinct_name": "Dearborn 4",
+     "registered_voters": 3321,
+     "ballots_cast": 1581,
+     "results": {
+      "Voted": 1581,
+      "Did not vote": 1740
+     }
+    },
+    "6": {
+     "precinct_name": "Dearborn 6",
+     "registered_voters": 2204,
+     "ballots_cast": 1141,
+     "results": {
+      "Voted": 1141,
+      "Did not vote": 1063
+     }
+    },
+    "7": {
+     "precinct_name": "Dearborn 7",
+     "registered_voters": 2775,
+     "ballots_cast": 1345,
+     "results": {
+      "Voted": 1345,
+      "Did not vote": 1430
+     }
+    },
+    "8": {
+     "precinct_name": "Dearborn 8",
+     "registered_voters": 1762,
+     "ballots_cast": 923,
+     "results": {
+      "Voted": 923,
+      "Did not vote": 839
+     }
+    },
+    "9": {
+     "precinct_name": "Dearborn 9",
+     "registered_voters": 1947,
+     "ballots_cast": 1003,
+     "results": {
+      "Voted": 1003,
+      "Did not vote": 944
+     }
+    },
+    "10": {
+     "precinct_name": "Dearborn 10",
+     "registered_voters": 1802,
+     "ballots_cast": 826,
+     "results": {
+      "Voted": 826,
+      "Did not vote": 976
+     }
+    },
+    "11": {
+     "precinct_name": "Dearborn 11",
+     "registered_voters": 1602,
+     "ballots_cast": 799,
+     "results": {
+      "Voted": 799,
+      "Did not vote": 803
+     }
+    },
+    "12": {
+     "precinct_name": "Dearborn 12",
+     "registered_voters": 1950,
+     "ballots_cast": 1024,
+     "results": {
+      "Voted": 1024,
+      "Did not vote": 926
+     }
+    },
+    "13": {
+     "precinct_name": "Dearborn 13",
+     "registered_voters": 584,
+     "ballots_cast": 369,
+     "results": {
+      "Voted": 369,
+      "Did not vote": 215
+     }
+    },
+    "15": {
+     "precinct_name": "Dearborn 15",
+     "registered_voters": 2197,
+     "ballots_cast": 1121,
+     "results": {
+      "Voted": 1121,
+      "Did not vote": 1076
+     }
+    },
+    "16": {
+     "precinct_name": "Dearborn 16",
+     "registered_voters": 1922,
+     "ballots_cast": 1007,
+     "results": {
+      "Voted": 1007,
+      "Did not vote": 915
+     }
+    },
+    "17": {
+     "precinct_name": "Dearborn 17",
+     "registered_voters": 2489,
+     "ballots_cast": 1281,
+     "results": {
+      "Voted": 1281,
+      "Did not vote": 1208
+     }
+    },
+    "18": {
+     "precinct_name": "Dearborn 18",
+     "registered_voters": 2904,
+     "ballots_cast": 1438,
+     "results": {
+      "Voted": 1438,
+      "Did not vote": 1466
+     }
+    },
+    "19": {
+     "precinct_name": "Dearborn 19",
+     "registered_voters": 1684,
+     "ballots_cast": 937,
+     "results": {
+      "Voted": 937,
+      "Did not vote": 747
+     }
+    },
+    "20": {
+     "precinct_name": "Dearborn 20",
+     "registered_voters": 1453,
+     "ballots_cast": 677,
+     "results": {
+      "Voted": 677,
+      "Did not vote": 776
+     }
+    },
+    "21": {
+     "precinct_name": "Dearborn 21",
+     "registered_voters": 1878,
+     "ballots_cast": 949,
+     "results": {
+      "Voted": 949,
+      "Did not vote": 929
+     }
+    },
+    "22": {
+     "precinct_name": "Dearborn 22",
+     "registered_voters": 2287,
+     "ballots_cast": 1373,
+     "results": {
+      "Voted": 1373,
+      "Did not vote": 914
+     }
+    },
+    "24": {
+     "precinct_name": "Dearborn 24",
+     "registered_voters": 1116,
+     "ballots_cast": 691,
+     "results": {
+      "Voted": 691,
+      "Did not vote": 425
+     }
+    },
+    "25": {
+     "precinct_name": "Dearborn 25",
+     "registered_voters": 1945,
+     "ballots_cast": 1206,
+     "results": {
+      "Voted": 1206,
+      "Did not vote": 739
+     }
+    },
+    "26": {
+     "precinct_name": "Dearborn 26",
+     "registered_voters": 1805,
+     "ballots_cast": 1119,
+     "results": {
+      "Voted": 1119,
+      "Did not vote": 686
+     }
+    },
+    "27": {
+     "precinct_name": "Dearborn 27",
+     "registered_voters": 1676,
+     "ballots_cast": 1027,
+     "results": {
+      "Voted": 1027,
+      "Did not vote": 649
+     }
+    },
+    "28": {
+     "precinct_name": "Dearborn 28",
+     "registered_voters": 1052,
+     "ballots_cast": 660,
+     "results": {
+      "Voted": 660,
+      "Did not vote": 392
+     }
+    },
+    "29": {
+     "precinct_name": "Dearborn 29",
+     "registered_voters": 1974,
+     "ballots_cast": 1179,
+     "results": {
+      "Voted": 1179,
+      "Did not vote": 795
+     }
+    },
+    "31": {
+     "precinct_name": "Dearborn 31",
+     "registered_voters": 1959,
+     "ballots_cast": 1137,
+     "results": {
+      "Voted": 1137,
+      "Did not vote": 822
+     }
+    },
+    "32": {
+     "precinct_name": "Dearborn 32",
+     "registered_voters": 1367,
+     "ballots_cast": 939,
+     "results": {
+      "Voted": 939,
+      "Did not vote": 428
+     }
+    },
+    "33": {
+     "precinct_name": "Dearborn 33",
+     "registered_voters": 1672,
+     "ballots_cast": 1053,
+     "results": {
+      "Voted": 1053,
+      "Did not vote": 619
+     }
+    },
+    "34": {
+     "precinct_name": "Dearborn 34",
+     "registered_voters": 1520,
+     "ballots_cast": 995,
+     "results": {
+      "Voted": 995,
+      "Did not vote": 525
+     }
+    },
+    "35": {
+     "precinct_name": "Dearborn 35",
+     "registered_voters": 2161,
+     "ballots_cast": 1489,
+     "results": {
+      "Voted": 1489,
+      "Did not vote": 672
+     }
+    },
+    "37": {
+     "precinct_name": "Dearborn 37",
+     "registered_voters": 1792,
+     "ballots_cast": 1110,
+     "results": {
+      "Voted": 1110,
+      "Did not vote": 682
+     }
+    },
+    "38": {
+     "precinct_name": "Dearborn 38",
+     "registered_voters": 1713,
+     "ballots_cast": 1157,
+     "results": {
+      "Voted": 1157,
+      "Did not vote": 556
+     }
+    },
+    "40": {
+     "precinct_name": "Dearborn 40",
+     "registered_voters": 1337,
+     "ballots_cast": 909,
+     "results": {
+      "Voted": 909,
+      "Did not vote": 428
+     }
+    },
+    "41": {
+     "precinct_name": "Dearborn 41",
+     "registered_voters": 1534,
+     "ballots_cast": 1042,
+     "results": {
+      "Voted": 1042,
+      "Did not vote": 492
+     }
+    },
+    "42": {
+     "precinct_name": "Dearborn 42",
+     "registered_voters": 2657,
+     "ballots_cast": 1749,
+     "results": {
+      "Voted": 1749,
+      "Did not vote": 908
+     }
+    },
+    "44": {
+     "precinct_name": "Dearborn 44",
+     "registered_voters": 1484,
+     "ballots_cast": 1057,
+     "results": {
+      "Voted": 1057,
+      "Did not vote": 427
+     }
+    },
+    "45": {
+     "precinct_name": "Dearborn 45",
+     "registered_voters": 1798,
+     "ballots_cast": 1136,
+     "results": {
+      "Voted": 1136,
+      "Did not vote": 662
+     }
+    },
+    "46": {
+     "precinct_name": "Dearborn 46",
+     "registered_voters": 1741,
+     "ballots_cast": 1076,
+     "results": {
+      "Voted": 1076,
+      "Did not vote": 665
+     }
+    },
+    "47": {
+     "precinct_name": "Dearborn 47",
+     "registered_voters": 2446,
+     "ballots_cast": 1531,
+     "results": {
+      "Voted": 1531,
+      "Did not vote": 915
+     }
+    },
+    "49": {
+     "precinct_name": "Dearborn 49",
+     "registered_voters": 1995,
+     "ballots_cast": 1114,
+     "results": {
+      "Voted": 1114,
+      "Did not vote": 881
+     }
+    },
+    "50": {
+     "precinct_name": "Dearborn 50",
+     "registered_voters": 1598,
+     "ballots_cast": 897,
+     "results": {
+      "Voted": 897,
+      "Did not vote": 701
+     }
+    }
+   }
   }
  }
 }
