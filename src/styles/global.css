@@ -892,6 +892,39 @@ body.home-page {
   display: none;
 }
 
+#stats-panel.compare-mode {
+  display: none;
+}
+
+.sidebar-label-spaced {
+  margin-top: 0.9rem;
+}
+
+.sidebar #candidate-select,
+.sidebar #compare-candidate-1,
+.sidebar #compare-candidate-2 {
+  max-width: none;
+}
+
+.vote-total-row.leader .candidate-name {
+  color: #fff;
+  font-weight: 600;
+}
+
+.candidate-race {
+  display: block;
+  font-size: 0.65rem;
+  color: #888;
+  font-weight: normal;
+}
+
+.compare-section .sidebar-select optgroup,
+#normal-selector .sidebar-select optgroup {
+  background: #111;
+  color: #888;
+  font-style: normal;
+}
+
 /* Legend */
 .legend {
   position: fixed;
@@ -1165,8 +1198,23 @@ body.home-page {
     display: flex;
   }
 
+  /* Sit to the right of the back button instead of underneath it */
   .sidebar-toggle-btn {
     display: flex;
+    left: calc(1rem + 40px + 0.5rem);
+    width: 40px;
+    height: 40px;
+    z-index: 20;
+  }
+
+  .sidebar-toggle-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Open sidebar covers both buttons */
+  .sidebar.open {
+    z-index: 30;
   }
 
   /* Move Mapbox controls to bottom right on mobile */
@@ -1177,7 +1225,7 @@ body.home-page {
   }
 
   .header {
-    padding: 0.75rem 1rem 1.5rem 3.5rem;
+    padding: 0.75rem 1rem 1.5rem 7rem;
   }
 
   .header h1 {

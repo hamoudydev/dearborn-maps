@@ -1,15 +1,14 @@
 ---
 import boundaryData from '../data/boundary.json';
 import precinctData from '../data/precincts.json';
-import electionData from '../data/election-data-template.json';
+import election2025 from '../data/election-data-template.json';
+import election2026 from '../data/election-2026.json';
 
 interface Props {
   mapboxToken: string;
 }
 
 const { mapboxToken } = Astro.props;
-
-const totalPrecincts = precinctData.features.length;
 ---
 
 <div id="map" class="map-container"></div>
@@ -41,36 +40,23 @@ const totalPrecincts = precinctData.features.length;
 
     <!-- Normal Mode Selector -->
     <div id="normal-selector" class="sidebar-section">
-      <label class="sidebar-label">Select Race</label>
-      <select id="race-select" class="sidebar-select">
-        <option value="mayor">Mayor</option>
-        <option value="city_clerk">City Clerk</option>
-        <option value="city_council">City Council (Winner)</option>
-        <option value="city_council_candidate">City Council (By Candidate)</option>
-        <option value="proposal">Proposal 1</option>
-      </select>
+      <label class="sidebar-label" for="year-select">Election</label>
+      <select id="year-select" class="sidebar-select"></select>
 
-      <div id="candidate-select-wrapper" class="hidden">
-        <label class="sidebar-label">Select Candidate</label>
-        <select id="candidate-select" class="sidebar-select">
-          <option value="">Select Candidate...</option>
-        </select>
-      </div>
+      <label class="sidebar-label sidebar-label-spaced" for="race-select">Race</label>
+      <select id="race-select" class="sidebar-select"></select>
+
+      <label class="sidebar-label sidebar-label-spaced" for="candidate-select">Color Precincts By</label>
+      <select id="candidate-select" class="sidebar-select"></select>
     </div>
 
     <!-- Compare Mode Selectors -->
     <div id="compare-selectors" class="sidebar-section hidden">
       <div class="compare-section">
         <label class="sidebar-label">Selection 1</label>
-        <select id="compare-race-1" class="sidebar-select">
-          <option value="mayor">Mayor</option>
-          <option value="city_clerk">City Clerk</option>
-          <option value="city_council_candidate">City Council</option>
-          <option value="proposal">Proposal 1</option>
-        </select>
-        <select id="compare-candidate-1" class="sidebar-select">
-          <option value="">Select...</option>
-        </select>
+        <select id="compare-year-1" class="sidebar-select"></select>
+        <select id="compare-race-1" class="sidebar-select"></select>
+        <select id="compare-candidate-1" class="sidebar-select"></select>
       </div>
 
       <div class="compare-divider">
@@ -79,21 +65,21 @@ const totalPrecincts = precinctData.features.length;
 
       <div class="compare-section">
         <label class="sidebar-label">Selection 2</label>
-        <select id="compare-race-2" class="sidebar-select">
-          <option value="mayor">Mayor</option>
-          <option value="city_clerk">City Clerk</option>
-          <option value="city_council_candidate">City Council</option>
-          <option value="proposal">Proposal 1</option>
-        </select>
-        <select id="compare-candidate-2" class="sidebar-select">
-          <option value="">Select...</option>
-        </select>
+        <select id="compare-year-2" class="sidebar-select"></select>
+        <select id="compare-race-2" class="sidebar-select"></select>
+        <select id="compare-candidate-2" class="sidebar-select"></select>
       </div>
+
+      <label class="sidebar-label sidebar-label-spaced" for="compare-metric">Compare By</label>
+      <select id="compare-metric" class="sidebar-select">
+        <option value="share">Vote share (% of race)</option>
+        <option value="votes">Raw votes</option>
+      </select>
     </div>
 
     <!-- Legend -->
     <div class="sidebar-section" id="election-legend">
-      <label class="sidebar-label" id="legend-title">Mayor</label>
+      <label class="sidebar-label" id="legend-title"></label>
       <div id="legend-items" class="legend-items">
         <!-- Dynamically populated -->
       </div>
@@ -102,7 +88,7 @@ const totalPrecincts = precinctData.features.length;
 
     <!-- Vote Totals -->
     <div class="sidebar-section" id="stats-panel">
-      <label class="sidebar-label">Vote Totals</label>
+      <label class="sidebar-label" id="vote-totals-title">Vote Totals</label>
       <div id="vote-totals" class="vote-totals-sidebar">
         <!-- Dynamically populated with candidate vote totals -->
       </div>
@@ -120,465 +106,420 @@ const totalPrecincts = precinctData.features.length;
 </button>
 
 <div class="attribution">
-  Data from <a href="https://www.michigan.gov/sos" target="_blank">Michigan Secretary of State</a>
+  Data from <a href="https://dearborn.gov/sites/default/files/2026-11/11-3-26%20Election%20Precinct%20Breakdown.pdf" target="_blank">City of Dearborn</a> &amp; <a href="https://www.michigan.gov/sos" target="_blank">Michigan SOS</a>
 </div>
 
-<script is:inline define:vars={{ mapboxToken, boundaryData, precinctData, electionData }}>
+<script is:inline define:vars={{ mapboxToken, boundaryData, precinctData, election2025, election2026 }}>
   const MAPBOX_TOKEN = mapboxToken;
+
+  // ---------------------------------------------------------------------------
+  // Elections
+  // ---------------------------------------------------------------------------
+
+  // Colors for the 2025 municipal races (the 2026 file carries its own colors).
+  const colors2025 = {
+    "Abdullah Hammoud": "#2ecc71",
+    "Nagi Almudhegi": "#e74c3c",
+    "George Darany": "#3498db",
+    "Sami Elhady": "#9b59b6",
+    "Robert A. Abraham": "#e74c3c",
+    "Mubarek Ahmed": "#2ecc71",
+    "Othman Ali Alaansi": "#3498db",
+    "Kamal Alsawafy": "#9b59b6",
+    "Mark Andrew": "#f39c12",
+    "Sharon Dulmage": "#1abc9c",
+    "Gary A. Enos": "#e91e63",
+    "Mustapha Hammoud": "#00bcd4",
+    "Shadi Mawari": "#ff5722",
+    "Devon O'Reilly": "#8bc34a",
+    "Ahmad Othman": "#673ab7",
+    "Ken Paris": "#ffc107",
+    "Michael T. Sareini": "#607d8b",
+    "yes": "#2ecc71",
+    "no": "#e74c3c"
+  };
+
+  // Year -> { label, races }. Each race: { race_name, category, seats, candidates, colors, precincts }.
+  const ELECTIONS = {
+    '2026': { label: 'Nov 2026 General', races: election2026.races },
+    '2025': {
+      label: 'Nov 2025 Municipal',
+      races: Object.fromEntries(Object.entries(election2025.races).map(([key, race]) => [key, {
+        ...race,
+        category: race.race_name.startsWith('Proposal') ? 'Proposals' : 'City',
+        colors: Object.fromEntries(race.candidates.map(c => [c, colors2025[c] || '#888888']))
+      }]))
+    }
+  };
+  const YEARS = Object.keys(ELECTIONS).sort().reverse();
+
+  const DEFAULT_RACE = { '2026': 'governor', '2025': 'mayor' };
+
+  // A "selection" is { year, race, candidate }; candidate === null means "precinct winner".
+  let current = { year: '2026', race: 'governor', candidate: null };
+  let compareMode = false;
+  let compareMetric = 'share';
+  let compare1 = { year: '2026', race: 'governor', candidate: null };
+  let compare2 = { year: '2025', race: 'mayor', candidate: null };
+
   let map;
   let currentPopup = null;
-  let currentRace = 'mayor';
-  let selectedCandidate = null;
-  let compareMode = false;
-  // Compare mode selections
-  let compare1Race = 'mayor';
-  let compare1Candidate = null;
-  let compare2Race = 'mayor';
-  let compare2Candidate = null;
 
-  // Define colors for each candidate
-  const candidateColors = {
-    // Mayor
-    "Abdullah Hammoud": "#2ecc71",  // Green
-    "Nagi Almudhegi": "#e74c3c",    // Red
+  function getRace(sel) {
+    return ELECTIONS[sel.year]?.races[sel.race] || null;
+  }
 
-    // City Clerk
-    "George Darany": "#3498db",     // Blue
-    "Sami Elhady": "#9b59b6",       // Purple
+  function getResults(sel, precinctId) {
+    return getRace(sel)?.precincts[precinctId]?.results || null;
+  }
 
-    // City Council - 13 candidates with distinct colors
-    "Robert A. Abraham": "#e74c3c",      // Red
-    "Mubarek Ahmed": "#2ecc71",          // Green
-    "Othman Ali Alaansi": "#3498db",     // Blue
-    "Kamal Alsawafy": "#9b59b6",         // Purple
-    "Mark Andrew": "#f39c12",            // Orange
-    "Sharon Dulmage": "#1abc9c",         // Teal
-    "Gary A. Enos": "#e91e63",           // Pink
-    "Mustapha Hammoud": "#00bcd4",       // Cyan
-    "Shadi Mawari": "#ff5722",           // Deep Orange
-    "Devon O'Reilly": "#8bc34a",         // Light Green
-    "Ahmad Othman": "#673ab7",           // Deep Purple
-    "Ken Paris": "#ffc107",              // Amber
-    "Michael T. Sareini": "#607d8b",     // Blue Grey
+  function candidateColor(sel, candidate) {
+    return getRace(sel)?.colors?.[candidate] || '#888888';
+  }
 
-    // Proposal
-    "yes": "#2ecc71",   // Green
-    "no": "#e74c3c"     // Red
-  };
+  function raceLabel(sel) {
+    const race = getRace(sel);
+    return race ? `${sel.year} ${race.race_name}` : '';
+  }
 
-  // Create a map of precinct_id to election results (restructured from race-first format)
-  const electionByPrecinct = {};
-  // Get all precinct IDs from the first race
-  const firstRace = Object.keys(electionData.races)[0];
-  const precinctIds = Object.keys(electionData.races[firstRace].precincts);
+  function sumVotes(results) {
+    return Object.values(results).reduce((sum, v) => sum + v, 0);
+  }
 
-  precinctIds.forEach(precinctId => {
-    const precinctInfo = electionData.races[firstRace].precincts[precinctId];
-    electionByPrecinct[precinctId] = {
-      precinct_id: precinctId,
-      precinct_name: precinctInfo.precinct_name,
-      registered_voters: precinctInfo.registered_voters
-    };
-    // Add results for each race
-    for (const [raceKey, raceData] of Object.entries(electionData.races)) {
-      electionByPrecinct[precinctId][raceKey] = raceData.precincts[precinctId].results;
-    }
-  });
+  function escapeHtml(str) {
+    return String(str).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
+  }
 
-  // Merge election data into precinct GeoJSON
-  const mergedPrecinctData = {
-    ...precinctData,
-    features: precinctData.features.map(feature => {
-      const precinctId = feature.properties.PRECINCT;
-      const electionResults = electionByPrecinct[precinctId];
-      return {
-        ...feature,
-        properties: {
-          ...feature.properties,
-          election: electionResults || null
-        }
-      };
-    })
-  };
+  // ---------------------------------------------------------------------------
+  // Color helpers
+  // ---------------------------------------------------------------------------
 
-  // Get winner and margin for a race in a precinct
-  function getWinnerWithMargin(precinctElection, race) {
-    if (!precinctElection || !precinctElection[race]) return null;
-
-    const results = precinctElection[race];
-    const sortedResults = Object.entries(results)
-      .sort((a, b) => b[1] - a[1]);
-
-    if (sortedResults.length === 0) return null;
-
-    const totalVotes = sortedResults.reduce((sum, [_, votes]) => sum + votes, 0);
-    const winnerVotes = sortedResults[0][1];
-    const secondVotes = sortedResults.length > 1 ? sortedResults[1][1] : 0;
-
-    // Calculate margin as percentage of total votes
-    const margin = totalVotes > 0 ? (winnerVotes - secondVotes) / totalVotes : 0;
-
+  function getWinnerWithMargin(results) {
+    if (!results) return null;
+    const sorted = Object.entries(results).sort((a, b) => b[1] - a[1]);
+    if (sorted.length === 0) return null;
+    const totalVotes = sumVotes(results);
+    const winnerVotes = sorted[0][1];
+    const secondVotes = sorted.length > 1 ? sorted[1][1] : 0;
     return {
-      name: sortedResults[0][0],
+      name: sorted[0][0],
       votes: winnerVotes,
-      margin: margin,
-      totalVotes: totalVotes
+      margin: totalVotes > 0 ? (winnerVotes - secondVotes) / totalVotes : 0,
+      totalVotes
     };
   }
 
-  // Adjust color brightness based on margin (darker = larger margin, lighter = smaller margin)
+  // Low intensity = washed out toward white, high intensity = darker.
   function adjustColorForMargin(hexColor, margin) {
-    // margin ranges from 0 to 1
-    // We want: low margin = lighter (washed out/pastel), high margin = darker/more saturated
-
-    // Convert hex to RGB
     const r = parseInt(hexColor.slice(1, 3), 16);
     const g = parseInt(hexColor.slice(3, 5), 16);
     const b = parseInt(hexColor.slice(5, 7), 16);
-
-    // For small margins, blend toward white (lighter)
-    // For large margins, darken the color
     if (margin < 0.5) {
-      // Blend toward white for small margins
-      // margin 0 = very light (80% white), margin 0.5 = original color
-      const whiteness = (0.5 - margin) * 1.6; // 0 to 0.8
-      const blendR = Math.round(r + (255 - r) * whiteness);
-      const blendG = Math.round(g + (255 - g) * whiteness);
-      const blendB = Math.round(b + (255 - b) * whiteness);
-      return `rgb(${blendR}, ${blendG}, ${blendB})`;
-    } else {
-      // Darken for large margins
-      // margin 0.5 = original color, margin 1.0 = 40% darker
-      const darkness = (margin - 0.5) * 0.8; // 0 to 0.4
-      const blendR = Math.round(r * (1 - darkness));
-      const blendG = Math.round(g * (1 - darkness));
-      const blendB = Math.round(b * (1 - darkness));
-      return `rgb(${blendR}, ${blendG}, ${blendB})`;
+      const whiteness = (0.5 - margin) * 1.6;
+      return `rgb(${Math.round(r + (255 - r) * whiteness)}, ${Math.round(g + (255 - g) * whiteness)}, ${Math.round(b + (255 - b) * whiteness)})`;
     }
+    const darkness = (margin - 0.5) * 0.8;
+    return `rgb(${Math.round(r * (1 - darkness))}, ${Math.round(g * (1 - darkness))}, ${Math.round(b * (1 - darkness))})`;
   }
 
-  // Get color for precinct based on winner and margin
-  function getPrecinctColor(precinctElection, race) {
-    const winner = getWinnerWithMargin(precinctElection, race);
-    if (!winner || !winner.name) return '#333333';
-
-    const baseColor = candidateColors[winner.name] || '#888888';
-    return adjustColorForMargin(baseColor, winner.margin);
+  function getVoteShare(results, candidate) {
+    if (!results) return 0;
+    const total = sumVotes(results);
+    return total > 0 ? (results[candidate] || 0) / total : 0;
   }
 
-  // Get color for precinct based on a single candidate's vote percentage
-  function getPrecinctColorByCandidate(precinctElection, race, candidateName) {
-    if (!precinctElection || !precinctElection[race]) return '#333333';
-
-    const results = precinctElection[race];
-    const totalVotes = Object.values(results).reduce((sum, v) => sum + v, 0);
-    const candidateVotes = results[candidateName] || 0;
-
-    if (totalVotes === 0) return '#333333';
-
-    // Calculate percentage (0 to 1)
-    const percentage = candidateVotes / totalVotes;
-
-    const baseColor = candidateColors[candidateName] || '#888888';
-    // Use percentage directly as the intensity (higher percentage = more saturated)
-    return adjustColorForMargin(baseColor, percentage);
-  }
-
-  // Get vote percentage for a specific candidate/option in a race
-  function getVotePercentage(precinctElection, race, candidate) {
-    if (!precinctElection || !precinctElection[race]) return 0;
-    const results = precinctElection[race];
-    const totalVotes = Object.values(results).reduce((sum, v) => sum + v, 0);
-    if (totalVotes === 0) return 0;
-
-    // If candidate specified, return their percentage
-    if (candidate) {
-      return (results[candidate] || 0) / totalVotes;
+  function getPrecinctColor(sel, precinctId) {
+    const results = getResults(sel, precinctId);
+    if (!results || sumVotes(results) === 0) return '#333333';
+    if (sel.candidate) {
+      return adjustColorForMargin(candidateColor(sel, sel.candidate), getVoteShare(results, sel.candidate));
     }
-    // Otherwise return winner's percentage
-    const winner = getWinnerWithMargin(precinctElection, race);
-    return winner ? winner.votes / totalVotes : 0;
+    const winner = getWinnerWithMargin(results);
+    return adjustColorForMargin(candidateColor(sel, winner.name), winner.margin);
   }
 
-  // Get raw votes for a candidate in a race
-  function getVotes(precinctElection, race, candidate) {
-    if (!precinctElection || !precinctElection[race]) return 0;
-    return precinctElection[race][candidate] || 0;
+  // Value used in compare mode: vote share (0-1) or raw votes.
+  function compareValue(sel, precinctId) {
+    const results = getResults(sel, precinctId);
+    if (!results) return null;
+    return compareMetric === 'share' ? getVoteShare(results, sel.candidate) : (results[sel.candidate] || 0);
   }
 
-  // Get comparison color based on difference between two selections (using raw votes)
-  function getComparisonColor(precinctElection, race1, candidate1, race2, candidate2) {
-    const votes1 = getVotes(precinctElection, race1, candidate1);
-    const votes2 = getVotes(precinctElection, race2, candidate2);
+  function getComparisonColor(precinctId) {
+    const v1 = compareValue(compare1, precinctId);
+    const v2 = compareValue(compare2, precinctId);
+    if (v1 === null || v2 === null) return '#333333';
+    const diff = v1 - v2;
+    if (diff === 0) return '#666666';
+    // Share: a 33-point gap is full intensity. Votes: relative difference.
+    const intensity = compareMetric === 'share'
+      ? Math.min(Math.abs(diff) * 3, 1)
+      : Math.min(Math.abs(diff) / Math.max(v1, v2, 1) * 1.5, 1);
+    return adjustColorForMargin(diff > 0 ? '#3498db' : '#e67e22', intensity);
+  }
 
-    // Difference in raw votes
-    const diff = votes1 - votes2;
-    const maxVotes = Math.max(votes1, votes2, 1);
-
-    // Calculate intensity based on the relative difference
-    const intensity = Math.abs(diff) / maxVotes;
-
-    if (diff > 0) {
-      // Selection 1 has more votes - use blue
-      return adjustColorForMargin('#3498db', Math.min(intensity * 1.5, 1));
-    } else if (diff < 0) {
-      // Selection 2 has more votes - use orange
-      return adjustColorForMargin('#e67e22', Math.min(intensity * 1.5, 1));
-    } else {
-      // Equal - neutral gray
-      return '#666666';
+  function formatDiff(diff) {
+    if (compareMetric === 'share') {
+      const pts = (diff * 100).toFixed(1);
+      return `${diff > 0 ? '+' : ''}${pts} pts`;
     }
+    return `${diff > 0 ? '+' : ''}${diff.toLocaleString()} votes`;
   }
 
-  // Get candidate stats across all precincts
-  function getCandidateStats(candidateName) {
-    let totalVotes = 0;
-    let totalAllVotes = 0;
-    let precinctsWon = 0;
+  // ---------------------------------------------------------------------------
+  // Pie chart
+  // ---------------------------------------------------------------------------
 
-    const councilPrecincts = electionData.races.city_council.precincts;
-    for (const [precinctId, precinctData] of Object.entries(councilPrecincts)) {
-      const results = precinctData.results;
-      if (results) {
-        const votes = results[candidateName] || 0;
-        const allVotes = Object.values(results).reduce((sum, v) => sum + v, 0);
-        totalVotes += votes;
-        totalAllVotes += allVotes;
-
-        // Check if this candidate won in this precinct (top 7)
-        const sorted = Object.entries(results).sort((a, b) => b[1] - a[1]);
-        const rank = sorted.findIndex(([name]) => name === candidateName);
-        if (rank >= 0 && rank < 7) precinctsWon++;
-      }
-    }
-
-    return {
-      totalVotes,
-      avgPercentage: totalAllVotes > 0 ? (totalVotes / totalAllVotes * 100).toFixed(1) : 0,
-      precinctsWon
-    };
-  }
-
-  // Generate pie chart SVG
-  function generatePieChart(results, size = 100) {
-    const sortedResults = Object.entries(results)
-      .filter(([_, votes]) => votes > 0)
-      .sort((a, b) => b[1] - a[1]);
-
-    const total = sortedResults.reduce((sum, [_, votes]) => sum + votes, 0);
+  function generatePieChart(sel, results, size = 100) {
+    const sorted = Object.entries(results).filter(([_, v]) => v > 0).sort((a, b) => b[1] - a[1]);
+    const total = sorted.reduce((sum, [_, v]) => sum + v, 0);
     if (total === 0) return '';
 
-    const centerX = size / 2;
-    const centerY = size / 2;
+    const c = size / 2;
     const radius = size / 2 - 2;
+    if (sorted.length === 1) {
+      return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}"><circle cx="${c}" cy="${c}" r="${radius}" fill="${candidateColor(sel, sorted[0][0])}" stroke="#000" stroke-width="1"/></svg>`;
+    }
 
-    let paths = [];
-    let currentAngle = -90; // Start from top
-
-    sortedResults.forEach(([candidate, votes]) => {
-      const percentage = votes / total;
-      const angle = percentage * 360;
-      const endAngle = currentAngle + angle;
-
-      // Convert angles to radians
-      const startRad = (currentAngle * Math.PI) / 180;
-      const endRad = (endAngle * Math.PI) / 180;
-
-      // Calculate arc points
-      const x1 = centerX + radius * Math.cos(startRad);
-      const y1 = centerY + radius * Math.sin(startRad);
-      const x2 = centerX + radius * Math.cos(endRad);
-      const y2 = centerY + radius * Math.sin(endRad);
-
-      // Large arc flag
-      const largeArc = angle > 180 ? 1 : 0;
-
-      const color = candidateColors[candidate] || '#888';
-
-      // Create path
-      const path = `<path d="M ${centerX} ${centerY} L ${x1} ${y1} A ${radius} ${radius} 0 ${largeArc} 1 ${x2} ${y2} Z" fill="${color}" stroke="#000" stroke-width="1"/>`;
-      paths.push(path);
-
-      currentAngle = endAngle;
+    let angle = -90;
+    const paths = sorted.map(([candidate, votes]) => {
+      const sweep = (votes / total) * 360;
+      const start = (angle * Math.PI) / 180;
+      const end = ((angle + sweep) * Math.PI) / 180;
+      angle += sweep;
+      const x1 = c + radius * Math.cos(start), y1 = c + radius * Math.sin(start);
+      const x2 = c + radius * Math.cos(end), y2 = c + radius * Math.sin(end);
+      return `<path d="M ${c} ${c} L ${x1} ${y1} A ${radius} ${radius} 0 ${sweep > 180 ? 1 : 0} 1 ${x2} ${y2} Z" fill="${candidateColor(sel, candidate)}" stroke="#000" stroke-width="1"/>`;
     });
-
     return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">${paths.join('')}</svg>`;
   }
 
-  // Calculate overall leader across all precincts
-  function getOverallLeader(race) {
+  // ---------------------------------------------------------------------------
+  // Sidebar rendering
+  // ---------------------------------------------------------------------------
+
+  function getRaceTotals(sel) {
     const totals = {};
-
-    const raceData = electionData.races[race];
-    if (raceData && raceData.precincts) {
-      for (const [precinctId, precinctData] of Object.entries(raceData.precincts)) {
-        const results = precinctData.results;
-        if (results) {
-          for (const [candidate, votes] of Object.entries(results)) {
-            totals[candidate] = (totals[candidate] || 0) + votes;
-          }
-        }
-      }
+    const race = getRace(sel);
+    if (!race) return totals;
+    race.candidates.forEach(c => { totals[c] = 0; });
+    for (const p of Object.values(race.precincts)) {
+      for (const [c, v] of Object.entries(p.results)) totals[c] = (totals[c] || 0) + v;
     }
-
-    let leader = null;
-    let maxVotes = -1;
-
-    for (const [candidate, votes] of Object.entries(totals)) {
-      if (votes > maxVotes) {
-        maxVotes = votes;
-        leader = candidate;
-      }
-    }
-
-    return { name: leader, votes: maxVotes, totals };
+    return totals;
   }
 
-  // Update vote totals display
-  function updateVoteTotals(race) {
-    const voteTotalsDiv = document.getElementById('vote-totals');
+  function updateVoteTotals() {
+    const div = document.getElementById('vote-totals');
+    const title = document.getElementById('vote-totals-title');
     const statsPanel = document.getElementById('stats-panel');
 
-    // Hide in compare mode
     if (compareMode) {
-      voteTotalsDiv.innerHTML = '';
-      statsPanel.classList.add('compare-mode');
+      const sides = [[compare1, '#3498db'], [compare2, '#e67e22']].filter(([sel]) => sel.candidate);
+      if (sides.length === 0) {
+        statsPanel.classList.add('compare-mode');
+        div.innerHTML = '';
+        return;
+      }
+      statsPanel.classList.remove('compare-mode');
+      title.textContent = 'Citywide';
+      div.innerHTML = sides.map(([sel, color]) => {
+        const totals = getRaceTotals(sel);
+        const grand = sumVotes(totals);
+        const votes = totals[sel.candidate] || 0;
+        const pct = grand > 0 ? ((votes / grand) * 100).toFixed(1) : '0.0';
+        return `
+          <div class="vote-total-row">
+            <span class="candidate-color" style="background: ${color}"></span>
+            <span class="candidate-name">${escapeHtml(sel.candidate)}<span class="candidate-race">${escapeHtml(raceLabel(sel))}</span></span>
+            <span class="candidate-votes">${votes.toLocaleString()} <span class="pct">(${pct}%)</span></span>
+          </div>`;
+      }).join('');
       return;
     }
 
     statsPanel.classList.remove('compare-mode');
-
-    const actualRace = race === 'city_council_candidate' ? 'city_council' : race;
-    const leader = getOverallLeader(actualRace);
-    const totals = leader.totals;
-
-    // Sort by votes descending
+    title.textContent = 'Citywide Vote Totals';
+    const totals = getRaceTotals(current);
     const sorted = Object.entries(totals).sort((a, b) => b[1] - a[1]);
+    const grand = sorted.reduce((sum, [_, v]) => sum + v, 0);
+    const seats = getRace(current)?.seats || 1;
 
-    // Calculate grand total
-    const grandTotal = sorted.reduce((sum, [_, v]) => sum + v, 0);
-
-    voteTotalsDiv.innerHTML = sorted.map(([candidate, votes]) => {
-      const pct = grandTotal > 0 ? ((votes / grandTotal) * 100).toFixed(1) : 0;
-      const color = candidateColors[candidate] || '#888';
+    div.innerHTML = sorted.map(([candidate, votes], idx) => {
+      const pct = grand > 0 ? ((votes / grand) * 100).toFixed(1) : '0.0';
       return `
-        <div class="vote-total-row">
-          <span class="candidate-color" style="background: ${color}"></span>
-          <span class="candidate-name">${candidate}</span>
+        <div class="vote-total-row ${idx < seats ? 'leader' : ''}">
+          <span class="candidate-color" style="background: ${candidateColor(current, candidate)}"></span>
+          <span class="candidate-name">${escapeHtml(candidate)}</span>
           <span class="candidate-votes">${votes.toLocaleString()} <span class="pct">(${pct}%)</span></span>
-        </div>
-      `;
-    }).join('');
+        </div>`;
+    }).join('') + (seats > 1 ? `<div class="legend-note">Vote for ${seats}; percentages are of all votes cast in the race.</div>` : '');
   }
 
-  // Update legend for selected race
-  function updateLegend(race) {
-    const legendItems = document.getElementById('legend-items');
-    const legendTitle = document.getElementById('legend-title');
+  function updateLegend() {
+    const items = document.getElementById('legend-items');
+    const title = document.getElementById('legend-title');
 
-    const raceNames = {
-      mayor: 'Mayor',
-      city_clerk: 'City Clerk',
-      city_council: 'City Council',
-      city_council_candidate: 'City Council',
-      proposal: 'Proposal 1'
-    };
-
-    // Handle comparison mode
-    if (compareMode && compare1Candidate && compare2Candidate) {
-      legendTitle.textContent = 'Comparison';
-
-      legendItems.innerHTML = `
+    if (compareMode) {
+      title.textContent = 'Comparison';
+      if (!compare1.candidate || !compare2.candidate) {
+        items.innerHTML = '<div class="legend-note">Pick a candidate or option on both sides to compare.</div>';
+        return;
+      }
+      const metricNote = compareMetric === 'share' ? 'higher vote share' : 'more votes';
+      items.innerHTML = `
         <div class="legend-item">
           <span class="legend-dot" style="background: #3498db"></span>
-          <span>${compare1Candidate} more votes</span>
+          <span>${escapeHtml(compare1.candidate)} (${escapeHtml(raceLabel(compare1))}) ${metricNote}</span>
         </div>
         <div class="legend-item">
           <span class="legend-dot" style="background: #e67e22"></span>
-          <span>${compare2Candidate} more votes</span>
+          <span>${escapeHtml(compare2.candidate)} (${escapeHtml(raceLabel(compare2))}) ${metricNote}</span>
         </div>
         <div class="legend-item">
           <span class="legend-dot" style="background: #666666"></span>
           <span>Equal</span>
         </div>
-        <div class="legend-note" style="margin-top: 0.5rem;">
-          Darker = larger vote difference
-        </div>
-      `;
+        <div class="legend-note" style="margin-top: 0.5rem;">Darker = larger difference</div>`;
       return;
     }
 
-    // Handle candidate-specific view
-    if (race === 'city_council_candidate' && selectedCandidate) {
-      legendTitle.textContent = selectedCandidate;
+    const race = getRace(current);
+    if (!race) return;
 
-      const stats = getCandidateStats(selectedCandidate);
-      const color = candidateColors[selectedCandidate] || '#888';
-      legendItems.innerHTML = `
+    if (current.candidate) {
+      title.textContent = current.candidate;
+      const totals = getRaceTotals(current);
+      const grand = sumVotes(totals);
+      const avg = grand > 0 ? ((totals[current.candidate] || 0) / grand * 100).toFixed(1) : '0.0';
+      const color = candidateColor(current, current.candidate);
+      items.innerHTML = `
         <div class="legend-item">
-          <span class="legend-dot" style="background: ${color}"></span>
-          <span>High Support</span>
+          <span class="legend-dot" style="background: ${adjustColorForMargin(color, 0.85)}"></span>
+          <span>High support</span>
         </div>
         <div class="legend-item">
-          <span class="legend-dot" style="background: ${adjustColorForMargin(color, 0.3)}"></span>
-          <span>Low Support</span>
+          <span class="legend-dot" style="background: ${adjustColorForMargin(color, 0.2)}"></span>
+          <span>Low support</span>
         </div>
-        <div class="legend-note" style="margin-top: 0.5rem;">
-          Avg: ${stats.avgPercentage}%
-        </div>
-      `;
+        <div class="legend-note" style="margin-top: 0.5rem;">Citywide: ${avg}% — ${escapeHtml(raceLabel(current))}</div>`;
       return;
     }
 
-    const actualRace = race === 'city_council_candidate' ? 'city_council' : race;
-    legendTitle.textContent = raceNames[race];
-
-    // Get candidates for this race
-    const candidates = electionData.races[actualRace].candidates;
-
-    // Build legend items
-    legendItems.innerHTML = candidates.map(candidate => `
+    title.textContent = raceLabel(current);
+    items.innerHTML = race.candidates.map(c => `
       <div class="legend-item">
-        <span class="legend-dot" style="background: ${candidateColors[candidate] || '#888'}"></span>
-        <span>${candidate}</span>
-      </div>
-    `).join('');
+        <span class="legend-dot" style="background: ${candidateColor(current, c)}"></span>
+        <span>${escapeHtml(c)}</span>
+      </div>`).join('') +
+      '<div class="legend-note" style="margin-top: 0.5rem;">Colored by precinct winner; darker = wider margin</div>';
   }
 
-  // Update map colors for selected race
-  function updateMapColors(race) {
+  function updateMapColors() {
     if (!map || !map.getSource('precincts')) return;
-
-    // Build color expression for fill
-    const colorExpression = ['case'];
-
-    mergedPrecinctData.features.forEach(feature => {
-      const precinctId = feature.properties.PRECINCT;
-      const election = feature.properties.election;
-
-      let color;
-      if (compareMode && compare1Candidate && compare2Candidate) {
-        // Comparison mode
-        const race1 = compare1Race === 'city_council_candidate' ? 'city_council' : compare1Race;
-        const race2 = compare2Race === 'city_council_candidate' ? 'city_council' : compare2Race;
-        color = getComparisonColor(election, race1, compare1Candidate, race2, compare2Candidate);
-      } else if (race === 'city_council_candidate' && selectedCandidate) {
-        color = getPrecinctColorByCandidate(election, 'city_council', selectedCandidate);
-      } else {
-        const actualRace = race === 'city_council_candidate' ? 'city_council' : race;
-        color = getPrecinctColor(election, actualRace);
-      }
-
-      colorExpression.push(
-        ['==', ['get', 'PRECINCT'], precinctId],
-        color
-      );
+    const expr = ['case'];
+    precinctData.features.forEach(feature => {
+      const id = feature.properties.PRECINCT;
+      const color = compareMode
+        ? (compare1.candidate && compare2.candidate ? getComparisonColor(id) : '#333333')
+        : getPrecinctColor(current, id);
+      expr.push(['==', ['get', 'PRECINCT'], id], color);
     });
-
-    colorExpression.push('#333333'); // default
-
-    map.setPaintProperty('precinct-fill', 'fill-color', colorExpression);
+    expr.push('#333333');
+    map.setPaintProperty('precinct-fill', 'fill-color', expr);
   }
+
+  function refresh() {
+    updateLegend();
+    updateVoteTotals();
+    updateMapColors();
+    if (currentPopup) currentPopup.remove();
+  }
+
+  // ---------------------------------------------------------------------------
+  // Popups
+  // ---------------------------------------------------------------------------
+
+  function precinctMeta(sel, precinctId) {
+    return getRace(sel)?.precincts[precinctId] || null;
+  }
+
+  function showPopup(lngLat, precinctId) {
+    if (currentPopup) currentPopup.remove();
+
+    if (compareMode && compare1.candidate && compare2.candidate) {
+      const rows = [[compare1, '#3498db'], [compare2, '#e67e22']].map(([sel, color]) => {
+        const results = getResults(sel, precinctId);
+        const votes = results ? (results[sel.candidate] || 0) : 0;
+        const pct = results ? getVoteShare(results, sel.candidate) : 0;
+        return `
+          <div class="compare-row">
+            <span class="candidate-color" style="background: ${color}"></span>
+            <span class="label">${escapeHtml(sel.candidate)}<span class="candidate-race">${escapeHtml(raceLabel(sel))}</span></span>
+            <span class="value">${votes.toLocaleString()} <span class="votes">(${(pct * 100).toFixed(1)}%)</span></span>
+          </div>`;
+      }).join('');
+      const v1 = compareValue(compare1, precinctId) ?? 0;
+      const v2 = compareValue(compare2, precinctId) ?? 0;
+      const diff = v1 - v2;
+      const winnerColor = diff > 0 ? '#3498db' : (diff < 0 ? '#e67e22' : '#666');
+
+      currentPopup = new mapboxgl.Popup({ maxWidth: '350px' })
+        .setLngLat(lngLat)
+        .setHTML(`
+          <div class="popup-title">Precinct ${escapeHtml(precinctId)}</div>
+          <div class="popup-subtitle">Comparison</div>
+          <div class="popup-compare">
+            ${rows}
+            <div class="compare-diff" style="border-left-color: ${winnerColor}">
+              <span class="diff-label">Difference:</span>
+              <span class="diff-value" style="color: ${winnerColor}">${formatDiff(compareMetric === 'share' ? diff : Math.round(diff))}</span>
+            </div>
+          </div>`)
+        .addTo(map);
+      return;
+    }
+
+    const results = getResults(current, precinctId);
+    const meta = precinctMeta(current, precinctId);
+    let resultsHtml = '<div class="popup-note">No data available</div>';
+    let pieChartHtml = '';
+
+    if (results) {
+      const sorted = Object.entries(results).sort((a, b) => b[1] - a[1]);
+      const total = sumVotes(results);
+      pieChartHtml = generatePieChart(current, results, 120);
+      resultsHtml = sorted.map(([candidate, votes], idx) => {
+        const pct = total > 0 ? ((votes / total) * 100).toFixed(1) : '0.0';
+        const highlight = current.candidate ? candidate === current.candidate : idx === 0;
+        return `
+          <div class="popup-row ${highlight ? 'winner' : ''}">
+            <span class="candidate-color" style="background: ${candidateColor(current, candidate)}"></span>
+            <span class="label">${escapeHtml(candidate)}</span>
+            <span class="value">${votes.toLocaleString()} <span class="pct">(${pct}%)</span></span>
+          </div>`;
+      }).join('');
+    }
+
+    const notes = [];
+    if (meta?.registered_voters) notes.push(`Registered voters: ${meta.registered_voters.toLocaleString()}`);
+    if (meta?.ballots_cast) notes.push(`Ballots cast: ${meta.ballots_cast.toLocaleString()}`);
+    if (meta?.precinct_name && meta.precinct_name.includes('&')) notes.push(`Includes ${escapeHtml(meta.precinct_name)}`);
+
+    currentPopup = new mapboxgl.Popup({ maxWidth: '320px' })
+      .setLngLat(lngLat)
+      .setHTML(`
+        <div class="popup-title">Precinct ${escapeHtml(precinctId)}</div>
+        <div class="popup-subtitle">${escapeHtml(raceLabel(current))}</div>
+        <div class="popup-chart">${pieChartHtml}</div>
+        <div class="popup-results">${resultsHtml}</div>
+        ${notes.map(n => `<div class="popup-note">${n}</div>`).join('')}`)
+      .addTo(map);
+  }
+
+  // ---------------------------------------------------------------------------
+  // Map
+  // ---------------------------------------------------------------------------
 
   function initMap() {
     if (!MAPBOX_TOKEN) {
@@ -599,193 +540,152 @@ const totalPrecincts = precinctData.features.length;
     map.addControl(new mapboxgl.FullscreenControl(), 'top-right');
 
     map.on('load', () => {
-      // Add Dearborn boundary
-      map.addSource('boundary', {
-        type: 'geojson',
-        data: boundaryData
-      });
-
+      map.addSource('boundary', { type: 'geojson', data: boundaryData });
       map.addLayer({
-        id: 'boundary-fill',
-        type: 'fill',
-        source: 'boundary',
-        paint: {
-          'fill-color': '#533483',
-          'fill-opacity': 0.05
-        }
+        id: 'boundary-fill', type: 'fill', source: 'boundary',
+        paint: { 'fill-color': '#533483', 'fill-opacity': 0.05 }
       });
-
       map.addLayer({
-        id: 'boundary-line',
-        type: 'line',
-        source: 'boundary',
-        paint: {
-          'line-color': '#533483',
-          'line-width': 2,
-          'line-opacity': 0.7,
-          'line-dasharray': [2, 2]
-        }
+        id: 'boundary-line', type: 'line', source: 'boundary',
+        paint: { 'line-color': '#533483', 'line-width': 2, 'line-opacity': 0.7, 'line-dasharray': [2, 2] }
       });
 
-      // Add precinct source
-      map.addSource('precincts', {
-        type: 'geojson',
-        data: mergedPrecinctData
-      });
-
-      // Precinct fill layer - will be colored by winner
+      map.addSource('precincts', { type: 'geojson', data: precinctData });
       map.addLayer({
-        id: 'precinct-fill',
-        type: 'fill',
-        source: 'precincts',
-        paint: {
-          'fill-color': '#333333',
-          'fill-opacity': 0.7
-        }
+        id: 'precinct-fill', type: 'fill', source: 'precincts',
+        paint: { 'fill-color': '#333333', 'fill-opacity': 0.7 }
       });
-
-      // Precinct outline layer
       map.addLayer({
-        id: 'precinct-line',
-        type: 'line',
-        source: 'precincts',
-        paint: {
-          'line-color': '#ffffff',
-          'line-width': 2,
-          'line-opacity': 0.8
-        }
+        id: 'precinct-line', type: 'line', source: 'precincts',
+        paint: { 'line-color': '#ffffff', 'line-width': 2, 'line-opacity': 0.8 }
       });
-
-      // Precinct labels
       map.addLayer({
-        id: 'precinct-labels',
-        type: 'symbol',
-        source: 'precincts',
+        id: 'precinct-labels', type: 'symbol', source: 'precincts',
         layout: {
           'text-field': ['get', 'PRECINCT'],
           'text-size': 11,
           'text-anchor': 'center',
           'text-font': ['DIN Pro Bold', 'Arial Unicode MS Bold']
         },
-        paint: {
-          'text-color': '#ffffff',
-          'text-halo-color': '#000000',
-          'text-halo-width': 1.5
-        }
+        paint: { 'text-color': '#ffffff', 'text-halo-color': '#000000', 'text-halo-width': 1.5 }
       });
 
-      // Initial update
-      updateLegend(currentRace);
-      updateVoteTotals(currentRace);
-      updateMapColors(currentRace);
+      refresh();
 
-      // Click handler for precincts
-      map.on('click', 'precinct-fill', (e) => {
-        const props = e.features[0].properties;
-        const precinctId = props.PRECINCT;
-        const election = electionByPrecinct[precinctId];
-
-        if (currentPopup) currentPopup.remove();
-
-        const raceNames = {
-          mayor: 'Mayor',
-          city_clerk: 'City Clerk',
-          city_council: 'City Council',
-          proposal: 'Proposal 1'
-        };
-
-        // Handle comparison mode popup
-        if (compareMode && compare1Candidate && compare2Candidate) {
-          const race1 = compare1Race === 'city_council_candidate' ? 'city_council' : compare1Race;
-          const race2 = compare2Race === 'city_council_candidate' ? 'city_council' : compare2Race;
-
-          const votes1 = election && election[race1] ? (election[race1][compare1Candidate] || 0) : 0;
-          const votes2 = election && election[race2] ? (election[race2][compare2Candidate] || 0) : 0;
-          const voteDiff = votes1 - votes2;
-
-          // Also get percentages for display
-          const pct1 = getVotePercentage(election, race1, compare1Candidate);
-          const pct2 = getVotePercentage(election, race2, compare2Candidate);
-
-          const winnerColor = voteDiff > 0 ? '#3498db' : (voteDiff < 0 ? '#e67e22' : '#666');
-
-          currentPopup = new mapboxgl.Popup({ maxWidth: '350px' })
-            .setLngLat(e.lngLat)
-            .setHTML(`
-              <div class="popup-title">Precinct ${precinctId}</div>
-              <div class="popup-subtitle">Comparison</div>
-              <div class="popup-compare">
-                <div class="compare-row selection-1">
-                  <span class="candidate-color" style="background: #3498db"></span>
-                  <span class="label">${compare1Candidate}</span>
-                  <span class="value">${votes1.toLocaleString()} <span class="votes">(${(pct1 * 100).toFixed(1)}%)</span></span>
-                </div>
-                <div class="compare-row selection-2">
-                  <span class="candidate-color" style="background: #e67e22"></span>
-                  <span class="label">${compare2Candidate}</span>
-                  <span class="value">${votes2.toLocaleString()} <span class="votes">(${(pct2 * 100).toFixed(1)}%)</span></span>
-                </div>
-                <div class="compare-diff" style="border-left-color: ${winnerColor}">
-                  <span class="diff-label">Difference:</span>
-                  <span class="diff-value" style="color: ${winnerColor}">${voteDiff > 0 ? '+' : ''}${voteDiff.toLocaleString()} votes</span>
-                </div>
-              </div>
-              <div class="popup-note">Registered voters: ${(props.Registered_Voters || 0).toLocaleString()}</div>
-            `)
-            .addTo(map);
-          return;
-        }
-
-        // Normal mode popup
-        let resultsHtml = '';
-        let pieChartHtml = '';
-
-        if (election && election[currentRace]) {
-          const results = election[currentRace];
-          const sortedResults = Object.entries(results)
-            .sort((a, b) => b[1] - a[1]);
-
-          const totalVotes = sortedResults.reduce((sum, [_, v]) => sum + v, 0);
-
-          // Generate pie chart
-          pieChartHtml = generatePieChart(results, 120);
-
-          resultsHtml = sortedResults.map(([candidate, votes], idx) => {
-            const pct = totalVotes > 0 ? ((votes / totalVotes) * 100).toFixed(1) : 0;
-            return `
-              <div class="popup-row ${idx === 0 ? 'winner' : ''}">
-                <span class="candidate-color" style="background: ${candidateColors[candidate] || '#888'}"></span>
-                <span class="label">${candidate}</span>
-                <span class="value">${votes.toLocaleString()} <span class="pct">(${pct}%)</span></span>
-              </div>
-            `;
-          }).join('');
-        } else {
-          resultsHtml = '<div class="popup-note">No data available</div>';
-        }
-
-        currentPopup = new mapboxgl.Popup({ maxWidth: '320px' })
-          .setLngLat(e.lngLat)
-          .setHTML(`
-            <div class="popup-title">Precinct ${precinctId}</div>
-            <div class="popup-subtitle">${raceNames[currentRace]}</div>
-            <div class="popup-chart">${pieChartHtml}</div>
-            <div class="popup-results">
-              ${resultsHtml}
-            </div>
-            <div class="popup-note">Registered voters: ${(props.Registered_Voters || 0).toLocaleString()}</div>
-          `)
-          .addTo(map);
-      });
-
-      // Cursor change for precincts
-      map.on('mouseenter', 'precinct-fill', () => {
-        map.getCanvas().style.cursor = 'pointer';
-      });
-      map.on('mouseleave', 'precinct-fill', () => {
-        map.getCanvas().style.cursor = '';
-      });
+      map.on('click', 'precinct-fill', (e) => showPopup(e.lngLat, e.features[0].properties.PRECINCT));
+      map.on('mouseenter', 'precinct-fill', () => { map.getCanvas().style.cursor = 'pointer'; });
+      map.on('mouseleave', 'precinct-fill', () => { map.getCanvas().style.cursor = ''; });
     });
+  }
+
+  // ---------------------------------------------------------------------------
+  // Controls
+  // ---------------------------------------------------------------------------
+
+  function fillYearSelect(select, value) {
+    select.innerHTML = YEARS.map(y => `<option value="${y}">${escapeHtml(ELECTIONS[y].label)}</option>`).join('');
+    select.value = value;
+  }
+
+  function fillRaceSelect(select, year, value) {
+    const groups = {};
+    for (const [key, race] of Object.entries(ELECTIONS[year].races)) {
+      (groups[race.category] = groups[race.category] || []).push([key, race.race_name]);
+    }
+    select.innerHTML = Object.entries(groups).map(([cat, races]) =>
+      `<optgroup label="${escapeHtml(cat)}">` +
+      races.map(([key, name]) => `<option value="${key}">${escapeHtml(name)}</option>`).join('') +
+      '</optgroup>'
+    ).join('');
+    select.value = value;
+  }
+
+  function fillCandidateSelect(select, sel, placeholder) {
+    const race = getRace(sel);
+    select.innerHTML = `<option value="">${placeholder}</option>` +
+      (race ? race.candidates.map(c => `<option value="${escapeHtml(c)}">${escapeHtml(c)}</option>`).join('') : '');
+    select.value = sel.candidate || '';
+  }
+
+  // Wire a year/race/candidate trio to a selection object.
+  function bindSelection(yearEl, raceEl, candEl, getSel, placeholder) {
+    const sync = () => {
+      const sel = getSel();
+      fillYearSelect(yearEl, sel.year);
+      fillRaceSelect(raceEl, sel.year, sel.race);
+      fillCandidateSelect(candEl, sel, placeholder);
+    };
+    yearEl.addEventListener('change', () => {
+      const sel = getSel();
+      sel.year = yearEl.value;
+      sel.race = DEFAULT_RACE[sel.year] || Object.keys(ELECTIONS[sel.year].races)[0];
+      sel.candidate = null;
+      sync();
+      refresh();
+    });
+    raceEl.addEventListener('change', () => {
+      const sel = getSel();
+      sel.race = raceEl.value;
+      sel.candidate = null;
+      fillCandidateSelect(candEl, sel, placeholder);
+      refresh();
+    });
+    candEl.addEventListener('change', () => {
+      getSel().candidate = candEl.value || null;
+      refresh();
+    });
+    sync();
+  }
+
+  function setupEventListeners() {
+    bindSelection(
+      document.getElementById('year-select'),
+      document.getElementById('race-select'),
+      document.getElementById('candidate-select'),
+      () => current,
+      'Precinct winner'
+    );
+    bindSelection(
+      document.getElementById('compare-year-1'),
+      document.getElementById('compare-race-1'),
+      document.getElementById('compare-candidate-1'),
+      () => compare1,
+      'Select candidate...'
+    );
+    bindSelection(
+      document.getElementById('compare-year-2'),
+      document.getElementById('compare-race-2'),
+      document.getElementById('compare-candidate-2'),
+      () => compare2,
+      'Select candidate...'
+    );
+
+    document.getElementById('compare-metric').addEventListener('change', (e) => {
+      compareMetric = e.target.value;
+      refresh();
+    });
+
+    const compareToggle = document.getElementById('compare-toggle');
+    const compareToggleText = document.getElementById('compare-toggle-text');
+    const normalSelector = document.getElementById('normal-selector');
+    const compareSelectors = document.getElementById('compare-selectors');
+    compareToggle.addEventListener('click', () => {
+      compareMode = !compareMode;
+      compareToggleText.textContent = compareMode ? 'Disable Compare Mode' : 'Enable Compare Mode';
+      compareToggle.classList.toggle('active', compareMode);
+      normalSelector.classList.toggle('hidden', compareMode);
+      compareSelectors.classList.toggle('hidden', !compareMode);
+      refresh();
+    });
+
+    // Sidebar toggle (mobile)
+    const sidebar = document.getElementById('sidebar');
+    document.getElementById('sidebar-toggle').addEventListener('click', () => sidebar.classList.add('open'));
+    document.getElementById('sidebar-close').addEventListener('click', () => sidebar.classList.remove('open'));
+
+    // Render sidebar content even before the map finishes loading.
+    updateLegend();
+    updateVoteTotals();
   }
 
   let domReady = false;
@@ -799,149 +699,6 @@ const totalPrecincts = precinctData.features.length;
         console.error('Map init error:', e);
       }
     }
-  }
-
-  function setupEventListeners() {
-    // Normal mode elements
-    const normalSelector = document.getElementById('normal-selector');
-    const raceSelect = document.getElementById('race-select');
-    const candidateSelect = document.getElementById('candidate-select');
-
-    // Compare mode elements
-    const compareToggle = document.getElementById('compare-toggle');
-    const compareSelectors = document.getElementById('compare-selectors');
-    const compareRace1 = document.getElementById('compare-race-1');
-    const compareCandidate1 = document.getElementById('compare-candidate-1');
-    const compareRace2 = document.getElementById('compare-race-2');
-    const compareCandidate2 = document.getElementById('compare-candidate-2');
-
-    // Populate candidate dropdowns for normal mode
-    const councilCandidates = electionData.races.city_council.candidates;
-    candidateSelect.innerHTML = '<option value="">Select Candidate...</option>' +
-      councilCandidates.map(c => `<option value="${c}">${c}</option>`).join('');
-
-    // Function to populate candidate dropdown based on race
-    function populateCandidateDropdown(raceValue, dropdown) {
-      const actualRace = raceValue === 'city_council_candidate' ? 'city_council' : raceValue;
-      const candidates = electionData.races[actualRace].candidates;
-      dropdown.innerHTML = '<option value="">Select...</option>' +
-        candidates.map(c => `<option value="${c}">${c}</option>`).join('');
-    }
-
-    // Initial populate for compare dropdowns
-    populateCandidateDropdown(compare1Race, compareCandidate1);
-    populateCandidateDropdown(compare2Race, compareCandidate2);
-
-    // Race selector (normal mode)
-    raceSelect.addEventListener('change', (e) => {
-      currentRace = e.target.value;
-      const candidateWrapper = document.getElementById('candidate-select-wrapper');
-
-      if (currentRace === 'city_council_candidate') {
-        candidateWrapper.classList.remove('hidden');
-        candidateSelect.value = '';
-        selectedCandidate = null;
-      } else {
-        candidateWrapper.classList.add('hidden');
-        selectedCandidate = null;
-      }
-
-      updateLegend(currentRace);
-      updateVoteTotals(currentRace);
-      updateMapColors(currentRace);
-      if (currentPopup) currentPopup.remove();
-    });
-
-    // Candidate selector (normal mode)
-    candidateSelect.addEventListener('change', (e) => {
-      selectedCandidate = e.target.value || null;
-      updateLegend(currentRace);
-      updateVoteTotals(currentRace);
-      updateMapColors(currentRace);
-      if (currentPopup) currentPopup.remove();
-    });
-
-    // Compare toggle
-    const compareToggleText = document.getElementById('compare-toggle-text');
-    compareToggle.addEventListener('click', () => {
-      compareMode = !compareMode;
-      if (compareMode) {
-        compareToggleText.textContent = 'Disable Compare Mode';
-        compareToggle.classList.add('active');
-        normalSelector.classList.add('hidden');
-        compareSelectors.classList.remove('hidden');
-      } else {
-        compareToggleText.textContent = 'Enable Compare Mode';
-        compareToggle.classList.remove('active');
-        normalSelector.classList.remove('hidden');
-        compareSelectors.classList.add('hidden');
-        compare1Candidate = null;
-        compare2Candidate = null;
-      }
-      updateLegend(currentRace);
-      updateVoteTotals(currentRace);
-      updateMapColors(currentRace);
-      if (currentPopup) currentPopup.remove();
-    });
-
-    // Sidebar toggle (mobile)
-    const sidebarToggle = document.getElementById('sidebar-toggle');
-    const sidebarClose = document.getElementById('sidebar-close');
-    const sidebar = document.getElementById('sidebar');
-
-    if (sidebarToggle) {
-      sidebarToggle.addEventListener('click', () => {
-        sidebar.classList.add('open');
-      });
-    }
-
-    if (sidebarClose) {
-      sidebarClose.addEventListener('click', () => {
-        sidebar.classList.remove('open');
-      });
-    }
-
-    // Compare race 1 selector
-    compareRace1.addEventListener('change', (e) => {
-      compare1Race = e.target.value;
-      populateCandidateDropdown(compare1Race, compareCandidate1);
-      compare1Candidate = null;
-      compareCandidate1.value = '';
-      updateLegend(currentRace);
-      updateVoteTotals(currentRace);
-      updateMapColors(currentRace);
-      if (currentPopup) currentPopup.remove();
-    });
-
-    // Compare candidate 1 selector
-    compareCandidate1.addEventListener('change', (e) => {
-      compare1Candidate = e.target.value || null;
-      updateLegend(currentRace);
-      updateVoteTotals(currentRace);
-      updateMapColors(currentRace);
-      if (currentPopup) currentPopup.remove();
-    });
-
-    // Compare race 2 selector
-    compareRace2.addEventListener('change', (e) => {
-      compare2Race = e.target.value;
-      populateCandidateDropdown(compare2Race, compareCandidate2);
-      compare2Candidate = null;
-      compareCandidate2.value = '';
-      updateLegend(currentRace);
-      updateVoteTotals(currentRace);
-      updateMapColors(currentRace);
-      if (currentPopup) currentPopup.remove();
-    });
-
-    // Compare candidate 2 selector
-    compareCandidate2.addEventListener('change', (e) => {
-      compare2Candidate = e.target.value || null;
-      updateLegend(currentRace);
-      updateVoteTotals(currentRace);
-      updateMapColors(currentRace);
-      if (currentPopup) currentPopup.remove();
-    });
   }
 
   if (document.readyState === 'loading') {

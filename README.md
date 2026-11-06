@@ -18,10 +18,11 @@ Visualizes Automated License Plate Recognition (ALPR) cameras and surveillance i
 Displays voting precincts and election results with interactive comparison features.
 
 - Precinct boundaries with election results
-- Multiple race selection (Mayor, City Council, Proposals)
-- Candidate-based color coding with margin intensity
-- Cross-race comparison mode
-- Vote totals by candidate
+- **Nov 2026 General**: statewide, federal, legislative, education-board, county, school-board and ballot-proposal races (all parties; judicial races and straight-party ticket omitted)
+- **Nov 2025 Municipal**: Mayor, City Clerk, City Council, Proposal 1
+- Color by precinct winner (margin intensity) or by any single candidate's vote share
+- Compare mode across races and years, by vote share or raw votes
+- Citywide vote totals by candidate
 
 ## Tech Stack
 

@@ -1,0 +1,7693 @@
+{
+ "election_info": {
+  "election_name": "November 2026 General Election",
+  "election_date": "2026-11-03",
+  "jurisdiction": "City of Dearborn, Michigan",
+  "source": "https://dearborn.gov/sites/default/files/2026-11/11-3-26%20Election%20Precinct%20Breakdown.pdf",
+  "notes": "Transcribed from the Wayne County precinct canvass (printed 2026-11-04). Write-ins omitted. 2026 precincts are summed into the map's precinct units (e.g. 8 + 9 -> 8-9)."
+ },
+ "races": {
+  "governor": {
+   "race_name": "Governor",
+   "category": "Statewide",
+   "seats": 1,
+   "candidates": [
+    "Jocelyn Benson (D)",
+    "John James (R)",
+    "Anthony Hudson (L)",
+    "Donna Brandenburg (UST)",
+    "Douglas Campbell (G)"
+   ],
+   "colors": {
+    "Jocelyn Benson (D)": "#2563eb",
+    "John James (R)": "#dc2626",
+    "Anthony Hudson (L)": "#eab308",
+    "Donna Brandenburg (UST)": "#7c3aed",
+    "Douglas Campbell (G)": "#16a34a"
+   },
+   "precincts": {
+    "1": {
+     "precinct_name": "Dearborn 1",
+     "registered_voters": 1990,
+     "ballots_cast": 1079,
+     "results": {
+      "Jocelyn Benson (D)": 830,
+      "John James (R)": 41,
+      "Anthony Hudson (L)": 7,
+      "Donna Brandenburg (UST)": 4,
+      "Douglas Campbell (G)": 9
+     }
+    },
+    "2": {
+     "precinct_name": "Dearborn 2",
+     "registered_voters": 2132,
+     "ballots_cast": 965,
+     "results": {
+      "Jocelyn Benson (D)": 723,
+      "John James (R)": 41,
+      "Anthony Hudson (L)": 6,
+      "Donna Brandenburg (UST)": 4,
+      "Douglas Campbell (G)": 19
+     }
+    },
+    "3": {
+     "precinct_name": "Dearborn 3",
+     "registered_voters": 2642,
+     "ballots_cast": 1349,
+     "results": {
+      "Jocelyn Benson (D)": 1083,
+      "John James (R)": 75,
+      "Anthony Hudson (L)": 6,
+      "Donna Brandenburg (UST)": 8,
+      "Douglas Campbell (G)": 16
+     }
+    },
+    "4-5": {
+     "precinct_name": "Dearborn 4",
+     "registered_voters": 3321,
+     "ballots_cast": 1581,
+     "results": {
+      "Jocelyn Benson (D)": 1206,
+      "John James (R)": 60,
+      "Anthony Hudson (L)": 12,
+      "Donna Brandenburg (UST)": 9,
+      "Douglas Campbell (G)": 27
+     }
+    },
+    "6": {
+     "precinct_name": "Dearborn 6",
+     "registered_voters": 2204,
+     "ballots_cast": 1141,
+     "results": {
+      "Jocelyn Benson (D)": 874,
+      "John James (R)": 31,
+      "Anthony Hudson (L)": 4,
+      "Donna Brandenburg (UST)": 8,
+      "Douglas Campbell (G)": 29
+     }
+    },
+    "7": {
+     "precinct_name": "Dearborn 7",
+     "registered_voters": 2775,
+     "ballots_cast": 1345,
+     "results": {
+      "Jocelyn Benson (D)": 1022,
+      "John James (R)": 53,
+      "Anthony Hudson (L)": 5,
+      "Donna Brandenburg (UST)": 5,
+      "Douglas Campbell (G)": 29
+     }
+    },
+    "8-9": {
+     "precinct_name": "Dearborn 8 & 9",
+     "registered_voters": 3709,
+     "ballots_cast": 1926,
+     "results": {
+      "Jocelyn Benson (D)": 1536,
+      "John James (R)": 74,
+      "Anthony Hudson (L)": 11,
+      "Donna Brandenburg (UST)": 6,
+      "Douglas Campbell (G)": 22
+     }
+    },
+    "10": {
+     "precinct_name": "Dearborn 10",
+     "registered_voters": 1802,
+     "ballots_cast": 826,
+     "results": {
+      "Jocelyn Benson (D)": 607,
+      "John James (R)": 54,
+      "Anthony Hudson (L)": 7,
+      "Donna Brandenburg (UST)": 4,
+      "Douglas Campbell (G)": 10
+     }
+    },
+    "11-12": {
+     "precinct_name": "Dearborn 11 & 12",
+     "registered_voters": 3552,
+     "ballots_cast": 1823,
+     "results": {
+      "Jocelyn Benson (D)": 1361,
+      "John James (R)": 114,
+      "Anthony Hudson (L)": 7,
+      "Donna Brandenburg (UST)": 13,
+      "Douglas Campbell (G)": 21
+     }
+    },
+    "13": {
+     "precinct_name": "Dearborn 13",
+     "registered_voters": 584,
+     "ballots_cast": 369,
+     "results": {
+      "Jocelyn Benson (D)": 279,
+      "John James (R)": 81,
+      "Anthony Hudson (L)": 1,
+      "Donna Brandenburg (UST)": 1,
+      "Douglas Campbell (G)": 1
+     }
+    },
+    "15-16": {
+     "precinct_name": "Dearborn 15 & 16",
+     "registered_voters": 4119,
+     "ballots_cast": 2128,
+     "results": {
+      "Jocelyn Benson (D)": 1648,
+      "John James (R)": 110,
+      "Anthony Hudson (L)": 15,
+      "Donna Brandenburg (UST)": 12,
+      "Douglas Campbell (G)": 35
+     }
+    },
+    "17": {
+     "precinct_name": "Dearborn 17",
+     "registered_voters": 2489,
+     "ballots_cast": 1281,
+     "results": {
+      "Jocelyn Benson (D)": 985,
+      "John James (R)": 121,
+      "Anthony Hudson (L)": 7,
+      "Donna Brandenburg (UST)": 5,
+      "Douglas Campbell (G)": 19
+     }
+    },
+    "18": {
+     "precinct_name": "Dearborn 18",
+     "registered_voters": 2904,
+     "ballots_cast": 1438,
+     "results": {
+      "Jocelyn Benson (D)": 1044,
+      "John James (R)": 106,
+      "Anthony Hudson (L)": 9,
+      "Donna Brandenburg (UST)": 10,
+      "Douglas Campbell (G)": 20
+     }
+    },
+    "19": {
+     "precinct_name": "Dearborn 19",
+     "registered_voters": 1684,
+     "ballots_cast": 937,
+     "results": {
+      "Jocelyn Benson (D)": 717,
+      "John James (R)": 51,
+      "Anthony Hudson (L)": 3,
+      "Donna Brandenburg (UST)": 2,
+      "Douglas Campbell (G)": 15
+     }
+    },
+    "20": {
+     "precinct_name": "Dearborn 20",
+     "registered_voters": 1453,
+     "ballots_cast": 677,
+     "results": {
+      "Jocelyn Benson (D)": 481,
+      "John James (R)": 18,
+      "Anthony Hudson (L)": 2,
+      "Donna Brandenburg (UST)": 1,
+      "Douglas Campbell (G)": 9
+     }
+    },
+    "21": {
+     "precinct_name": "Dearborn 21",
+     "registered_voters": 1878,
+     "ballots_cast": 949,
+     "results": {
+      "Jocelyn Benson (D)": 710,
+      "John James (R)": 28,
+      "Anthony Hudson (L)": 9,
+      "Donna Brandenburg (UST)": 8,
+      "Douglas Campbell (G)": 12
+     }
+    },
+    "22-23": {
+     "precinct_name": "Dearborn 22",
+     "registered_voters": 2287,
+     "ballots_cast": 1373,
+     "results": {
+      "Jocelyn Benson (D)": 1087,
+      "John James (R)": 181,
+      "Anthony Hudson (L)": 5,
+      "Donna Brandenburg (UST)": 2,
+      "Douglas Campbell (G)": 20
+     }
+    },
+    "24": {
+     "precinct_name": "Dearborn 24",
+     "registered_voters": 1116,
+     "ballots_cast": 691,
+     "results": {
+      "Jocelyn Benson (D)": 462,
+      "John James (R)": 170,
+      "Anthony Hudson (L)": 7,
+      "Donna Brandenburg (UST)": 10,
+      "Douglas Campbell (G)": 5
+     }
+    },
+    "25-26": {
+     "precinct_name": "Dearborn 25 & 26",
+     "registered_voters": 3750,
+     "ballots_cast": 2325,
+     "results": {
+      "Jocelyn Benson (D)": 1581,
+      "John James (R)": 582,
+      "Anthony Hudson (L)": 17,
+      "Donna Brandenburg (UST)": 11,
+      "Douglas Campbell (G)": 28
+     }
+    },
+    "27": {
+     "precinct_name": "Dearborn 27",
+     "registered_voters": 1676,
+     "ballots_cast": 1027,
+     "results": {
+      "Jocelyn Benson (D)": 693,
+      "John James (R)": 275,
+      "Anthony Hudson (L)": 6,
+      "Donna Brandenburg (UST)": 6,
+      "Douglas Campbell (G)": 12
+     }
+    },
+    "28": {
+     "precinct_name": "Dearborn 28",
+     "registered_voters": 1052,
+     "ballots_cast": 660,
+     "results": {
+      "Jocelyn Benson (D)": 425,
+      "John James (R)": 204,
+      "Anthony Hudson (L)": 4,
+      "Donna Brandenburg (UST)": 6,
+      "Douglas Campbell (G)": 3
+     }
+    },
+    "29-30": {
+     "precinct_name": "Dearborn 29",
+     "registered_voters": 1974,
+     "ballots_cast": 1179,
+     "results": {
+      "Jocelyn Benson (D)": 763,
+      "John James (R)": 338,
+      "Anthony Hudson (L)": 14,
+      "Donna Brandenburg (UST)": 3,
+      "Douglas Campbell (G)": 10
+     }
+    },
+    "31-32": {
+     "precinct_name": "Dearborn 31 & 32",
+     "registered_voters": 3326,
+     "ballots_cast": 2076,
+     "results": {
+      "Jocelyn Benson (D)": 1480,
+      "John James (R)": 436,
+      "Anthony Hudson (L)": 14,
+      "Donna Brandenburg (UST)": 4,
+      "Douglas Campbell (G)": 23
+     }
+    },
+    "33-34": {
+     "precinct_name": "Dearborn 33 & 34",
+     "registered_voters": 3192,
+     "ballots_cast": 2048,
+     "results": {
+      "Jocelyn Benson (D)": 1466,
+      "John James (R)": 398,
+      "Anthony Hudson (L)": 14,
+      "Donna Brandenburg (UST)": 4,
+      "Douglas Campbell (G)": 24
+     }
+    },
+    "35-36": {
+     "precinct_name": "Dearborn 35",
+     "registered_voters": 2161,
+     "ballots_cast": 1489,
+     "results": {
+      "Jocelyn Benson (D)": 1055,
+      "John James (R)": 332,
+      "Anthony Hudson (L)": 8,
+      "Donna Brandenburg (UST)": 0,
+      "Douglas Campbell (G)": 18
+     }
+    },
+    "37-38": {
+     "precinct_name": "Dearborn 37 & 38",
+     "registered_voters": 3505,
+     "ballots_cast": 2267,
+     "results": {
+      "Jocelyn Benson (D)": 1536,
+      "John James (R)": 556,
+      "Anthony Hudson (L)": 14,
+      "Donna Brandenburg (UST)": 11,
+      "Douglas Campbell (G)": 25
+     }
+    },
+    "40-41": {
+     "precinct_name": "Dearborn 40 & 41",
+     "registered_voters": 2871,
+     "ballots_cast": 1951,
+     "results": {
+      "Jocelyn Benson (D)": 1356,
+      "John James (R)": 456,
+      "Anthony Hudson (L)": 16,
+      "Donna Brandenburg (UST)": 12,
+      "Douglas Campbell (G)": 19
+     }
+    },
+    "42-43": {
+     "precinct_name": "Dearborn 42",
+     "registered_voters": 2657,
+     "ballots_cast": 1749,
+     "results": {
+      "Jocelyn Benson (D)": 1194,
+      "John James (R)": 427,
+      "Anthony Hudson (L)": 10,
+      "Donna Brandenburg (UST)": 3,
+      "Douglas Campbell (G)": 30
+     }
+    },
+    "44": {
+     "precinct_name": "Dearborn 44",
+     "registered_voters": 1484,
+     "ballots_cast": 1057,
+     "results": {
+      "Jocelyn Benson (D)": 714,
+      "John James (R)": 296,
+      "Anthony Hudson (L)": 6,
+      "Donna Brandenburg (UST)": 0,
+      "Douglas Campbell (G)": 7
+     }
+    },
+    "45": {
+     "precinct_name": "Dearborn 45",
+     "registered_voters": 1798,
+     "ballots_cast": 1136,
+     "results": {
+      "Jocelyn Benson (D)": 768,
+      "John James (R)": 312,
+      "Anthony Hudson (L)": 9,
+      "Donna Brandenburg (UST)": 3,
+      "Douglas Campbell (G)": 9
+     }
+    },
+    "46": {
+     "precinct_name": "Dearborn 46",
+     "registered_voters": 1741,
+     "ballots_cast": 1076,
+     "results": {
+      "Jocelyn Benson (D)": 702,
+      "John James (R)": 316,
+      "Anthony Hudson (L)": 9,
+      "Donna Brandenburg (UST)": 6,
+      "Douglas Campbell (G)": 12
+     }
+    },
+    "47-48": {
+     "precinct_name": "Dearborn 47",
+     "registered_voters": 2446,
+     "ballots_cast": 1531,
+     "results": {
+      "Jocelyn Benson (D)": 947,
+      "John James (R)": 513,
+      "Anthony Hudson (L)": 9,
+      "Donna Brandenburg (UST)": 5,
+      "Douglas Campbell (G)": 18
+     }
+    },
+    "49-50": {
+     "precinct_name": "Dearborn 49 & 50",
+     "registered_voters": 3593,
+     "ballots_cast": 2011,
+     "results": {
+      "Jocelyn Benson (D)": 1282,
+      "John James (R)": 619,
+      "Anthony Hudson (L)": 20,
+      "Donna Brandenburg (UST)": 11,
+      "Douglas Campbell (G)": 18
+     }
+    }
+   }
+  },
+  "secretary_of_state": {
+   "race_name": "Secretary of State",
+   "category": "Statewide",
+   "seats": 1,
+   "candidates": [
+    "Garlin Gilchrist II (D)",
+    "Anthony G. Forlini (R)",
+    "Christine Sloan (L)",
+    "Scott Aughney (UST)",
+    "Eric Borregard (G)"
+   ],
+   "colors": {
+    "Garlin Gilchrist II (D)": "#2563eb",
+    "Anthony G. Forlini (R)": "#dc2626",
+    "Christine Sloan (L)": "#eab308",
+    "Scott Aughney (UST)": "#7c3aed",
+    "Eric Borregard (G)": "#16a34a"
+   },
+   "precincts": {
+    "1": {
+     "precinct_name": "Dearborn 1",
+     "registered_voters": 1990,
+     "ballots_cast": 1079,
+     "results": {
+      "Garlin Gilchrist II (D)": 864,
+      "Anthony G. Forlini (R)": 50,
+      "Christine Sloan (L)": 14,
+      "Scott Aughney (UST)": 4,
+      "Eric Borregard (G)": 5
+     }
+    },
+    "2": {
+     "precinct_name": "Dearborn 2",
+     "registered_voters": 2132,
+     "ballots_cast": 965,
+     "results": {
+      "Garlin Gilchrist II (D)": 748,
+      "Anthony G. Forlini (R)": 35,
+      "Christine Sloan (L)": 11,
+      "Scott Aughney (UST)": 3,
+      "Eric Borregard (G)": 13
+     }
+    },
+    "3": {
+     "precinct_name": "Dearborn 3",
+     "registered_voters": 2642,
+     "ballots_cast": 1349,
+     "results": {
+      "Garlin Gilchrist II (D)": 1087,
+      "Anthony G. Forlini (R)": 77,
+      "Christine Sloan (L)": 8,
+      "Scott Aughney (UST)": 7,
+      "Eric Borregard (G)": 12
+     }
+    },
+    "4-5": {
+     "precinct_name": "Dearborn 4",
+     "registered_voters": 3321,
+     "ballots_cast": 1581,
+     "results": {
+      "Garlin Gilchrist II (D)": 1277,
+      "Anthony G. Forlini (R)": 51,
+      "Christine Sloan (L)": 13,
+      "Scott Aughney (UST)": 11,
+      "Eric Borregard (G)": 23
+     }
+    },
+    "6": {
+     "precinct_name": "Dearborn 6",
+     "registered_voters": 2204,
+     "ballots_cast": 1141,
+     "results": {
+      "Garlin Gilchrist II (D)": 934,
+      "Anthony G. Forlini (R)": 37,
+      "Christine Sloan (L)": 3,
+      "Scott Aughney (UST)": 9,
+      "Eric Borregard (G)": 14
+     }
+    },
+    "7": {
+     "precinct_name": "Dearborn 7",
+     "registered_voters": 2775,
+     "ballots_cast": 1345,
+     "results": {
+      "Garlin Gilchrist II (D)": 1072,
+      "Anthony G. Forlini (R)": 53,
+      "Christine Sloan (L)": 10,
+      "Scott Aughney (UST)": 6,
+      "Eric Borregard (G)": 18
+     }
+    },
+    "8-9": {
+     "precinct_name": "Dearborn 8 & 9",
+     "registered_voters": 3709,
+     "ballots_cast": 1926,
+     "results": {
+      "Garlin Gilchrist II (D)": 1592,
+      "Anthony G. Forlini (R)": 76,
+      "Christine Sloan (L)": 15,
+      "Scott Aughney (UST)": 2,
+      "Eric Borregard (G)": 23
+     }
+    },
+    "10": {
+     "precinct_name": "Dearborn 10",
+     "registered_voters": 1802,
+     "ballots_cast": 826,
+     "results": {
+      "Garlin Gilchrist II (D)": 643,
+      "Anthony G. Forlini (R)": 50,
+      "Christine Sloan (L)": 12,
+      "Scott Aughney (UST)": 9,
+      "Eric Borregard (G)": 6
+     }
+    },
+    "11-12": {
+     "precinct_name": "Dearborn 11 & 12",
+     "registered_voters": 3552,
+     "ballots_cast": 1823,
+     "results": {
+      "Garlin Gilchrist II (D)": 1416,
+      "Anthony G. Forlini (R)": 105,
+      "Christine Sloan (L)": 10,
+      "Scott Aughney (UST)": 12,
+      "Eric Borregard (G)": 32
+     }
+    },
+    "13": {
+     "precinct_name": "Dearborn 13",
+     "registered_voters": 584,
+     "ballots_cast": 369,
+     "results": {
+      "Garlin Gilchrist II (D)": 278,
+      "Anthony G. Forlini (R)": 77,
+      "Christine Sloan (L)": 6,
+      "Scott Aughney (UST)": 2,
+      "Eric Borregard (G)": 0
+     }
+    },
+    "15-16": {
+     "precinct_name": "Dearborn 15 & 16",
+     "registered_voters": 4119,
+     "ballots_cast": 2128,
+     "results": {
+      "Garlin Gilchrist II (D)": 1695,
+      "Anthony G. Forlini (R)": 111,
+      "Christine Sloan (L)": 18,
+      "Scott Aughney (UST)": 13,
+      "Eric Borregard (G)": 30
+     }
+    },
+    "17": {
+     "precinct_name": "Dearborn 17",
+     "registered_voters": 2489,
+     "ballots_cast": 1281,
+     "results": {
+      "Garlin Gilchrist II (D)": 1002,
+      "Anthony G. Forlini (R)": 120,
+      "Christine Sloan (L)": 9,
+      "Scott Aughney (UST)": 7,
+      "Eric Borregard (G)": 19
+     }
+    },
+    "18": {
+     "precinct_name": "Dearborn 18",
+     "registered_voters": 2904,
+     "ballots_cast": 1438,
+     "results": {
+      "Garlin Gilchrist II (D)": 1096,
+      "Anthony G. Forlini (R)": 96,
+      "Christine Sloan (L)": 13,
+      "Scott Aughney (UST)": 8,
+      "Eric Borregard (G)": 20
+     }
+    },
+    "19": {
+     "precinct_name": "Dearborn 19",
+     "registered_voters": 1684,
+     "ballots_cast": 937,
+     "results": {
+      "Garlin Gilchrist II (D)": 741,
+      "Anthony G. Forlini (R)": 50,
+      "Christine Sloan (L)": 3,
+      "Scott Aughney (UST)": 7,
+      "Eric Borregard (G)": 7
+     }
+    },
+    "20": {
+     "precinct_name": "Dearborn 20",
+     "registered_voters": 1453,
+     "ballots_cast": 677,
+     "results": {
+      "Garlin Gilchrist II (D)": 550,
+      "Anthony G. Forlini (R)": 15,
+      "Christine Sloan (L)": 4,
+      "Scott Aughney (UST)": 1,
+      "Eric Borregard (G)": 4
+     }
+    },
+    "21": {
+     "precinct_name": "Dearborn 21",
+     "registered_voters": 1878,
+     "ballots_cast": 949,
+     "results": {
+      "Garlin Gilchrist II (D)": 740,
+      "Anthony G. Forlini (R)": 27,
+      "Christine Sloan (L)": 7,
+      "Scott Aughney (UST)": 9,
+      "Eric Borregard (G)": 6
+     }
+    },
+    "22-23": {
+     "precinct_name": "Dearborn 22",
+     "registered_voters": 2287,
+     "ballots_cast": 1373,
+     "results": {
+      "Garlin Gilchrist II (D)": 1087,
+      "Anthony G. Forlini (R)": 181,
+      "Christine Sloan (L)": 11,
+      "Scott Aughney (UST)": 6,
+      "Eric Borregard (G)": 19
+     }
+    },
+    "24": {
+     "precinct_name": "Dearborn 24",
+     "registered_voters": 1116,
+     "ballots_cast": 691,
+     "results": {
+      "Garlin Gilchrist II (D)": 470,
+      "Anthony G. Forlini (R)": 163,
+      "Christine Sloan (L)": 9,
+      "Scott Aughney (UST)": 7,
+      "Eric Borregard (G)": 3
+     }
+    },
+    "25-26": {
+     "precinct_name": "Dearborn 25 & 26",
+     "registered_voters": 3750,
+     "ballots_cast": 2325,
+     "results": {
+      "Garlin Gilchrist II (D)": 1563,
+      "Anthony G. Forlini (R)": 573,
+      "Christine Sloan (L)": 29,
+      "Scott Aughney (UST)": 15,
+      "Eric Borregard (G)": 23
+     }
+    },
+    "27": {
+     "precinct_name": "Dearborn 27",
+     "registered_voters": 1676,
+     "ballots_cast": 1027,
+     "results": {
+      "Garlin Gilchrist II (D)": 685,
+      "Anthony G. Forlini (R)": 275,
+      "Christine Sloan (L)": 12,
+      "Scott Aughney (UST)": 6,
+      "Eric Borregard (G)": 12
+     }
+    },
+    "28": {
+     "precinct_name": "Dearborn 28",
+     "registered_voters": 1052,
+     "ballots_cast": 660,
+     "results": {
+      "Garlin Gilchrist II (D)": 419,
+      "Anthony G. Forlini (R)": 196,
+      "Christine Sloan (L)": 9,
+      "Scott Aughney (UST)": 4,
+      "Eric Borregard (G)": 2
+     }
+    },
+    "29-30": {
+     "precinct_name": "Dearborn 29",
+     "registered_voters": 1974,
+     "ballots_cast": 1179,
+     "results": {
+      "Garlin Gilchrist II (D)": 749,
+      "Anthony G. Forlini (R)": 325,
+      "Christine Sloan (L)": 21,
+      "Scott Aughney (UST)": 5,
+      "Eric Borregard (G)": 14
+     }
+    },
+    "31-32": {
+     "precinct_name": "Dearborn 31 & 32",
+     "registered_voters": 3326,
+     "ballots_cast": 2076,
+     "results": {
+      "Garlin Gilchrist II (D)": 1427,
+      "Anthony G. Forlini (R)": 441,
+      "Christine Sloan (L)": 26,
+      "Scott Aughney (UST)": 10,
+      "Eric Borregard (G)": 24
+     }
+    },
+    "33-34": {
+     "precinct_name": "Dearborn 33 & 34",
+     "registered_voters": 3192,
+     "ballots_cast": 2048,
+     "results": {
+      "Garlin Gilchrist II (D)": 1416,
+      "Anthony G. Forlini (R)": 400,
+      "Christine Sloan (L)": 26,
+      "Scott Aughney (UST)": 5,
+      "Eric Borregard (G)": 28
+     }
+    },
+    "35-36": {
+     "precinct_name": "Dearborn 35",
+     "registered_voters": 2161,
+     "ballots_cast": 1489,
+     "results": {
+      "Garlin Gilchrist II (D)": 1009,
+      "Anthony G. Forlini (R)": 331,
+      "Christine Sloan (L)": 17,
+      "Scott Aughney (UST)": 7,
+      "Eric Borregard (G)": 21
+     }
+    },
+    "37-38": {
+     "precinct_name": "Dearborn 37 & 38",
+     "registered_voters": 3505,
+     "ballots_cast": 2267,
+     "results": {
+      "Garlin Gilchrist II (D)": 1501,
+      "Anthony G. Forlini (R)": 542,
+      "Christine Sloan (L)": 36,
+      "Scott Aughney (UST)": 8,
+      "Eric Borregard (G)": 28
+     }
+    },
+    "40-41": {
+     "precinct_name": "Dearborn 40 & 41",
+     "registered_voters": 2871,
+     "ballots_cast": 1951,
+     "results": {
+      "Garlin Gilchrist II (D)": 1318,
+      "Anthony G. Forlini (R)": 460,
+      "Christine Sloan (L)": 19,
+      "Scott Aughney (UST)": 5,
+      "Eric Borregard (G)": 18
+     }
+    },
+    "42-43": {
+     "precinct_name": "Dearborn 42",
+     "registered_voters": 2657,
+     "ballots_cast": 1749,
+     "results": {
+      "Garlin Gilchrist II (D)": 1181,
+      "Anthony G. Forlini (R)": 407,
+      "Christine Sloan (L)": 20,
+      "Scott Aughney (UST)": 4,
+      "Eric Borregard (G)": 23
+     }
+    },
+    "44": {
+     "precinct_name": "Dearborn 44",
+     "registered_voters": 1484,
+     "ballots_cast": 1057,
+     "results": {
+      "Garlin Gilchrist II (D)": 684,
+      "Anthony G. Forlini (R)": 287,
+      "Christine Sloan (L)": 15,
+      "Scott Aughney (UST)": 4,
+      "Eric Borregard (G)": 10
+     }
+    },
+    "45": {
+     "precinct_name": "Dearborn 45",
+     "registered_voters": 1798,
+     "ballots_cast": 1136,
+     "results": {
+      "Garlin Gilchrist II (D)": 757,
+      "Anthony G. Forlini (R)": 303,
+      "Christine Sloan (L)": 17,
+      "Scott Aughney (UST)": 5,
+      "Eric Borregard (G)": 7
+     }
+    },
+    "46": {
+     "precinct_name": "Dearborn 46",
+     "registered_voters": 1741,
+     "ballots_cast": 1076,
+     "results": {
+      "Garlin Gilchrist II (D)": 697,
+      "Anthony G. Forlini (R)": 290,
+      "Christine Sloan (L)": 19,
+      "Scott Aughney (UST)": 6,
+      "Eric Borregard (G)": 21
+     }
+    },
+    "47-48": {
+     "precinct_name": "Dearborn 47",
+     "registered_voters": 2446,
+     "ballots_cast": 1531,
+     "results": {
+      "Garlin Gilchrist II (D)": 939,
+      "Anthony G. Forlini (R)": 477,
+      "Christine Sloan (L)": 23,
+      "Scott Aughney (UST)": 8,
+      "Eric Borregard (G)": 16
+     }
+    },
+    "49-50": {
+     "precinct_name": "Dearborn 49 & 50",
+     "registered_voters": 3593,
+     "ballots_cast": 2011,
+     "results": {
+      "Garlin Gilchrist II (D)": 1257,
+      "Anthony G. Forlini (R)": 593,
+      "Christine Sloan (L)": 37,
+      "Scott Aughney (UST)": 13,
+      "Eric Borregard (G)": 17
+     }
+    }
+   }
+  },
+  "attorney_general": {
+   "race_name": "Attorney General",
+   "category": "Statewide",
+   "seats": 1,
+   "candidates": [
+    "Eli Savit (D)",
+    "Doug Lloyd (R)",
+    "Jason Dye (L)",
+    "John Perry Ludtke Jr. (UST)",
+    "Jeff Polonowski (G)",
+    "Doug Dern (NLP)"
+   ],
+   "colors": {
+    "Eli Savit (D)": "#2563eb",
+    "Doug Lloyd (R)": "#dc2626",
+    "Jason Dye (L)": "#eab308",
+    "John Perry Ludtke Jr. (UST)": "#7c3aed",
+    "Jeff Polonowski (G)": "#16a34a",
+    "Doug Dern (NLP)": "#0d9488"
+   },
+   "precincts": {
+    "1": {
+     "precinct_name": "Dearborn 1",
+     "registered_voters": 1990,
+     "ballots_cast": 1079,
+     "results": {
+      "Eli Savit (D)": 860,
+      "Doug Lloyd (R)": 44,
+      "Jason Dye (L)": 8,
+      "John Perry Ludtke Jr. (UST)": 4,
+      "Jeff Polonowski (G)": 12,
+      "Doug Dern (NLP)": 3
+     }
+    },
+    "2": {
+     "precinct_name": "Dearborn 2",
+     "registered_voters": 2132,
+     "ballots_cast": 965,
+     "results": {
+      "Eli Savit (D)": 744,
+      "Doug Lloyd (R)": 45,
+      "Jason Dye (L)": 7,
+      "John Perry Ludtke Jr. (UST)": 3,
+      "Jeff Polonowski (G)": 15,
+      "Doug Dern (NLP)": 6
+     }
+    },
+    "3": {
+     "precinct_name": "Dearborn 3",
+     "registered_voters": 2642,
+     "ballots_cast": 1349,
+     "results": {
+      "Eli Savit (D)": 1068,
+      "Doug Lloyd (R)": 78,
+      "Jason Dye (L)": 5,
+      "John Perry Ludtke Jr. (UST)": 9,
+      "Jeff Polonowski (G)": 19,
+      "Doug Dern (NLP)": 0
+     }
+    },
+    "4-5": {
+     "precinct_name": "Dearborn 4",
+     "registered_voters": 3321,
+     "ballots_cast": 1581,
+     "results": {
+      "Eli Savit (D)": 1269,
+      "Doug Lloyd (R)": 63,
+      "Jason Dye (L)": 6,
+      "John Perry Ludtke Jr. (UST)": 8,
+      "Jeff Polonowski (G)": 24,
+      "Doug Dern (NLP)": 3
+     }
+    },
+    "6": {
+     "precinct_name": "Dearborn 6",
+     "registered_voters": 2204,
+     "ballots_cast": 1141,
+     "results": {
+      "Eli Savit (D)": 926,
+      "Doug Lloyd (R)": 39,
+      "Jason Dye (L)": 4,
+      "John Perry Ludtke Jr. (UST)": 6,
+      "Jeff Polonowski (G)": 18,
+      "Doug Dern (NLP)": 4
+     }
+    },
+    "7": {
+     "precinct_name": "Dearborn 7",
+     "registered_voters": 2775,
+     "ballots_cast": 1345,
+     "results": {
+      "Eli Savit (D)": 1042,
+      "Doug Lloyd (R)": 56,
+      "Jason Dye (L)": 9,
+      "John Perry Ludtke Jr. (UST)": 8,
+      "Jeff Polonowski (G)": 24,
+      "Doug Dern (NLP)": 2
+     }
+    },
+    "8-9": {
+     "precinct_name": "Dearborn 8 & 9",
+     "registered_voters": 3709,
+     "ballots_cast": 1926,
+     "results": {
+      "Eli Savit (D)": 1581,
+      "Doug Lloyd (R)": 74,
+      "Jason Dye (L)": 9,
+      "John Perry Ludtke Jr. (UST)": 3,
+      "Jeff Polonowski (G)": 27,
+      "Doug Dern (NLP)": 9
+     }
+    },
+    "10": {
+     "precinct_name": "Dearborn 10",
+     "registered_voters": 1802,
+     "ballots_cast": 826,
+     "results": {
+      "Eli Savit (D)": 626,
+      "Doug Lloyd (R)": 52,
+      "Jason Dye (L)": 9,
+      "John Perry Ludtke Jr. (UST)": 5,
+      "Jeff Polonowski (G)": 9,
+      "Doug Dern (NLP)": 5
+     }
+    },
+    "11-12": {
+     "precinct_name": "Dearborn 11 & 12",
+     "registered_voters": 3552,
+     "ballots_cast": 1823,
+     "results": {
+      "Eli Savit (D)": 1384,
+      "Doug Lloyd (R)": 110,
+      "Jason Dye (L)": 9,
+      "John Perry Ludtke Jr. (UST)": 11,
+      "Jeff Polonowski (G)": 28,
+      "Doug Dern (NLP)": 11
+     }
+    },
+    "13": {
+     "precinct_name": "Dearborn 13",
+     "registered_voters": 584,
+     "ballots_cast": 369,
+     "results": {
+      "Eli Savit (D)": 262,
+      "Doug Lloyd (R)": 80,
+      "Jason Dye (L)": 5,
+      "John Perry Ludtke Jr. (UST)": 0,
+      "Jeff Polonowski (G)": 2,
+      "Doug Dern (NLP)": 2
+     }
+    },
+    "15-16": {
+     "precinct_name": "Dearborn 15 & 16",
+     "registered_voters": 4119,
+     "ballots_cast": 2128,
+     "results": {
+      "Eli Savit (D)": 1679,
+      "Doug Lloyd (R)": 114,
+      "Jason Dye (L)": 13,
+      "John Perry Ludtke Jr. (UST)": 17,
+      "Jeff Polonowski (G)": 20,
+      "Doug Dern (NLP)": 11
+     }
+    },
+    "17": {
+     "precinct_name": "Dearborn 17",
+     "registered_voters": 2489,
+     "ballots_cast": 1281,
+     "results": {
+      "Eli Savit (D)": 990,
+      "Doug Lloyd (R)": 124,
+      "Jason Dye (L)": 11,
+      "John Perry Ludtke Jr. (UST)": 5,
+      "Jeff Polonowski (G)": 19,
+      "Doug Dern (NLP)": 8
+     }
+    },
+    "18": {
+     "precinct_name": "Dearborn 18",
+     "registered_voters": 2904,
+     "ballots_cast": 1438,
+     "results": {
+      "Eli Savit (D)": 1084,
+      "Doug Lloyd (R)": 102,
+      "Jason Dye (L)": 11,
+      "John Perry Ludtke Jr. (UST)": 11,
+      "Jeff Polonowski (G)": 15,
+      "Doug Dern (NLP)": 9
+     }
+    },
+    "19": {
+     "precinct_name": "Dearborn 19",
+     "registered_voters": 1684,
+     "ballots_cast": 937,
+     "results": {
+      "Eli Savit (D)": 732,
+      "Doug Lloyd (R)": 48,
+      "Jason Dye (L)": 5,
+      "John Perry Ludtke Jr. (UST)": 3,
+      "Jeff Polonowski (G)": 15,
+      "Doug Dern (NLP)": 4
+     }
+    },
+    "20": {
+     "precinct_name": "Dearborn 20",
+     "registered_voters": 1453,
+     "ballots_cast": 677,
+     "results": {
+      "Eli Savit (D)": 538,
+      "Doug Lloyd (R)": 21,
+      "Jason Dye (L)": 1,
+      "John Perry Ludtke Jr. (UST)": 1,
+      "Jeff Polonowski (G)": 8,
+      "Doug Dern (NLP)": 1
+     }
+    },
+    "21": {
+     "precinct_name": "Dearborn 21",
+     "registered_voters": 1878,
+     "ballots_cast": 949,
+     "results": {
+      "Eli Savit (D)": 750,
+      "Doug Lloyd (R)": 28,
+      "Jason Dye (L)": 9,
+      "John Perry Ludtke Jr. (UST)": 4,
+      "Jeff Polonowski (G)": 10,
+      "Doug Dern (NLP)": 1
+     }
+    },
+    "22-23": {
+     "precinct_name": "Dearborn 22",
+     "registered_voters": 2287,
+     "ballots_cast": 1373,
+     "results": {
+      "Eli Savit (D)": 1052,
+      "Doug Lloyd (R)": 192,
+      "Jason Dye (L)": 7,
+      "John Perry Ludtke Jr. (UST)": 3,
+      "Jeff Polonowski (G)": 26,
+      "Doug Dern (NLP)": 6
+     }
+    },
+    "24": {
+     "precinct_name": "Dearborn 24",
+     "registered_voters": 1116,
+     "ballots_cast": 691,
+     "results": {
+      "Eli Savit (D)": 445,
+      "Doug Lloyd (R)": 173,
+      "Jason Dye (L)": 3,
+      "John Perry Ludtke Jr. (UST)": 8,
+      "Jeff Polonowski (G)": 10,
+      "Doug Dern (NLP)": 2
+     }
+    },
+    "25-26": {
+     "precinct_name": "Dearborn 25 & 26",
+     "registered_voters": 3750,
+     "ballots_cast": 2325,
+     "results": {
+      "Eli Savit (D)": 1490,
+      "Doug Lloyd (R)": 601,
+      "Jason Dye (L)": 24,
+      "John Perry Ludtke Jr. (UST)": 10,
+      "Jeff Polonowski (G)": 34,
+      "Doug Dern (NLP)": 12
+     }
+    },
+    "27": {
+     "precinct_name": "Dearborn 27",
+     "registered_voters": 1676,
+     "ballots_cast": 1027,
+     "results": {
+      "Eli Savit (D)": 669,
+      "Doug Lloyd (R)": 282,
+      "Jason Dye (L)": 11,
+      "John Perry Ludtke Jr. (UST)": 3,
+      "Jeff Polonowski (G)": 8,
+      "Doug Dern (NLP)": 4
+     }
+    },
+    "28": {
+     "precinct_name": "Dearborn 28",
+     "registered_voters": 1052,
+     "ballots_cast": 660,
+     "results": {
+      "Eli Savit (D)": 395,
+      "Doug Lloyd (R)": 201,
+      "Jason Dye (L)": 9,
+      "John Perry Ludtke Jr. (UST)": 4,
+      "Jeff Polonowski (G)": 6,
+      "Doug Dern (NLP)": 5
+     }
+    },
+    "29-30": {
+     "precinct_name": "Dearborn 29",
+     "registered_voters": 1974,
+     "ballots_cast": 1179,
+     "results": {
+      "Eli Savit (D)": 726,
+      "Doug Lloyd (R)": 342,
+      "Jason Dye (L)": 18,
+      "John Perry Ludtke Jr. (UST)": 3,
+      "Jeff Polonowski (G)": 17,
+      "Doug Dern (NLP)": 5
+     }
+    },
+    "31-32": {
+     "precinct_name": "Dearborn 31 & 32",
+     "registered_voters": 3326,
+     "ballots_cast": 2076,
+     "results": {
+      "Eli Savit (D)": 1368,
+      "Doug Lloyd (R)": 457,
+      "Jason Dye (L)": 16,
+      "John Perry Ludtke Jr. (UST)": 8,
+      "Jeff Polonowski (G)": 26,
+      "Doug Dern (NLP)": 7
+     }
+    },
+    "33-34": {
+     "precinct_name": "Dearborn 33 & 34",
+     "registered_voters": 3192,
+     "ballots_cast": 2048,
+     "results": {
+      "Eli Savit (D)": 1361,
+      "Doug Lloyd (R)": 401,
+      "Jason Dye (L)": 24,
+      "John Perry Ludtke Jr. (UST)": 3,
+      "Jeff Polonowski (G)": 41,
+      "Doug Dern (NLP)": 3
+     }
+    },
+    "35-36": {
+     "precinct_name": "Dearborn 35",
+     "registered_voters": 2161,
+     "ballots_cast": 1489,
+     "results": {
+      "Eli Savit (D)": 972,
+      "Doug Lloyd (R)": 346,
+      "Jason Dye (L)": 15,
+      "John Perry Ludtke Jr. (UST)": 9,
+      "Jeff Polonowski (G)": 28,
+      "Doug Dern (NLP)": 1
+     }
+    },
+    "37-38": {
+     "precinct_name": "Dearborn 37 & 38",
+     "registered_voters": 3505,
+     "ballots_cast": 2267,
+     "results": {
+      "Eli Savit (D)": 1439,
+      "Doug Lloyd (R)": 567,
+      "Jason Dye (L)": 17,
+      "John Perry Ludtke Jr. (UST)": 16,
+      "Jeff Polonowski (G)": 37,
+      "Doug Dern (NLP)": 4
+     }
+    },
+    "40-41": {
+     "precinct_name": "Dearborn 40 & 41",
+     "registered_voters": 2871,
+     "ballots_cast": 1951,
+     "results": {
+      "Eli Savit (D)": 1289,
+      "Doug Lloyd (R)": 453,
+      "Jason Dye (L)": 17,
+      "John Perry Ludtke Jr. (UST)": 8,
+      "Jeff Polonowski (G)": 19,
+      "Doug Dern (NLP)": 5
+     }
+    },
+    "42-43": {
+     "precinct_name": "Dearborn 42",
+     "registered_voters": 2657,
+     "ballots_cast": 1749,
+     "results": {
+      "Eli Savit (D)": 1132,
+      "Doug Lloyd (R)": 419,
+      "Jason Dye (L)": 19,
+      "John Perry Ludtke Jr. (UST)": 8,
+      "Jeff Polonowski (G)": 27,
+      "Doug Dern (NLP)": 4
+     }
+    },
+    "44": {
+     "precinct_name": "Dearborn 44",
+     "registered_voters": 1484,
+     "ballots_cast": 1057,
+     "results": {
+      "Eli Savit (D)": 650,
+      "Doug Lloyd (R)": 296,
+      "Jason Dye (L)": 13,
+      "John Perry Ludtke Jr. (UST)": 7,
+      "Jeff Polonowski (G)": 12,
+      "Doug Dern (NLP)": 0
+     }
+    },
+    "45": {
+     "precinct_name": "Dearborn 45",
+     "registered_voters": 1798,
+     "ballots_cast": 1136,
+     "results": {
+      "Eli Savit (D)": 733,
+      "Doug Lloyd (R)": 309,
+      "Jason Dye (L)": 12,
+      "John Perry Ludtke Jr. (UST)": 3,
+      "Jeff Polonowski (G)": 10,
+      "Doug Dern (NLP)": 3
+     }
+    },
+    "46": {
+     "precinct_name": "Dearborn 46",
+     "registered_voters": 1741,
+     "ballots_cast": 1076,
+     "results": {
+      "Eli Savit (D)": 671,
+      "Doug Lloyd (R)": 304,
+      "Jason Dye (L)": 13,
+      "John Perry Ludtke Jr. (UST)": 5,
+      "Jeff Polonowski (G)": 18,
+      "Doug Dern (NLP)": 8
+     }
+    },
+    "47-48": {
+     "precinct_name": "Dearborn 47",
+     "registered_voters": 2446,
+     "ballots_cast": 1531,
+     "results": {
+      "Eli Savit (D)": 893,
+      "Doug Lloyd (R)": 501,
+      "Jason Dye (L)": 22,
+      "John Perry Ludtke Jr. (UST)": 9,
+      "Jeff Polonowski (G)": 17,
+      "Doug Dern (NLP)": 3
+     }
+    },
+    "49-50": {
+     "precinct_name": "Dearborn 49 & 50",
+     "registered_voters": 3593,
+     "ballots_cast": 2011,
+     "results": {
+      "Eli Savit (D)": 1214,
+      "Doug Lloyd (R)": 617,
+      "Jason Dye (L)": 24,
+      "John Perry Ludtke Jr. (UST)": 12,
+      "Jeff Polonowski (G)": 26,
+      "Doug Dern (NLP)": 7
+     }
+    }
+   }
+  },
+  "us_senate": {
+   "race_name": "U.S. Senate",
+   "category": "Federal",
+   "seats": 1,
+   "candidates": [
+    "Abdul El-Sayed (D)",
+    "Mike Rogers (R)",
+    "Lydia Christensen (L)",
+    "Tim Long (UST)",
+    "Douglas P. Marsh (G)",
+    "Walter P. Kristy (NLP)"
+   ],
+   "colors": {
+    "Abdul El-Sayed (D)": "#2563eb",
+    "Mike Rogers (R)": "#dc2626",
+    "Lydia Christensen (L)": "#eab308",
+    "Tim Long (UST)": "#7c3aed",
+    "Douglas P. Marsh (G)": "#16a34a",
+    "Walter P. Kristy (NLP)": "#0d9488"
+   },
+   "precincts": {
+    "1": {
+     "precinct_name": "Dearborn 1",
+     "registered_voters": 1990,
+     "ballots_cast": 1079,
+     "results": {
+      "Abdul El-Sayed (D)": 1039,
+      "Mike Rogers (R)": 33,
+      "Lydia Christensen (L)": 2,
+      "Tim Long (UST)": 1,
+      "Douglas P. Marsh (G)": 0,
+      "Walter P. Kristy (NLP)": 0
+     }
+    },
+    "2": {
+     "precinct_name": "Dearborn 2",
+     "registered_voters": 2132,
+     "ballots_cast": 965,
+     "results": {
+      "Abdul El-Sayed (D)": 918,
+      "Mike Rogers (R)": 37,
+      "Lydia Christensen (L)": 2,
+      "Tim Long (UST)": 0,
+      "Douglas P. Marsh (G)": 2,
+      "Walter P. Kristy (NLP)": 0
+     }
+    },
+    "3": {
+     "precinct_name": "Dearborn 3",
+     "registered_voters": 2642,
+     "ballots_cast": 1349,
+     "results": {
+      "Abdul El-Sayed (D)": 1261,
+      "Mike Rogers (R)": 69,
+      "Lydia Christensen (L)": 3,
+      "Tim Long (UST)": 2,
+      "Douglas P. Marsh (G)": 2,
+      "Walter P. Kristy (NLP)": 0
+     }
+    },
+    "4-5": {
+     "precinct_name": "Dearborn 4",
+     "registered_voters": 3321,
+     "ballots_cast": 1581,
+     "results": {
+      "Abdul El-Sayed (D)": 1502,
+      "Mike Rogers (R)": 51,
+      "Lydia Christensen (L)": 3,
+      "Tim Long (UST)": 1,
+      "Douglas P. Marsh (G)": 6,
+      "Walter P. Kristy (NLP)": 1
+     }
+    },
+    "6": {
+     "precinct_name": "Dearborn 6",
+     "registered_voters": 2204,
+     "ballots_cast": 1141,
+     "results": {
+      "Abdul El-Sayed (D)": 1105,
+      "Mike Rogers (R)": 26,
+      "Lydia Christensen (L)": 0,
+      "Tim Long (UST)": 1,
+      "Douglas P. Marsh (G)": 2,
+      "Walter P. Kristy (NLP)": 0
+     }
+    },
+    "7": {
+     "precinct_name": "Dearborn 7",
+     "registered_voters": 2775,
+     "ballots_cast": 1345,
+     "results": {
+      "Abdul El-Sayed (D)": 1285,
+      "Mike Rogers (R)": 44,
+      "Lydia Christensen (L)": 1,
+      "Tim Long (UST)": 2,
+      "Douglas P. Marsh (G)": 2,
+      "Walter P. Kristy (NLP)": 0
+     }
+    },
+    "8-9": {
+     "precinct_name": "Dearborn 8 & 9",
+     "registered_voters": 3709,
+     "ballots_cast": 1926,
+     "results": {
+      "Abdul El-Sayed (D)": 1850,
+      "Mike Rogers (R)": 58,
+      "Lydia Christensen (L)": 4,
+      "Tim Long (UST)": 0,
+      "Douglas P. Marsh (G)": 1,
+      "Walter P. Kristy (NLP)": 2
+     }
+    },
+    "10": {
+     "precinct_name": "Dearborn 10",
+     "registered_voters": 1802,
+     "ballots_cast": 826,
+     "results": {
+      "Abdul El-Sayed (D)": 758,
+      "Mike Rogers (R)": 50,
+      "Lydia Christensen (L)": 3,
+      "Tim Long (UST)": 2,
+      "Douglas P. Marsh (G)": 1,
+      "Walter P. Kristy (NLP)": 1
+     }
+    },
+    "11-12": {
+     "precinct_name": "Dearborn 11 & 12",
+     "registered_voters": 3552,
+     "ballots_cast": 1823,
+     "results": {
+      "Abdul El-Sayed (D)": 1702,
+      "Mike Rogers (R)": 94,
+      "Lydia Christensen (L)": 3,
+      "Tim Long (UST)": 2,
+      "Douglas P. Marsh (G)": 1,
+      "Walter P. Kristy (NLP)": 0
+     }
+    },
+    "13": {
+     "precinct_name": "Dearborn 13",
+     "registered_voters": 584,
+     "ballots_cast": 369,
+     "results": {
+      "Abdul El-Sayed (D)": 263,
+      "Mike Rogers (R)": 84,
+      "Lydia Christensen (L)": 8,
+      "Tim Long (UST)": 3,
+      "Douglas P. Marsh (G)": 0,
+      "Walter P. Kristy (NLP)": 1
+     }
+    },
+    "15-16": {
+     "precinct_name": "Dearborn 15 & 16",
+     "registered_voters": 4119,
+     "ballots_cast": 2128,
+     "results": {
+      "Abdul El-Sayed (D)": 1997,
+      "Mike Rogers (R)": 98,
+      "Lydia Christensen (L)": 7,
+      "Tim Long (UST)": 2,
+      "Douglas P. Marsh (G)": 3,
+      "Walter P. Kristy (NLP)": 1
+     }
+    },
+    "17": {
+     "precinct_name": "Dearborn 17",
+     "registered_voters": 2489,
+     "ballots_cast": 1281,
+     "results": {
+      "Abdul El-Sayed (D)": 1148,
+      "Mike Rogers (R)": 119,
+      "Lydia Christensen (L)": 2,
+      "Tim Long (UST)": 5,
+      "Douglas P. Marsh (G)": 1,
+      "Walter P. Kristy (NLP)": 1
+     }
+    },
+    "18": {
+     "precinct_name": "Dearborn 18",
+     "registered_voters": 2904,
+     "ballots_cast": 1438,
+     "results": {
+      "Abdul El-Sayed (D)": 1319,
+      "Mike Rogers (R)": 89,
+      "Lydia Christensen (L)": 3,
+      "Tim Long (UST)": 2,
+      "Douglas P. Marsh (G)": 2,
+      "Walter P. Kristy (NLP)": 2
+     }
+    },
+    "19": {
+     "precinct_name": "Dearborn 19",
+     "registered_voters": 1684,
+     "ballots_cast": 937,
+     "results": {
+      "Abdul El-Sayed (D)": 884,
+      "Mike Rogers (R)": 43,
+      "Lydia Christensen (L)": 2,
+      "Tim Long (UST)": 0,
+      "Douglas P. Marsh (G)": 1,
+      "Walter P. Kristy (NLP)": 0
+     }
+    },
+    "20": {
+     "precinct_name": "Dearborn 20",
+     "registered_voters": 1453,
+     "ballots_cast": 677,
+     "results": {
+      "Abdul El-Sayed (D)": 664,
+      "Mike Rogers (R)": 10,
+      "Lydia Christensen (L)": 0,
+      "Tim Long (UST)": 0,
+      "Douglas P. Marsh (G)": 1,
+      "Walter P. Kristy (NLP)": 0
+     }
+    },
+    "21": {
+     "precinct_name": "Dearborn 21",
+     "registered_voters": 1878,
+     "ballots_cast": 949,
+     "results": {
+      "Abdul El-Sayed (D)": 927,
+      "Mike Rogers (R)": 17,
+      "Lydia Christensen (L)": 0,
+      "Tim Long (UST)": 0,
+      "Douglas P. Marsh (G)": 1,
+      "Walter P. Kristy (NLP)": 0
+     }
+    },
+    "22-23": {
+     "precinct_name": "Dearborn 22",
+     "registered_voters": 2287,
+     "ballots_cast": 1373,
+     "results": {
+      "Abdul El-Sayed (D)": 1146,
+      "Mike Rogers (R)": 201,
+      "Lydia Christensen (L)": 5,
+      "Tim Long (UST)": 4,
+      "Douglas P. Marsh (G)": 3,
+      "Walter P. Kristy (NLP)": 0
+     }
+    },
+    "24": {
+     "precinct_name": "Dearborn 24",
+     "registered_voters": 1116,
+     "ballots_cast": 691,
+     "results": {
+      "Abdul El-Sayed (D)": 485,
+      "Mike Rogers (R)": 182,
+      "Lydia Christensen (L)": 5,
+      "Tim Long (UST)": 4,
+      "Douglas P. Marsh (G)": 0,
+      "Walter P. Kristy (NLP)": 1
+     }
+    },
+    "25-26": {
+     "precinct_name": "Dearborn 25 & 26",
+     "registered_voters": 3750,
+     "ballots_cast": 2325,
+     "results": {
+      "Abdul El-Sayed (D)": 1653,
+      "Mike Rogers (R)": 607,
+      "Lydia Christensen (L)": 17,
+      "Tim Long (UST)": 13,
+      "Douglas P. Marsh (G)": 5,
+      "Walter P. Kristy (NLP)": 4
+     }
+    },
+    "27": {
+     "precinct_name": "Dearborn 27",
+     "registered_voters": 1676,
+     "ballots_cast": 1027,
+     "results": {
+      "Abdul El-Sayed (D)": 729,
+      "Mike Rogers (R)": 281,
+      "Lydia Christensen (L)": 6,
+      "Tim Long (UST)": 1,
+      "Douglas P. Marsh (G)": 1,
+      "Walter P. Kristy (NLP)": 2
+     }
+    },
+    "28": {
+     "precinct_name": "Dearborn 28",
+     "registered_voters": 1052,
+     "ballots_cast": 660,
+     "results": {
+      "Abdul El-Sayed (D)": 429,
+      "Mike Rogers (R)": 224,
+      "Lydia Christensen (L)": 2,
+      "Tim Long (UST)": 3,
+      "Douglas P. Marsh (G)": 0,
+      "Walter P. Kristy (NLP)": 0
+     }
+    },
+    "29-30": {
+     "precinct_name": "Dearborn 29",
+     "registered_voters": 1974,
+     "ballots_cast": 1179,
+     "results": {
+      "Abdul El-Sayed (D)": 796,
+      "Mike Rogers (R)": 347,
+      "Lydia Christensen (L)": 9,
+      "Tim Long (UST)": 2,
+      "Douglas P. Marsh (G)": 4,
+      "Walter P. Kristy (NLP)": 3
+     }
+    },
+    "31-32": {
+     "precinct_name": "Dearborn 31 & 32",
+     "registered_voters": 3326,
+     "ballots_cast": 2076,
+     "results": {
+      "Abdul El-Sayed (D)": 1591,
+      "Mike Rogers (R)": 448,
+      "Lydia Christensen (L)": 14,
+      "Tim Long (UST)": 0,
+      "Douglas P. Marsh (G)": 4,
+      "Walter P. Kristy (NLP)": 0
+     }
+    },
+    "33-34": {
+     "precinct_name": "Dearborn 33 & 34",
+     "registered_voters": 3192,
+     "ballots_cast": 2048,
+     "results": {
+      "Abdul El-Sayed (D)": 1595,
+      "Mike Rogers (R)": 424,
+      "Lydia Christensen (L)": 3,
+      "Tim Long (UST)": 2,
+      "Douglas P. Marsh (G)": 3,
+      "Walter P. Kristy (NLP)": 0
+     }
+    },
+    "35-36": {
+     "precinct_name": "Dearborn 35",
+     "registered_voters": 2161,
+     "ballots_cast": 1489,
+     "results": {
+      "Abdul El-Sayed (D)": 1102,
+      "Mike Rogers (R)": 358,
+      "Lydia Christensen (L)": 8,
+      "Tim Long (UST)": 3,
+      "Douglas P. Marsh (G)": 4,
+      "Walter P. Kristy (NLP)": 0
+     }
+    },
+    "37-38": {
+     "precinct_name": "Dearborn 37 & 38",
+     "registered_voters": 3505,
+     "ballots_cast": 2267,
+     "results": {
+      "Abdul El-Sayed (D)": 1643,
+      "Mike Rogers (R)": 575,
+      "Lydia Christensen (L)": 17,
+      "Tim Long (UST)": 3,
+      "Douglas P. Marsh (G)": 4,
+      "Walter P. Kristy (NLP)": 2
+     }
+    },
+    "40-41": {
+     "precinct_name": "Dearborn 40 & 41",
+     "registered_voters": 2871,
+     "ballots_cast": 1951,
+     "results": {
+      "Abdul El-Sayed (D)": 1456,
+      "Mike Rogers (R)": 469,
+      "Lydia Christensen (L)": 9,
+      "Tim Long (UST)": 4,
+      "Douglas P. Marsh (G)": 2,
+      "Walter P. Kristy (NLP)": 0
+     }
+    },
+    "42-43": {
+     "precinct_name": "Dearborn 42",
+     "registered_voters": 2657,
+     "ballots_cast": 1749,
+     "results": {
+      "Abdul El-Sayed (D)": 1277,
+      "Mike Rogers (R)": 435,
+      "Lydia Christensen (L)": 10,
+      "Tim Long (UST)": 1,
+      "Douglas P. Marsh (G)": 6,
+      "Walter P. Kristy (NLP)": 1
+     }
+    },
+    "44": {
+     "precinct_name": "Dearborn 44",
+     "registered_voters": 1484,
+     "ballots_cast": 1057,
+     "results": {
+      "Abdul El-Sayed (D)": 722,
+      "Mike Rogers (R)": 304,
+      "Lydia Christensen (L)": 8,
+      "Tim Long (UST)": 3,
+      "Douglas P. Marsh (G)": 5,
+      "Walter P. Kristy (NLP)": 1
+     }
+    },
+    "45": {
+     "precinct_name": "Dearborn 45",
+     "registered_voters": 1798,
+     "ballots_cast": 1136,
+     "results": {
+      "Abdul El-Sayed (D)": 785,
+      "Mike Rogers (R)": 317,
+      "Lydia Christensen (L)": 6,
+      "Tim Long (UST)": 6,
+      "Douglas P. Marsh (G)": 3,
+      "Walter P. Kristy (NLP)": 0
+     }
+    },
+    "46": {
+     "precinct_name": "Dearborn 46",
+     "registered_voters": 1741,
+     "ballots_cast": 1076,
+     "results": {
+      "Abdul El-Sayed (D)": 720,
+      "Mike Rogers (R)": 326,
+      "Lydia Christensen (L)": 5,
+      "Tim Long (UST)": 5,
+      "Douglas P. Marsh (G)": 7,
+      "Walter P. Kristy (NLP)": 1
+     }
+    },
+    "47-48": {
+     "precinct_name": "Dearborn 47",
+     "registered_voters": 2446,
+     "ballots_cast": 1531,
+     "results": {
+      "Abdul El-Sayed (D)": 966,
+      "Mike Rogers (R)": 529,
+      "Lydia Christensen (L)": 14,
+      "Tim Long (UST)": 6,
+      "Douglas P. Marsh (G)": 5,
+      "Walter P. Kristy (NLP)": 1
+     }
+    },
+    "49-50": {
+     "precinct_name": "Dearborn 49 & 50",
+     "registered_voters": 3593,
+     "ballots_cast": 2011,
+     "results": {
+      "Abdul El-Sayed (D)": 1308,
+      "Mike Rogers (R)": 644,
+      "Lydia Christensen (L)": 14,
+      "Tim Long (UST)": 9,
+      "Douglas P. Marsh (G)": 13,
+      "Walter P. Kristy (NLP)": 6
+     }
+    }
+   }
+  },
+  "us_house_12": {
+   "race_name": "U.S. House (MI-12)",
+   "category": "Federal",
+   "seats": 1,
+   "candidates": [
+    "Rashida Tlaib (D)",
+    "James D. Hooper (R)",
+    "Marc Joseph Sosnowski (UST)",
+    "Brenda K. Sanders (G)",
+    "Gary Walkowicz (WCP)"
+   ],
+   "colors": {
+    "Rashida Tlaib (D)": "#2563eb",
+    "James D. Hooper (R)": "#dc2626",
+    "Marc Joseph Sosnowski (UST)": "#7c3aed",
+    "Brenda K. Sanders (G)": "#16a34a",
+    "Gary Walkowicz (WCP)": "#ea580c"
+   },
+   "precincts": {
+    "1": {
+     "precinct_name": "Dearborn 1",
+     "registered_voters": 1990,
+     "ballots_cast": 1079,
+     "results": {
+      "Rashida Tlaib (D)": 967,
+      "James D. Hooper (R)": 35,
+      "Marc Joseph Sosnowski (UST)": 5,
+      "Brenda K. Sanders (G)": 3,
+      "Gary Walkowicz (WCP)": 5
+     }
+    },
+    "2": {
+     "precinct_name": "Dearborn 2",
+     "registered_voters": 2132,
+     "ballots_cast": 965,
+     "results": {
+      "Rashida Tlaib (D)": 844,
+      "James D. Hooper (R)": 36,
+      "Marc Joseph Sosnowski (UST)": 1,
+      "Brenda K. Sanders (G)": 4,
+      "Gary Walkowicz (WCP)": 9
+     }
+    },
+    "3": {
+     "precinct_name": "Dearborn 3",
+     "registered_voters": 2642,
+     "ballots_cast": 1349,
+     "results": {
+      "Rashida Tlaib (D)": 1184,
+      "James D. Hooper (R)": 72,
+      "Marc Joseph Sosnowski (UST)": 5,
+      "Brenda K. Sanders (G)": 8,
+      "Gary Walkowicz (WCP)": 3
+     }
+    },
+    "4-5": {
+     "precinct_name": "Dearborn 4",
+     "registered_voters": 3321,
+     "ballots_cast": 1581,
+     "results": {
+      "Rashida Tlaib (D)": 1410,
+      "James D. Hooper (R)": 53,
+      "Marc Joseph Sosnowski (UST)": 9,
+      "Brenda K. Sanders (G)": 9,
+      "Gary Walkowicz (WCP)": 1
+     }
+    },
+    "6": {
+     "precinct_name": "Dearborn 6",
+     "registered_voters": 2204,
+     "ballots_cast": 1141,
+     "results": {
+      "Rashida Tlaib (D)": 1031,
+      "James D. Hooper (R)": 32,
+      "Marc Joseph Sosnowski (UST)": 2,
+      "Brenda K. Sanders (G)": 7,
+      "Gary Walkowicz (WCP)": 3
+     }
+    },
+    "7": {
+     "precinct_name": "Dearborn 7",
+     "registered_voters": 2775,
+     "ballots_cast": 1345,
+     "results": {
+      "Rashida Tlaib (D)": 1207,
+      "James D. Hooper (R)": 44,
+      "Marc Joseph Sosnowski (UST)": 2,
+      "Brenda K. Sanders (G)": 9,
+      "Gary Walkowicz (WCP)": 6
+     }
+    },
+    "8-9": {
+     "precinct_name": "Dearborn 8 & 9",
+     "registered_voters": 3709,
+     "ballots_cast": 1926,
+     "results": {
+      "Rashida Tlaib (D)": 1722,
+      "James D. Hooper (R)": 68,
+      "Marc Joseph Sosnowski (UST)": 3,
+      "Brenda K. Sanders (G)": 11,
+      "Gary Walkowicz (WCP)": 12
+     }
+    },
+    "10": {
+     "precinct_name": "Dearborn 10",
+     "registered_voters": 1802,
+     "ballots_cast": 826,
+     "results": {
+      "Rashida Tlaib (D)": 712,
+      "James D. Hooper (R)": 48,
+      "Marc Joseph Sosnowski (UST)": 4,
+      "Brenda K. Sanders (G)": 2,
+      "Gary Walkowicz (WCP)": 7
+     }
+    },
+    "11-12": {
+     "precinct_name": "Dearborn 11 & 12",
+     "registered_voters": 3552,
+     "ballots_cast": 1823,
+     "results": {
+      "Rashida Tlaib (D)": 1565,
+      "James D. Hooper (R)": 100,
+      "Marc Joseph Sosnowski (UST)": 6,
+      "Brenda K. Sanders (G)": 11,
+      "Gary Walkowicz (WCP)": 15
+     }
+    },
+    "13": {
+     "precinct_name": "Dearborn 13",
+     "registered_voters": 584,
+     "ballots_cast": 369,
+     "results": {
+      "Rashida Tlaib (D)": 260,
+      "James D. Hooper (R)": 83,
+      "Marc Joseph Sosnowski (UST)": 3,
+      "Brenda K. Sanders (G)": 5,
+      "Gary Walkowicz (WCP)": 3
+     }
+    },
+    "15-16": {
+     "precinct_name": "Dearborn 15 & 16",
+     "registered_voters": 4119,
+     "ballots_cast": 2128,
+     "results": {
+      "Rashida Tlaib (D)": 1863,
+      "James D. Hooper (R)": 101,
+      "Marc Joseph Sosnowski (UST)": 7,
+      "Brenda K. Sanders (G)": 9,
+      "Gary Walkowicz (WCP)": 19
+     }
+    },
+    "17": {
+     "precinct_name": "Dearborn 17",
+     "registered_voters": 2489,
+     "ballots_cast": 1281,
+     "results": {
+      "Rashida Tlaib (D)": 1078,
+      "James D. Hooper (R)": 119,
+      "Marc Joseph Sosnowski (UST)": 11,
+      "Brenda K. Sanders (G)": 5,
+      "Gary Walkowicz (WCP)": 10
+     }
+    },
+    "18": {
+     "precinct_name": "Dearborn 18",
+     "registered_voters": 2904,
+     "ballots_cast": 1438,
+     "results": {
+      "Rashida Tlaib (D)": 1228,
+      "James D. Hooper (R)": 84,
+      "Marc Joseph Sosnowski (UST)": 6,
+      "Brenda K. Sanders (G)": 9,
+      "Gary Walkowicz (WCP)": 14
+     }
+    },
+    "19": {
+     "precinct_name": "Dearborn 19",
+     "registered_voters": 1684,
+     "ballots_cast": 937,
+     "results": {
+      "Rashida Tlaib (D)": 813,
+      "James D. Hooper (R)": 39,
+      "Marc Joseph Sosnowski (UST)": 3,
+      "Brenda K. Sanders (G)": 4,
+      "Gary Walkowicz (WCP)": 11
+     }
+    },
+    "20": {
+     "precinct_name": "Dearborn 20",
+     "registered_voters": 1453,
+     "ballots_cast": 677,
+     "results": {
+      "Rashida Tlaib (D)": 604,
+      "James D. Hooper (R)": 16,
+      "Marc Joseph Sosnowski (UST)": 0,
+      "Brenda K. Sanders (G)": 3,
+      "Gary Walkowicz (WCP)": 0
+     }
+    },
+    "21": {
+     "precinct_name": "Dearborn 21",
+     "registered_voters": 1878,
+     "ballots_cast": 949,
+     "results": {
+      "Rashida Tlaib (D)": 835,
+      "James D. Hooper (R)": 23,
+      "Marc Joseph Sosnowski (UST)": 3,
+      "Brenda K. Sanders (G)": 2,
+      "Gary Walkowicz (WCP)": 5
+     }
+    },
+    "22-23": {
+     "precinct_name": "Dearborn 22",
+     "registered_voters": 2287,
+     "ballots_cast": 1373,
+     "results": {
+      "Rashida Tlaib (D)": 1116,
+      "James D. Hooper (R)": 180,
+      "Marc Joseph Sosnowski (UST)": 4,
+      "Brenda K. Sanders (G)": 13,
+      "Gary Walkowicz (WCP)": 16
+     }
+    },
+    "24": {
+     "precinct_name": "Dearborn 24",
+     "registered_voters": 1116,
+     "ballots_cast": 691,
+     "results": {
+      "Rashida Tlaib (D)": 466,
+      "James D. Hooper (R)": 174,
+      "Marc Joseph Sosnowski (UST)": 6,
+      "Brenda K. Sanders (G)": 5,
+      "Gary Walkowicz (WCP)": 15
+     }
+    },
+    "25-26": {
+     "precinct_name": "Dearborn 25 & 26",
+     "registered_voters": 3750,
+     "ballots_cast": 2325,
+     "results": {
+      "Rashida Tlaib (D)": 1578,
+      "James D. Hooper (R)": 587,
+      "Marc Joseph Sosnowski (UST)": 25,
+      "Brenda K. Sanders (G)": 9,
+      "Gary Walkowicz (WCP)": 47
+     }
+    },
+    "27": {
+     "precinct_name": "Dearborn 27",
+     "registered_voters": 1676,
+     "ballots_cast": 1027,
+     "results": {
+      "Rashida Tlaib (D)": 694,
+      "James D. Hooper (R)": 268,
+      "Marc Joseph Sosnowski (UST)": 8,
+      "Brenda K. Sanders (G)": 10,
+      "Gary Walkowicz (WCP)": 23
+     }
+    },
+    "28": {
+     "precinct_name": "Dearborn 28",
+     "registered_voters": 1052,
+     "ballots_cast": 660,
+     "results": {
+      "Rashida Tlaib (D)": 414,
+      "James D. Hooper (R)": 197,
+      "Marc Joseph Sosnowski (UST)": 6,
+      "Brenda K. Sanders (G)": 4,
+      "Gary Walkowicz (WCP)": 18
+     }
+    },
+    "29-30": {
+     "precinct_name": "Dearborn 29",
+     "registered_voters": 1974,
+     "ballots_cast": 1179,
+     "results": {
+      "Rashida Tlaib (D)": 759,
+      "James D. Hooper (R)": 332,
+      "Marc Joseph Sosnowski (UST)": 6,
+      "Brenda K. Sanders (G)": 12,
+      "Gary Walkowicz (WCP)": 30
+     }
+    },
+    "31-32": {
+     "precinct_name": "Dearborn 31 & 32",
+     "registered_voters": 3326,
+     "ballots_cast": 2076,
+     "results": {
+      "Rashida Tlaib (D)": 1517,
+      "James D. Hooper (R)": 427,
+      "Marc Joseph Sosnowski (UST)": 7,
+      "Brenda K. Sanders (G)": 12,
+      "Gary Walkowicz (WCP)": 14
+     }
+    },
+    "33-34": {
+     "precinct_name": "Dearborn 33 & 34",
+     "registered_voters": 3192,
+     "ballots_cast": 2048,
+     "results": {
+      "Rashida Tlaib (D)": 1511,
+      "James D. Hooper (R)": 393,
+      "Marc Joseph Sosnowski (UST)": 11,
+      "Brenda K. Sanders (G)": 7,
+      "Gary Walkowicz (WCP)": 39
+     }
+    },
+    "35-36": {
+     "precinct_name": "Dearborn 35",
+     "registered_voters": 2161,
+     "ballots_cast": 1489,
+     "results": {
+      "Rashida Tlaib (D)": 1055,
+      "James D. Hooper (R)": 340,
+      "Marc Joseph Sosnowski (UST)": 7,
+      "Brenda K. Sanders (G)": 5,
+      "Gary Walkowicz (WCP)": 28
+     }
+    },
+    "37-38": {
+     "precinct_name": "Dearborn 37 & 38",
+     "registered_voters": 3505,
+     "ballots_cast": 2267,
+     "results": {
+      "Rashida Tlaib (D)": 1556,
+      "James D. Hooper (R)": 556,
+      "Marc Joseph Sosnowski (UST)": 12,
+      "Brenda K. Sanders (G)": 10,
+      "Gary Walkowicz (WCP)": 30
+     }
+    },
+    "40-41": {
+     "precinct_name": "Dearborn 40 & 41",
+     "registered_voters": 2871,
+     "ballots_cast": 1951,
+     "results": {
+      "Rashida Tlaib (D)": 1380,
+      "James D. Hooper (R)": 459,
+      "Marc Joseph Sosnowski (UST)": 14,
+      "Brenda K. Sanders (G)": 13,
+      "Gary Walkowicz (WCP)": 27
+     }
+    },
+    "42-43": {
+     "precinct_name": "Dearborn 42",
+     "registered_voters": 2657,
+     "ballots_cast": 1749,
+     "results": {
+      "Rashida Tlaib (D)": 1217,
+      "James D. Hooper (R)": 434,
+      "Marc Joseph Sosnowski (UST)": 11,
+      "Brenda K. Sanders (G)": 10,
+      "Gary Walkowicz (WCP)": 14
+     }
+    },
+    "44": {
+     "precinct_name": "Dearborn 44",
+     "registered_voters": 1484,
+     "ballots_cast": 1057,
+     "results": {
+      "Rashida Tlaib (D)": 679,
+      "James D. Hooper (R)": 301,
+      "Marc Joseph Sosnowski (UST)": 8,
+      "Brenda K. Sanders (G)": 9,
+      "Gary Walkowicz (WCP)": 22
+     }
+    },
+    "45": {
+     "precinct_name": "Dearborn 45",
+     "registered_voters": 1798,
+     "ballots_cast": 1136,
+     "results": {
+      "Rashida Tlaib (D)": 754,
+      "James D. Hooper (R)": 296,
+      "Marc Joseph Sosnowski (UST)": 5,
+      "Brenda K. Sanders (G)": 11,
+      "Gary Walkowicz (WCP)": 30
+     }
+    },
+    "46": {
+     "precinct_name": "Dearborn 46",
+     "registered_voters": 1741,
+     "ballots_cast": 1076,
+     "results": {
+      "Rashida Tlaib (D)": 692,
+      "James D. Hooper (R)": 306,
+      "Marc Joseph Sosnowski (UST)": 8,
+      "Brenda K. Sanders (G)": 7,
+      "Gary Walkowicz (WCP)": 34
+     }
+    },
+    "47-48": {
+     "precinct_name": "Dearborn 47",
+     "registered_voters": 2446,
+     "ballots_cast": 1531,
+     "results": {
+      "Rashida Tlaib (D)": 929,
+      "James D. Hooper (R)": 492,
+      "Marc Joseph Sosnowski (UST)": 7,
+      "Brenda K. Sanders (G)": 11,
+      "Gary Walkowicz (WCP)": 41
+     }
+    },
+    "49-50": {
+     "precinct_name": "Dearborn 49 & 50",
+     "registered_voters": 3593,
+     "ballots_cast": 2011,
+     "results": {
+      "Rashida Tlaib (D)": 1248,
+      "James D. Hooper (R)": 604,
+      "Marc Joseph Sosnowski (UST)": 13,
+      "Brenda K. Sanders (G)": 26,
+      "Gary Walkowicz (WCP)": 58
+     }
+    }
+   }
+  },
+  "state_senate_2": {
+   "race_name": "State Senate (District 2)",
+   "category": "Legislature",
+   "seats": 1,
+   "candidates": [
+    "Abbas Alawieh (D)",
+    "Harry Sawicki (R)",
+    "Larry Darnell Betts (WCP)"
+   ],
+   "colors": {
+    "Abbas Alawieh (D)": "#2563eb",
+    "Harry Sawicki (R)": "#dc2626",
+    "Larry Darnell Betts (WCP)": "#ea580c"
+   },
+   "precincts": {
+    "1": {
+     "precinct_name": "Dearborn 1",
+     "registered_voters": 1990,
+     "ballots_cast": 1079,
+     "results": {
+      "Abbas Alawieh (D)": 926,
+      "Harry Sawicki (R)": 37,
+      "Larry Darnell Betts (WCP)": 9
+     }
+    },
+    "2": {
+     "precinct_name": "Dearborn 2",
+     "registered_voters": 2132,
+     "ballots_cast": 965,
+     "results": {
+      "Abbas Alawieh (D)": 813,
+      "Harry Sawicki (R)": 36,
+      "Larry Darnell Betts (WCP)": 12
+     }
+    },
+    "3": {
+     "precinct_name": "Dearborn 3",
+     "registered_voters": 2642,
+     "ballots_cast": 1349,
+     "results": {
+      "Abbas Alawieh (D)": 1161,
+      "Harry Sawicki (R)": 76,
+      "Larry Darnell Betts (WCP)": 10
+     }
+    },
+    "4-5": {
+     "precinct_name": "Dearborn 4",
+     "registered_voters": 3321,
+     "ballots_cast": 1581,
+     "results": {
+      "Abbas Alawieh (D)": 1395,
+      "Harry Sawicki (R)": 59,
+      "Larry Darnell Betts (WCP)": 16
+     }
+    },
+    "6": {
+     "precinct_name": "Dearborn 6",
+     "registered_voters": 2204,
+     "ballots_cast": 1141,
+     "results": {
+      "Abbas Alawieh (D)": 1009,
+      "Harry Sawicki (R)": 34,
+      "Larry Darnell Betts (WCP)": 11
+     }
+    },
+    "7": {
+     "precinct_name": "Dearborn 7",
+     "registered_voters": 2775,
+     "ballots_cast": 1345,
+     "results": {
+      "Abbas Alawieh (D)": 1181,
+      "Harry Sawicki (R)": 47,
+      "Larry Darnell Betts (WCP)": 9
+     }
+    },
+    "8-9": {
+     "precinct_name": "Dearborn 8 & 9",
+     "registered_voters": 3709,
+     "ballots_cast": 1926,
+     "results": {
+      "Abbas Alawieh (D)": 1695,
+      "Harry Sawicki (R)": 70,
+      "Larry Darnell Betts (WCP)": 12
+     }
+    },
+    "10": {
+     "precinct_name": "Dearborn 10",
+     "registered_voters": 1802,
+     "ballots_cast": 826,
+     "results": {
+      "Abbas Alawieh (D)": 703,
+      "Harry Sawicki (R)": 53,
+      "Larry Darnell Betts (WCP)": 9
+     }
+    },
+    "11-12": {
+     "precinct_name": "Dearborn 11 & 12",
+     "registered_voters": 3552,
+     "ballots_cast": 1823,
+     "results": {
+      "Abbas Alawieh (D)": 1509,
+      "Harry Sawicki (R)": 113,
+      "Larry Darnell Betts (WCP)": 32
+     }
+    },
+    "13": {
+     "precinct_name": "Dearborn 13",
+     "registered_voters": 584,
+     "ballots_cast": 369,
+     "results": {
+      "Abbas Alawieh (D)": 258,
+      "Harry Sawicki (R)": 85,
+      "Larry Darnell Betts (WCP)": 3
+     }
+    },
+    "15-16": {
+     "precinct_name": "Dearborn 15 & 16",
+     "registered_voters": 4119,
+     "ballots_cast": 2128,
+     "results": {
+      "Abbas Alawieh (D)": 1832,
+      "Harry Sawicki (R)": 108,
+      "Larry Darnell Betts (WCP)": 23
+     }
+    },
+    "17": {
+     "precinct_name": "Dearborn 17",
+     "registered_voters": 2489,
+     "ballots_cast": 1281,
+     "results": {
+      "Abbas Alawieh (D)": 1050,
+      "Harry Sawicki (R)": 126,
+      "Larry Darnell Betts (WCP)": 15
+     }
+    },
+    "18": {
+     "precinct_name": "Dearborn 18",
+     "registered_voters": 2904,
+     "ballots_cast": 1438,
+     "results": {
+      "Abbas Alawieh (D)": 1177,
+      "Harry Sawicki (R)": 97,
+      "Larry Darnell Betts (WCP)": 15
+     }
+    },
+    "19": {
+     "precinct_name": "Dearborn 19",
+     "registered_voters": 1684,
+     "ballots_cast": 937,
+     "results": {
+      "Abbas Alawieh (D)": 789,
+      "Harry Sawicki (R)": 48,
+      "Larry Darnell Betts (WCP)": 8
+     }
+    },
+    "20": {
+     "precinct_name": "Dearborn 20",
+     "registered_voters": 1453,
+     "ballots_cast": 677,
+     "results": {
+      "Abbas Alawieh (D)": 589,
+      "Harry Sawicki (R)": 18,
+      "Larry Darnell Betts (WCP)": 1
+     }
+    },
+    "21": {
+     "precinct_name": "Dearborn 21",
+     "registered_voters": 1878,
+     "ballots_cast": 949,
+     "results": {
+      "Abbas Alawieh (D)": 798,
+      "Harry Sawicki (R)": 24,
+      "Larry Darnell Betts (WCP)": 8
+     }
+    },
+    "22-23": {
+     "precinct_name": "Dearborn 22",
+     "registered_voters": 2287,
+     "ballots_cast": 1373,
+     "results": {
+      "Abbas Alawieh (D)": 1089,
+      "Harry Sawicki (R)": 201,
+      "Larry Darnell Betts (WCP)": 22
+     }
+    },
+    "24": {
+     "precinct_name": "Dearborn 24",
+     "registered_voters": 1116,
+     "ballots_cast": 691,
+     "results": {
+      "Abbas Alawieh (D)": 449,
+      "Harry Sawicki (R)": 185,
+      "Larry Darnell Betts (WCP)": 20
+     }
+    },
+    "25-26": {
+     "precinct_name": "Dearborn 25 & 26",
+     "registered_voters": 3750,
+     "ballots_cast": 2325,
+     "results": {
+      "Abbas Alawieh (D)": 1545,
+      "Harry Sawicki (R)": 600,
+      "Larry Darnell Betts (WCP)": 52
+     }
+    },
+    "27": {
+     "precinct_name": "Dearborn 27",
+     "registered_voters": 1676,
+     "ballots_cast": 1027,
+     "results": {
+      "Abbas Alawieh (D)": 682,
+      "Harry Sawicki (R)": 278,
+      "Larry Darnell Betts (WCP)": 25
+     }
+    },
+    "28": {
+     "precinct_name": "Dearborn 28",
+     "registered_voters": 1052,
+     "ballots_cast": 660,
+     "results": {
+      "Abbas Alawieh (D)": 393,
+      "Harry Sawicki (R)": 213,
+      "Larry Darnell Betts (WCP)": 21
+     }
+    },
+    "29-30": {
+     "precinct_name": "Dearborn 29",
+     "registered_voters": 1974,
+     "ballots_cast": 1179,
+     "results": {
+      "Abbas Alawieh (D)": 740,
+      "Harry Sawicki (R)": 351,
+      "Larry Darnell Betts (WCP)": 34
+     }
+    },
+    "31-32": {
+     "precinct_name": "Dearborn 31 & 32",
+     "registered_voters": 3326,
+     "ballots_cast": 2076,
+     "results": {
+      "Abbas Alawieh (D)": 1498,
+      "Harry Sawicki (R)": 443,
+      "Larry Darnell Betts (WCP)": 30
+     }
+    },
+    "33-34": {
+     "precinct_name": "Dearborn 33 & 34",
+     "registered_voters": 3192,
+     "ballots_cast": 2048,
+     "results": {
+      "Abbas Alawieh (D)": 1488,
+      "Harry Sawicki (R)": 422,
+      "Larry Darnell Betts (WCP)": 24
+     }
+    },
+    "35-36": {
+     "precinct_name": "Dearborn 35",
+     "registered_voters": 2161,
+     "ballots_cast": 1489,
+     "results": {
+      "Abbas Alawieh (D)": 1038,
+      "Harry Sawicki (R)": 362,
+      "Larry Darnell Betts (WCP)": 19
+     }
+    },
+    "37-38": {
+     "precinct_name": "Dearborn 37 & 38",
+     "registered_voters": 3505,
+     "ballots_cast": 2267,
+     "results": {
+      "Abbas Alawieh (D)": 1544,
+      "Harry Sawicki (R)": 576,
+      "Larry Darnell Betts (WCP)": 27
+     }
+    },
+    "40-41": {
+     "precinct_name": "Dearborn 40 & 41",
+     "registered_voters": 2871,
+     "ballots_cast": 1951,
+     "results": {
+      "Abbas Alawieh (D)": 1383,
+      "Harry Sawicki (R)": 469,
+      "Larry Darnell Betts (WCP)": 19
+     }
+    },
+    "42-43": {
+     "precinct_name": "Dearborn 42",
+     "registered_voters": 2657,
+     "ballots_cast": 1749,
+     "results": {
+      "Abbas Alawieh (D)": 1184,
+      "Harry Sawicki (R)": 437,
+      "Larry Darnell Betts (WCP)": 23
+     }
+    },
+    "44": {
+     "precinct_name": "Dearborn 44",
+     "registered_voters": 1484,
+     "ballots_cast": 1057,
+     "results": {
+      "Abbas Alawieh (D)": 646,
+      "Harry Sawicki (R)": 311,
+      "Larry Darnell Betts (WCP)": 25
+     }
+    },
+    "45": {
+     "precinct_name": "Dearborn 45",
+     "registered_voters": 1798,
+     "ballots_cast": 1136,
+     "results": {
+      "Abbas Alawieh (D)": 735,
+      "Harry Sawicki (R)": 320,
+      "Larry Darnell Betts (WCP)": 31
+     }
+    },
+    "46": {
+     "precinct_name": "Dearborn 46",
+     "registered_voters": 1741,
+     "ballots_cast": 1076,
+     "results": {
+      "Abbas Alawieh (D)": 669,
+      "Harry Sawicki (R)": 319,
+      "Larry Darnell Betts (WCP)": 35
+     }
+    },
+    "47-48": {
+     "precinct_name": "Dearborn 47",
+     "registered_voters": 2446,
+     "ballots_cast": 1531,
+     "results": {
+      "Abbas Alawieh (D)": 896,
+      "Harry Sawicki (R)": 513,
+      "Larry Darnell Betts (WCP)": 46
+     }
+    },
+    "49-50": {
+     "precinct_name": "Dearborn 49 & 50",
+     "registered_voters": 3593,
+     "ballots_cast": 2011,
+     "results": {
+      "Abbas Alawieh (D)": 1217,
+      "Harry Sawicki (R)": 636,
+      "Larry Darnell Betts (WCP)": 59
+     }
+    }
+   }
+  },
+  "state_house": {
+   "race_name": "State House (Districts 3 & 15)",
+   "category": "Legislature",
+   "seats": 1,
+   "candidates": [
+    "Alabas Farhat (D)",
+    "Gus Tarraf (R)",
+    "Jalal Abdallah (D)",
+    "Hassan H. Nehme (R)"
+   ],
+   "colors": {
+    "Alabas Farhat (D)": "#2563eb",
+    "Gus Tarraf (R)": "#dc2626",
+    "Jalal Abdallah (D)": "#60a5fa",
+    "Hassan H. Nehme (R)": "#f87171"
+   },
+   "precincts": {
+    "1": {
+     "precinct_name": "Dearborn 1",
+     "registered_voters": 1990,
+     "ballots_cast": 1079,
+     "results": {
+      "Alabas Farhat (D)": 863,
+      "Gus Tarraf (R)": 86
+     }
+    },
+    "2": {
+     "precinct_name": "Dearborn 2",
+     "registered_voters": 2132,
+     "ballots_cast": 965,
+     "results": {
+      "Alabas Farhat (D)": 770,
+      "Gus Tarraf (R)": 77
+     }
+    },
+    "3": {
+     "precinct_name": "Dearborn 3",
+     "registered_voters": 2642,
+     "ballots_cast": 1349,
+     "results": {
+      "Alabas Farhat (D)": 1149,
+      "Gus Tarraf (R)": 105
+     }
+    },
+    "4-5": {
+     "precinct_name": "Dearborn 4",
+     "registered_voters": 3321,
+     "ballots_cast": 1581,
+     "results": {
+      "Alabas Farhat (D)": 1346,
+      "Gus Tarraf (R)": 105
+     }
+    },
+    "6": {
+     "precinct_name": "Dearborn 6",
+     "registered_voters": 2204,
+     "ballots_cast": 1141,
+     "results": {
+      "Alabas Farhat (D)": 978,
+      "Gus Tarraf (R)": 78
+     }
+    },
+    "7": {
+     "precinct_name": "Dearborn 7",
+     "registered_voters": 2775,
+     "ballots_cast": 1345,
+     "results": {
+      "Alabas Farhat (D)": 1097,
+      "Gus Tarraf (R)": 137
+     }
+    },
+    "8-9": {
+     "precinct_name": "Dearborn 8 & 9",
+     "registered_voters": 3709,
+     "ballots_cast": 1926,
+     "results": {
+      "Alabas Farhat (D)": 1608,
+      "Gus Tarraf (R)": 152
+     }
+    },
+    "10": {
+     "precinct_name": "Dearborn 10",
+     "registered_voters": 1802,
+     "ballots_cast": 826,
+     "results": {
+      "Alabas Farhat (D)": 699,
+      "Gus Tarraf (R)": 72
+     }
+    },
+    "11-12": {
+     "precinct_name": "Dearborn 11 & 12",
+     "registered_voters": 3552,
+     "ballots_cast": 1823,
+     "results": {
+      "Alabas Farhat (D)": 1406,
+      "Gus Tarraf (R)": 224
+     }
+    },
+    "13": {
+     "precinct_name": "Dearborn 13",
+     "registered_voters": 584,
+     "ballots_cast": 369,
+     "results": {
+      "Alabas Farhat (D)": 265,
+      "Gus Tarraf (R)": 77
+     }
+    },
+    "15-16": {
+     "precinct_name": "Dearborn 15 & 16",
+     "registered_voters": 4119,
+     "ballots_cast": 2128,
+     "results": {
+      "Alabas Farhat (D)": 1751,
+      "Gus Tarraf (R)": 177
+     }
+    },
+    "17": {
+     "precinct_name": "Dearborn 17",
+     "registered_voters": 2489,
+     "ballots_cast": 1281,
+     "results": {
+      "Alabas Farhat (D)": 1037,
+      "Gus Tarraf (R)": 153
+     }
+    },
+    "18": {
+     "precinct_name": "Dearborn 18",
+     "registered_voters": 2904,
+     "ballots_cast": 1438,
+     "results": {
+      "Alabas Farhat (D)": 1121,
+      "Gus Tarraf (R)": 152
+     }
+    },
+    "19": {
+     "precinct_name": "Dearborn 19",
+     "registered_voters": 1684,
+     "ballots_cast": 937,
+     "results": {
+      "Alabas Farhat (D)": 760,
+      "Gus Tarraf (R)": 74
+     }
+    },
+    "20": {
+     "precinct_name": "Dearborn 20",
+     "registered_voters": 1453,
+     "ballots_cast": 677,
+     "results": {
+      "Alabas Farhat (D)": 557,
+      "Gus Tarraf (R)": 43
+     }
+    },
+    "21": {
+     "precinct_name": "Dearborn 21",
+     "registered_voters": 1878,
+     "ballots_cast": 949,
+     "results": {
+      "Alabas Farhat (D)": 769,
+      "Gus Tarraf (R)": 56
+     }
+    },
+    "22-23": {
+     "precinct_name": "Dearborn 22",
+     "registered_voters": 2287,
+     "ballots_cast": 1373,
+     "results": {
+      "Alabas Farhat (D)": 1094,
+      "Gus Tarraf (R)": 202
+     }
+    },
+    "24": {
+     "precinct_name": "Dearborn 24",
+     "registered_voters": 1116,
+     "ballots_cast": 691,
+     "results": {
+      "Alabas Farhat (D)": 472,
+      "Gus Tarraf (R)": 175
+     }
+    },
+    "25-26": {
+     "precinct_name": "Dearborn 25 & 26",
+     "registered_voters": 3750,
+     "ballots_cast": 2325,
+     "results": {
+      "Alabas Farhat (D)": 1565,
+      "Gus Tarraf (R)": 605
+     }
+    },
+    "27": {
+     "precinct_name": "Dearborn 27",
+     "registered_voters": 1676,
+     "ballots_cast": 1027,
+     "results": {
+      "Alabas Farhat (D)": 698,
+      "Gus Tarraf (R)": 274
+     }
+    },
+    "28": {
+     "precinct_name": "Dearborn 28",
+     "registered_voters": 1052,
+     "ballots_cast": 660,
+     "results": {
+      "Alabas Farhat (D)": 403,
+      "Gus Tarraf (R)": 208
+     }
+    },
+    "29-30": {
+     "precinct_name": "Dearborn 29",
+     "registered_voters": 1974,
+     "ballots_cast": 1179,
+     "results": {
+      "Alabas Farhat (D)": 757,
+      "Gus Tarraf (R)": 348
+     }
+    },
+    "31-32": {
+     "precinct_name": "Dearborn 31 & 32",
+     "registered_voters": 3326,
+     "ballots_cast": 2076,
+     "results": {
+      "Alabas Farhat (D)": 1526,
+      "Gus Tarraf (R)": 429
+     }
+    },
+    "33-34": {
+     "precinct_name": "Dearborn 33 & 34",
+     "registered_voters": 3192,
+     "ballots_cast": 2048,
+     "results": {
+      "Jalal Abdallah (D)": 1371,
+      "Hassan H. Nehme (R)": 434
+     }
+    },
+    "35-36": {
+     "precinct_name": "Dearborn 35",
+     "registered_voters": 2161,
+     "ballots_cast": 1489,
+     "results": {
+      "Jalal Abdallah (D)": 1005,
+      "Hassan H. Nehme (R)": 340
+     }
+    },
+    "37-38": {
+     "precinct_name": "Dearborn 37 & 38",
+     "registered_voters": 3505,
+     "ballots_cast": 2267,
+     "results": {
+      "Jalal Abdallah (D)": 1449,
+      "Hassan H. Nehme (R)": 563
+     }
+    },
+    "40-41": {
+     "precinct_name": "Dearborn 40 & 41",
+     "registered_voters": 2871,
+     "ballots_cast": 1951,
+     "results": {
+      "Jalal Abdallah (D)": 1270,
+      "Hassan H. Nehme (R)": 506
+     }
+    },
+    "42-43": {
+     "precinct_name": "Dearborn 42",
+     "registered_voters": 2657,
+     "ballots_cast": 1749,
+     "results": {
+      "Jalal Abdallah (D)": 1109,
+      "Hassan H. Nehme (R)": 452
+     }
+    },
+    "44": {
+     "precinct_name": "Dearborn 44",
+     "registered_voters": 1484,
+     "ballots_cast": 1057,
+     "results": {
+      "Jalal Abdallah (D)": 640,
+      "Hassan H. Nehme (R)": 292
+     }
+    },
+    "45": {
+     "precinct_name": "Dearborn 45",
+     "registered_voters": 1798,
+     "ballots_cast": 1136,
+     "results": {
+      "Jalal Abdallah (D)": 717,
+      "Hassan H. Nehme (R)": 303
+     }
+    },
+    "46": {
+     "precinct_name": "Dearborn 46",
+     "registered_voters": 1741,
+     "ballots_cast": 1076,
+     "results": {
+      "Jalal Abdallah (D)": 687,
+      "Hassan H. Nehme (R)": 296
+     }
+    },
+    "47-48": {
+     "precinct_name": "Dearborn 47",
+     "registered_voters": 2446,
+     "ballots_cast": 1531,
+     "results": {
+      "Jalal Abdallah (D)": 890,
+      "Hassan H. Nehme (R)": 485
+     }
+    },
+    "49-50": {
+     "precinct_name": "Dearborn 49 & 50",
+     "registered_voters": 3593,
+     "ballots_cast": 2011,
+     "results": {
+      "Jalal Abdallah (D)": 1241,
+      "Hassan H. Nehme (R)": 589
+     }
+    }
+   }
+  },
+  "board_of_education": {
+   "race_name": "State Board of Education",
+   "category": "Education Boards",
+   "seats": 2,
+   "candidates": [
+    "Judith Pritchett (D)",
+    "Tiffany Tilley (D)",
+    "Terence Collins (R)",
+    "Bree Moeggenberg (R)",
+    "Charles Essner (L)",
+    "William Mohr II (UST)",
+    "Christine C. Schwartz (UST)",
+    "Wissam Charafeddine (G)",
+    "Mary Anne Hering (WCP)",
+    "Kelli Monroe (NLP)"
+   ],
+   "colors": {
+    "Judith Pritchett (D)": "#2563eb",
+    "Tiffany Tilley (D)": "#60a5fa",
+    "Terence Collins (R)": "#dc2626",
+    "Bree Moeggenberg (R)": "#f87171",
+    "Charles Essner (L)": "#eab308",
+    "William Mohr II (UST)": "#7c3aed",
+    "Christine C. Schwartz (UST)": "#a78bfa",
+    "Wissam Charafeddine (G)": "#16a34a",
+    "Mary Anne Hering (WCP)": "#ea580c",
+    "Kelli Monroe (NLP)": "#0d9488"
+   },
+   "precincts": {
+    "1": {
+     "precinct_name": "Dearborn 1",
+     "registered_voters": 1990,
+     "ballots_cast": 1079,
+     "results": {
+      "Judith Pritchett (D)": 651,
+      "Tiffany Tilley (D)": 718,
+      "Terence Collins (R)": 40,
+      "Bree Moeggenberg (R)": 43,
+      "Charles Essner (L)": 9,
+      "William Mohr II (UST)": 6,
+      "Christine C. Schwartz (UST)": 4,
+      "Wissam Charafeddine (G)": 145,
+      "Mary Anne Hering (WCP)": 17,
+      "Kelli Monroe (NLP)": 10
+     }
+    },
+    "2": {
+     "precinct_name": "Dearborn 2",
+     "registered_voters": 2132,
+     "ballots_cast": 965,
+     "results": {
+      "Judith Pritchett (D)": 560,
+      "Tiffany Tilley (D)": 608,
+      "Terence Collins (R)": 42,
+      "Bree Moeggenberg (R)": 35,
+      "Charles Essner (L)": 2,
+      "William Mohr II (UST)": 3,
+      "Christine C. Schwartz (UST)": 1,
+      "Wissam Charafeddine (G)": 143,
+      "Mary Anne Hering (WCP)": 17,
+      "Kelli Monroe (NLP)": 6
+     }
+    },
+    "3": {
+     "precinct_name": "Dearborn 3",
+     "registered_voters": 2642,
+     "ballots_cast": 1349,
+     "results": {
+      "Judith Pritchett (D)": 864,
+      "Tiffany Tilley (D)": 892,
+      "Terence Collins (R)": 78,
+      "Bree Moeggenberg (R)": 66,
+      "Charles Essner (L)": 7,
+      "William Mohr II (UST)": 7,
+      "Christine C. Schwartz (UST)": 17,
+      "Wissam Charafeddine (G)": 174,
+      "Mary Anne Hering (WCP)": 18,
+      "Kelli Monroe (NLP)": 6
+     }
+    },
+    "4-5": {
+     "precinct_name": "Dearborn 4",
+     "registered_voters": 3321,
+     "ballots_cast": 1581,
+     "results": {
+      "Judith Pritchett (D)": 965,
+      "Tiffany Tilley (D)": 1038,
+      "Terence Collins (R)": 56,
+      "Bree Moeggenberg (R)": 59,
+      "Charles Essner (L)": 8,
+      "William Mohr II (UST)": 21,
+      "Christine C. Schwartz (UST)": 10,
+      "Wissam Charafeddine (G)": 288,
+      "Mary Anne Hering (WCP)": 27,
+      "Kelli Monroe (NLP)": 12
+     }
+    },
+    "6": {
+     "precinct_name": "Dearborn 6",
+     "registered_voters": 2204,
+     "ballots_cast": 1141,
+     "results": {
+      "Judith Pritchett (D)": 677,
+      "Tiffany Tilley (D)": 712,
+      "Terence Collins (R)": 37,
+      "Bree Moeggenberg (R)": 30,
+      "Charles Essner (L)": 7,
+      "William Mohr II (UST)": 8,
+      "Christine C. Schwartz (UST)": 8,
+      "Wissam Charafeddine (G)": 209,
+      "Mary Anne Hering (WCP)": 11,
+      "Kelli Monroe (NLP)": 5
+     }
+    },
+    "7": {
+     "precinct_name": "Dearborn 7",
+     "registered_voters": 2775,
+     "ballots_cast": 1345,
+     "results": {
+      "Judith Pritchett (D)": 774,
+      "Tiffany Tilley (D)": 843,
+      "Terence Collins (R)": 49,
+      "Bree Moeggenberg (R)": 46,
+      "Charles Essner (L)": 6,
+      "William Mohr II (UST)": 2,
+      "Christine C. Schwartz (UST)": 7,
+      "Wissam Charafeddine (G)": 253,
+      "Mary Anne Hering (WCP)": 19,
+      "Kelli Monroe (NLP)": 9
+     }
+    },
+    "8-9": {
+     "precinct_name": "Dearborn 8 & 9",
+     "registered_voters": 3709,
+     "ballots_cast": 1926,
+     "results": {
+      "Judith Pritchett (D)": 1215,
+      "Tiffany Tilley (D)": 1309,
+      "Terence Collins (R)": 69,
+      "Bree Moeggenberg (R)": 69,
+      "Charles Essner (L)": 6,
+      "William Mohr II (UST)": 11,
+      "Christine C. Schwartz (UST)": 8,
+      "Wissam Charafeddine (G)": 287,
+      "Mary Anne Hering (WCP)": 32,
+      "Kelli Monroe (NLP)": 14
+     }
+    },
+    "10": {
+     "precinct_name": "Dearborn 10",
+     "registered_voters": 1802,
+     "ballots_cast": 826,
+     "results": {
+      "Judith Pritchett (D)": 494,
+      "Tiffany Tilley (D)": 514,
+      "Terence Collins (R)": 55,
+      "Bree Moeggenberg (R)": 50,
+      "Charles Essner (L)": 8,
+      "William Mohr II (UST)": 10,
+      "Christine C. Schwartz (UST)": 6,
+      "Wissam Charafeddine (G)": 127,
+      "Mary Anne Hering (WCP)": 15,
+      "Kelli Monroe (NLP)": 5
+     }
+    },
+    "11-12": {
+     "precinct_name": "Dearborn 11 & 12",
+     "registered_voters": 3552,
+     "ballots_cast": 1823,
+     "results": {
+      "Judith Pritchett (D)": 1100,
+      "Tiffany Tilley (D)": 1152,
+      "Terence Collins (R)": 115,
+      "Bree Moeggenberg (R)": 106,
+      "Charles Essner (L)": 8,
+      "William Mohr II (UST)": 12,
+      "Christine C. Schwartz (UST)": 8,
+      "Wissam Charafeddine (G)": 270,
+      "Mary Anne Hering (WCP)": 36,
+      "Kelli Monroe (NLP)": 13
+     }
+    },
+    "13": {
+     "precinct_name": "Dearborn 13",
+     "registered_voters": 584,
+     "ballots_cast": 369,
+     "results": {
+      "Judith Pritchett (D)": 261,
+      "Tiffany Tilley (D)": 247,
+      "Terence Collins (R)": 81,
+      "Bree Moeggenberg (R)": 75,
+      "Charles Essner (L)": 7,
+      "William Mohr II (UST)": 1,
+      "Christine C. Schwartz (UST)": 2,
+      "Wissam Charafeddine (G)": 2,
+      "Mary Anne Hering (WCP)": 4,
+      "Kelli Monroe (NLP)": 3
+     }
+    },
+    "15-16": {
+     "precinct_name": "Dearborn 15 & 16",
+     "registered_voters": 4119,
+     "ballots_cast": 2128,
+     "results": {
+      "Judith Pritchett (D)": 1338,
+      "Tiffany Tilley (D)": 1383,
+      "Terence Collins (R)": 110,
+      "Bree Moeggenberg (R)": 101,
+      "Charles Essner (L)": 13,
+      "William Mohr II (UST)": 15,
+      "Christine C. Schwartz (UST)": 13,
+      "Wissam Charafeddine (G)": 324,
+      "Mary Anne Hering (WCP)": 28,
+      "Kelli Monroe (NLP)": 15
+     }
+    },
+    "17": {
+     "precinct_name": "Dearborn 17",
+     "registered_voters": 2489,
+     "ballots_cast": 1281,
+     "results": {
+      "Judith Pritchett (D)": 798,
+      "Tiffany Tilley (D)": 823,
+      "Terence Collins (R)": 132,
+      "Bree Moeggenberg (R)": 114,
+      "Charles Essner (L)": 12,
+      "William Mohr II (UST)": 10,
+      "Christine C. Schwartz (UST)": 7,
+      "Wissam Charafeddine (G)": 185,
+      "Mary Anne Hering (WCP)": 22,
+      "Kelli Monroe (NLP)": 2
+     }
+    },
+    "18": {
+     "precinct_name": "Dearborn 18",
+     "registered_voters": 2904,
+     "ballots_cast": 1438,
+     "results": {
+      "Judith Pritchett (D)": 848,
+      "Tiffany Tilley (D)": 896,
+      "Terence Collins (R)": 112,
+      "Bree Moeggenberg (R)": 95,
+      "Charles Essner (L)": 5,
+      "William Mohr II (UST)": 12,
+      "Christine C. Schwartz (UST)": 15,
+      "Wissam Charafeddine (G)": 217,
+      "Mary Anne Hering (WCP)": 22,
+      "Kelli Monroe (NLP)": 11
+     }
+    },
+    "19": {
+     "precinct_name": "Dearborn 19",
+     "registered_voters": 1684,
+     "ballots_cast": 937,
+     "results": {
+      "Judith Pritchett (D)": 559,
+      "Tiffany Tilley (D)": 589,
+      "Terence Collins (R)": 55,
+      "Bree Moeggenberg (R)": 41,
+      "Charles Essner (L)": 6,
+      "William Mohr II (UST)": 8,
+      "Christine C. Schwartz (UST)": 2,
+      "Wissam Charafeddine (G)": 121,
+      "Mary Anne Hering (WCP)": 21,
+      "Kelli Monroe (NLP)": 10
+     }
+    },
+    "20": {
+     "precinct_name": "Dearborn 20",
+     "registered_voters": 1453,
+     "ballots_cast": 677,
+     "results": {
+      "Judith Pritchett (D)": 393,
+      "Tiffany Tilley (D)": 429,
+      "Terence Collins (R)": 20,
+      "Bree Moeggenberg (R)": 14,
+      "Charles Essner (L)": 2,
+      "William Mohr II (UST)": 3,
+      "Christine C. Schwartz (UST)": 0,
+      "Wissam Charafeddine (G)": 136,
+      "Mary Anne Hering (WCP)": 15,
+      "Kelli Monroe (NLP)": 3
+     }
+    },
+    "21": {
+     "precinct_name": "Dearborn 21",
+     "registered_voters": 1878,
+     "ballots_cast": 949,
+     "results": {
+      "Judith Pritchett (D)": 564,
+      "Tiffany Tilley (D)": 607,
+      "Terence Collins (R)": 28,
+      "Bree Moeggenberg (R)": 27,
+      "Charles Essner (L)": 7,
+      "William Mohr II (UST)": 6,
+      "Christine C. Schwartz (UST)": 5,
+      "Wissam Charafeddine (G)": 143,
+      "Mary Anne Hering (WCP)": 21,
+      "Kelli Monroe (NLP)": 8
+     }
+    },
+    "22-23": {
+     "precinct_name": "Dearborn 22",
+     "registered_voters": 2287,
+     "ballots_cast": 1373,
+     "results": {
+      "Judith Pritchett (D)": 937,
+      "Tiffany Tilley (D)": 939,
+      "Terence Collins (R)": 183,
+      "Bree Moeggenberg (R)": 164,
+      "Charles Essner (L)": 15,
+      "William Mohr II (UST)": 7,
+      "Christine C. Schwartz (UST)": 6,
+      "Wissam Charafeddine (G)": 111,
+      "Mary Anne Hering (WCP)": 31,
+      "Kelli Monroe (NLP)": 4
+     }
+    },
+    "24": {
+     "precinct_name": "Dearborn 24",
+     "registered_voters": 1116,
+     "ballots_cast": 691,
+     "results": {
+      "Judith Pritchett (D)": 417,
+      "Tiffany Tilley (D)": 409,
+      "Terence Collins (R)": 163,
+      "Bree Moeggenberg (R)": 157,
+      "Charles Essner (L)": 7,
+      "William Mohr II (UST)": 3,
+      "Christine C. Schwartz (UST)": 7,
+      "Wissam Charafeddine (G)": 34,
+      "Mary Anne Hering (WCP)": 22,
+      "Kelli Monroe (NLP)": 3
+     }
+    },
+    "25-26": {
+     "precinct_name": "Dearborn 25 & 26",
+     "registered_voters": 3750,
+     "ballots_cast": 2325,
+     "results": {
+      "Judith Pritchett (D)": 1343,
+      "Tiffany Tilley (D)": 1329,
+      "Terence Collins (R)": 571,
+      "Bree Moeggenberg (R)": 524,
+      "Charles Essner (L)": 26,
+      "William Mohr II (UST)": 16,
+      "Christine C. Schwartz (UST)": 32,
+      "Wissam Charafeddine (G)": 162,
+      "Mary Anne Hering (WCP)": 59,
+      "Kelli Monroe (NLP)": 17
+     }
+    },
+    "27": {
+     "precinct_name": "Dearborn 27",
+     "registered_voters": 1676,
+     "ballots_cast": 1027,
+     "results": {
+      "Judith Pritchett (D)": 594,
+      "Tiffany Tilley (D)": 584,
+      "Terence Collins (R)": 253,
+      "Bree Moeggenberg (R)": 245,
+      "Charles Essner (L)": 10,
+      "William Mohr II (UST)": 8,
+      "Christine C. Schwartz (UST)": 13,
+      "Wissam Charafeddine (G)": 70,
+      "Mary Anne Hering (WCP)": 30,
+      "Kelli Monroe (NLP)": 15
+     }
+    },
+    "28": {
+     "precinct_name": "Dearborn 28",
+     "registered_voters": 1052,
+     "ballots_cast": 660,
+     "results": {
+      "Judith Pritchett (D)": 359,
+      "Tiffany Tilley (D)": 352,
+      "Terence Collins (R)": 185,
+      "Bree Moeggenberg (R)": 170,
+      "Charles Essner (L)": 9,
+      "William Mohr II (UST)": 7,
+      "Christine C. Schwartz (UST)": 7,
+      "Wissam Charafeddine (G)": 31,
+      "Mary Anne Hering (WCP)": 15,
+      "Kelli Monroe (NLP)": 5
+     }
+    },
+    "29-30": {
+     "precinct_name": "Dearborn 29",
+     "registered_voters": 1974,
+     "ballots_cast": 1179,
+     "results": {
+      "Judith Pritchett (D)": 683,
+      "Tiffany Tilley (D)": 671,
+      "Terence Collins (R)": 324,
+      "Bree Moeggenberg (R)": 313,
+      "Charles Essner (L)": 20,
+      "William Mohr II (UST)": 6,
+      "Christine C. Schwartz (UST)": 11,
+      "Wissam Charafeddine (G)": 53,
+      "Mary Anne Hering (WCP)": 29,
+      "Kelli Monroe (NLP)": 6
+     }
+    },
+    "31-32": {
+     "precinct_name": "Dearborn 31 & 32",
+     "registered_voters": 3326,
+     "ballots_cast": 2076,
+     "results": {
+      "Judith Pritchett (D)": 1169,
+      "Tiffany Tilley (D)": 1142,
+      "Terence Collins (R)": 427,
+      "Bree Moeggenberg (R)": 399,
+      "Charles Essner (L)": 27,
+      "William Mohr II (UST)": 8,
+      "Christine C. Schwartz (UST)": 13,
+      "Wissam Charafeddine (G)": 209,
+      "Mary Anne Hering (WCP)": 46,
+      "Kelli Monroe (NLP)": 5
+     }
+    },
+    "33-34": {
+     "precinct_name": "Dearborn 33 & 34",
+     "registered_voters": 3192,
+     "ballots_cast": 2048,
+     "results": {
+      "Judith Pritchett (D)": 1184,
+      "Tiffany Tilley (D)": 1161,
+      "Terence Collins (R)": 365,
+      "Bree Moeggenberg (R)": 354,
+      "Charles Essner (L)": 19,
+      "William Mohr II (UST)": 13,
+      "Christine C. Schwartz (UST)": 11,
+      "Wissam Charafeddine (G)": 213,
+      "Mary Anne Hering (WCP)": 34,
+      "Kelli Monroe (NLP)": 10
+     }
+    },
+    "35-36": {
+     "precinct_name": "Dearborn 35",
+     "registered_voters": 2161,
+     "ballots_cast": 1489,
+     "results": {
+      "Judith Pritchett (D)": 870,
+      "Tiffany Tilley (D)": 838,
+      "Terence Collins (R)": 314,
+      "Bree Moeggenberg (R)": 287,
+      "Charles Essner (L)": 19,
+      "William Mohr II (UST)": 14,
+      "Christine C. Schwartz (UST)": 13,
+      "Wissam Charafeddine (G)": 115,
+      "Mary Anne Hering (WCP)": 36,
+      "Kelli Monroe (NLP)": 7
+     }
+    },
+    "37-38": {
+     "precinct_name": "Dearborn 37 & 38",
+     "registered_voters": 3505,
+     "ballots_cast": 2267,
+     "results": {
+      "Judith Pritchett (D)": 1293,
+      "Tiffany Tilley (D)": 1264,
+      "Terence Collins (R)": 514,
+      "Bree Moeggenberg (R)": 487,
+      "Charles Essner (L)": 24,
+      "William Mohr II (UST)": 14,
+      "Christine C. Schwartz (UST)": 20,
+      "Wissam Charafeddine (G)": 185,
+      "Mary Anne Hering (WCP)": 33,
+      "Kelli Monroe (NLP)": 9
+     }
+    },
+    "40-41": {
+     "precinct_name": "Dearborn 40 & 41",
+     "registered_voters": 2871,
+     "ballots_cast": 1951,
+     "results": {
+      "Judith Pritchett (D)": 1096,
+      "Tiffany Tilley (D)": 1007,
+      "Terence Collins (R)": 438,
+      "Bree Moeggenberg (R)": 421,
+      "Charles Essner (L)": 20,
+      "William Mohr II (UST)": 6,
+      "Christine C. Schwartz (UST)": 15,
+      "Wissam Charafeddine (G)": 203,
+      "Mary Anne Hering (WCP)": 42,
+      "Kelli Monroe (NLP)": 9
+     }
+    },
+    "42-43": {
+     "precinct_name": "Dearborn 42",
+     "registered_voters": 2657,
+     "ballots_cast": 1749,
+     "results": {
+      "Judith Pritchett (D)": 1016,
+      "Tiffany Tilley (D)": 1002,
+      "Terence Collins (R)": 396,
+      "Bree Moeggenberg (R)": 375,
+      "Charles Essner (L)": 26,
+      "William Mohr II (UST)": 10,
+      "Christine C. Schwartz (UST)": 5,
+      "Wissam Charafeddine (G)": 114,
+      "Mary Anne Hering (WCP)": 28,
+      "Kelli Monroe (NLP)": 4
+     }
+    },
+    "44": {
+     "precinct_name": "Dearborn 44",
+     "registered_voters": 1484,
+     "ballots_cast": 1057,
+     "results": {
+      "Judith Pritchett (D)": 626,
+      "Tiffany Tilley (D)": 605,
+      "Terence Collins (R)": 271,
+      "Bree Moeggenberg (R)": 270,
+      "Charles Essner (L)": 14,
+      "William Mohr II (UST)": 8,
+      "Christine C. Schwartz (UST)": 11,
+      "Wissam Charafeddine (G)": 34,
+      "Mary Anne Hering (WCP)": 26,
+      "Kelli Monroe (NLP)": 5
+     }
+    },
+    "45": {
+     "precinct_name": "Dearborn 45",
+     "registered_voters": 1798,
+     "ballots_cast": 1136,
+     "results": {
+      "Judith Pritchett (D)": 679,
+      "Tiffany Tilley (D)": 663,
+      "Terence Collins (R)": 284,
+      "Bree Moeggenberg (R)": 274,
+      "Charles Essner (L)": 19,
+      "William Mohr II (UST)": 9,
+      "Christine C. Schwartz (UST)": 5,
+      "Wissam Charafeddine (G)": 49,
+      "Mary Anne Hering (WCP)": 18,
+      "Kelli Monroe (NLP)": 4
+     }
+    },
+    "46": {
+     "precinct_name": "Dearborn 46",
+     "registered_voters": 1741,
+     "ballots_cast": 1076,
+     "results": {
+      "Judith Pritchett (D)": 634,
+      "Tiffany Tilley (D)": 616,
+      "Terence Collins (R)": 280,
+      "Bree Moeggenberg (R)": 253,
+      "Charles Essner (L)": 12,
+      "William Mohr II (UST)": 9,
+      "Christine C. Schwartz (UST)": 12,
+      "Wissam Charafeddine (G)": 48,
+      "Mary Anne Hering (WCP)": 37,
+      "Kelli Monroe (NLP)": 10
+     }
+    },
+    "47-48": {
+     "precinct_name": "Dearborn 47",
+     "registered_voters": 2446,
+     "ballots_cast": 1531,
+     "results": {
+      "Judith Pritchett (D)": 841,
+      "Tiffany Tilley (D)": 831,
+      "Terence Collins (R)": 458,
+      "Bree Moeggenberg (R)": 425,
+      "Charles Essner (L)": 16,
+      "William Mohr II (UST)": 4,
+      "Christine C. Schwartz (UST)": 11,
+      "Wissam Charafeddine (G)": 66,
+      "Mary Anne Hering (WCP)": 41,
+      "Kelli Monroe (NLP)": 8
+     }
+    },
+    "49-50": {
+     "precinct_name": "Dearborn 49 & 50",
+     "registered_voters": 3593,
+     "ballots_cast": 2011,
+     "results": {
+      "Judith Pritchett (D)": 1146,
+      "Tiffany Tilley (D)": 1126,
+      "Terence Collins (R)": 575,
+      "Bree Moeggenberg (R)": 540,
+      "Charles Essner (L)": 32,
+      "William Mohr II (UST)": 13,
+      "Christine C. Schwartz (UST)": 22,
+      "Wissam Charafeddine (G)": 71,
+      "Mary Anne Hering (WCP)": 66,
+      "Kelli Monroe (NLP)": 18
+     }
+    }
+   }
+  },
+  "um_regents": {
+   "race_name": "UM Board of Regents",
+   "category": "Education Boards",
+   "seats": 2,
+   "candidates": [
+    "Paul Brown (D)",
+    "Amir Makled (D)",
+    "Lena Epstein (R)",
+    "Michael Schostak (R)",
+    "Andrew Chadderdon (L)",
+    "Kyle Maas (UST)"
+   ],
+   "colors": {
+    "Paul Brown (D)": "#2563eb",
+    "Amir Makled (D)": "#60a5fa",
+    "Lena Epstein (R)": "#dc2626",
+    "Michael Schostak (R)": "#f87171",
+    "Andrew Chadderdon (L)": "#eab308",
+    "Kyle Maas (UST)": "#7c3aed"
+   },
+   "precincts": {
+    "1": {
+     "precinct_name": "Dearborn 1",
+     "registered_voters": 1990,
+     "ballots_cast": 1079,
+     "results": {
+      "Paul Brown (D)": 656,
+      "Amir Makled (D)": 881,
+      "Lena Epstein (R)": 42,
+      "Michael Schostak (R)": 39,
+      "Andrew Chadderdon (L)": 7,
+      "Kyle Maas (UST)": 16
+     }
+    },
+    "2": {
+     "precinct_name": "Dearborn 2",
+     "registered_voters": 2132,
+     "ballots_cast": 965,
+     "results": {
+      "Paul Brown (D)": 570,
+      "Amir Makled (D)": 770,
+      "Lena Epstein (R)": 38,
+      "Michael Schostak (R)": 35,
+      "Andrew Chadderdon (L)": 9,
+      "Kyle Maas (UST)": 11
+     }
+    },
+    "3": {
+     "precinct_name": "Dearborn 3",
+     "registered_voters": 2642,
+     "ballots_cast": 1349,
+     "results": {
+      "Paul Brown (D)": 891,
+      "Amir Makled (D)": 1117,
+      "Lena Epstein (R)": 74,
+      "Michael Schostak (R)": 72,
+      "Andrew Chadderdon (L)": 14,
+      "Kyle Maas (UST)": 9
+     }
+    },
+    "4-5": {
+     "precinct_name": "Dearborn 4",
+     "registered_voters": 3321,
+     "ballots_cast": 1581,
+     "results": {
+      "Paul Brown (D)": 1050,
+      "Amir Makled (D)": 1331,
+      "Lena Epstein (R)": 48,
+      "Michael Schostak (R)": 54,
+      "Andrew Chadderdon (L)": 18,
+      "Kyle Maas (UST)": 29
+     }
+    },
+    "6": {
+     "precinct_name": "Dearborn 6",
+     "registered_voters": 2204,
+     "ballots_cast": 1141,
+     "results": {
+      "Paul Brown (D)": 701,
+      "Amir Makled (D)": 955,
+      "Lena Epstein (R)": 39,
+      "Michael Schostak (R)": 33,
+      "Andrew Chadderdon (L)": 11,
+      "Kyle Maas (UST)": 11
+     }
+    },
+    "7": {
+     "precinct_name": "Dearborn 7",
+     "registered_voters": 2775,
+     "ballots_cast": 1345,
+     "results": {
+      "Paul Brown (D)": 824,
+      "Amir Makled (D)": 1122,
+      "Lena Epstein (R)": 43,
+      "Michael Schostak (R)": 42,
+      "Andrew Chadderdon (L)": 13,
+      "Kyle Maas (UST)": 18
+     }
+    },
+    "8-9": {
+     "precinct_name": "Dearborn 8 & 9",
+     "registered_voters": 3709,
+     "ballots_cast": 1926,
+     "results": {
+      "Paul Brown (D)": 1270,
+      "Amir Makled (D)": 1631,
+      "Lena Epstein (R)": 69,
+      "Michael Schostak (R)": 68,
+      "Andrew Chadderdon (L)": 20,
+      "Kyle Maas (UST)": 13
+     }
+    },
+    "10": {
+     "precinct_name": "Dearborn 10",
+     "registered_voters": 1802,
+     "ballots_cast": 826,
+     "results": {
+      "Paul Brown (D)": 530,
+      "Amir Makled (D)": 661,
+      "Lena Epstein (R)": 53,
+      "Michael Schostak (R)": 41,
+      "Andrew Chadderdon (L)": 4,
+      "Kyle Maas (UST)": 12
+     }
+    },
+    "11-12": {
+     "precinct_name": "Dearborn 11 & 12",
+     "registered_voters": 3552,
+     "ballots_cast": 1823,
+     "results": {
+      "Paul Brown (D)": 1152,
+      "Amir Makled (D)": 1419,
+      "Lena Epstein (R)": 105,
+      "Michael Schostak (R)": 109,
+      "Andrew Chadderdon (L)": 18,
+      "Kyle Maas (UST)": 27
+     }
+    },
+    "13": {
+     "precinct_name": "Dearborn 13",
+     "registered_voters": 584,
+     "ballots_cast": 369,
+     "results": {
+      "Paul Brown (D)": 263,
+      "Amir Makled (D)": 246,
+      "Lena Epstein (R)": 86,
+      "Michael Schostak (R)": 83,
+      "Andrew Chadderdon (L)": 7,
+      "Kyle Maas (UST)": 3
+     }
+    },
+    "15-16": {
+     "precinct_name": "Dearborn 15 & 16",
+     "registered_voters": 4119,
+     "ballots_cast": 2128,
+     "results": {
+      "Paul Brown (D)": 1419,
+      "Amir Makled (D)": 1738,
+      "Lena Epstein (R)": 111,
+      "Michael Schostak (R)": 107,
+      "Andrew Chadderdon (L)": 16,
+      "Kyle Maas (UST)": 19
+     }
+    },
+    "17": {
+     "precinct_name": "Dearborn 17",
+     "registered_voters": 2489,
+     "ballots_cast": 1281,
+     "results": {
+      "Paul Brown (D)": 855,
+      "Amir Makled (D)": 1016,
+      "Lena Epstein (R)": 117,
+      "Michael Schostak (R)": 117,
+      "Andrew Chadderdon (L)": 14,
+      "Kyle Maas (UST)": 11
+     }
+    },
+    "18": {
+     "precinct_name": "Dearborn 18",
+     "registered_voters": 2904,
+     "ballots_cast": 1438,
+     "results": {
+      "Paul Brown (D)": 883,
+      "Amir Makled (D)": 1112,
+      "Lena Epstein (R)": 97,
+      "Michael Schostak (R)": 98,
+      "Andrew Chadderdon (L)": 10,
+      "Kyle Maas (UST)": 14
+     }
+    },
+    "19": {
+     "precinct_name": "Dearborn 19",
+     "registered_voters": 1684,
+     "ballots_cast": 937,
+     "results": {
+      "Paul Brown (D)": 548,
+      "Amir Makled (D)": 762,
+      "Lena Epstein (R)": 48,
+      "Michael Schostak (R)": 42,
+      "Andrew Chadderdon (L)": 7,
+      "Kyle Maas (UST)": 9
+     }
+    },
+    "20": {
+     "precinct_name": "Dearborn 20",
+     "registered_voters": 1453,
+     "ballots_cast": 677,
+     "results": {
+      "Paul Brown (D)": 398,
+      "Amir Makled (D)": 559,
+      "Lena Epstein (R)": 15,
+      "Michael Schostak (R)": 19,
+      "Andrew Chadderdon (L)": 3,
+      "Kyle Maas (UST)": 0
+     }
+    },
+    "21": {
+     "precinct_name": "Dearborn 21",
+     "registered_voters": 1878,
+     "ballots_cast": 949,
+     "results": {
+      "Paul Brown (D)": 595,
+      "Amir Makled (D)": 778,
+      "Lena Epstein (R)": 23,
+      "Michael Schostak (R)": 24,
+      "Andrew Chadderdon (L)": 10,
+      "Kyle Maas (UST)": 10
+     }
+    },
+    "22-23": {
+     "precinct_name": "Dearborn 22",
+     "registered_voters": 2287,
+     "ballots_cast": 1373,
+     "results": {
+      "Paul Brown (D)": 950,
+      "Amir Makled (D)": 1057,
+      "Lena Epstein (R)": 181,
+      "Michael Schostak (R)": 188,
+      "Andrew Chadderdon (L)": 15,
+      "Kyle Maas (UST)": 16
+     }
+    },
+    "24": {
+     "precinct_name": "Dearborn 24",
+     "registered_voters": 1116,
+     "ballots_cast": 691,
+     "results": {
+      "Paul Brown (D)": 417,
+      "Amir Makled (D)": 427,
+      "Lena Epstein (R)": 164,
+      "Michael Schostak (R)": 174,
+      "Andrew Chadderdon (L)": 13,
+      "Kyle Maas (UST)": 10
+     }
+    },
+    "25-26": {
+     "precinct_name": "Dearborn 25 & 26",
+     "registered_voters": 3750,
+     "ballots_cast": 2325,
+     "results": {
+      "Paul Brown (D)": 1397,
+      "Amir Makled (D)": 1465,
+      "Lena Epstein (R)": 544,
+      "Michael Schostak (R)": 542,
+      "Andrew Chadderdon (L)": 32,
+      "Kyle Maas (UST)": 50
+     }
+    },
+    "27": {
+     "precinct_name": "Dearborn 27",
+     "registered_voters": 1676,
+     "ballots_cast": 1027,
+     "results": {
+      "Paul Brown (D)": 610,
+      "Amir Makled (D)": 642,
+      "Lena Epstein (R)": 255,
+      "Michael Schostak (R)": 251,
+      "Andrew Chadderdon (L)": 19,
+      "Kyle Maas (UST)": 24
+     }
+    },
+    "28": {
+     "precinct_name": "Dearborn 28",
+     "registered_voters": 1052,
+     "ballots_cast": 660,
+     "results": {
+      "Paul Brown (D)": 368,
+      "Amir Makled (D)": 375,
+      "Lena Epstein (R)": 171,
+      "Michael Schostak (R)": 187,
+      "Andrew Chadderdon (L)": 19,
+      "Kyle Maas (UST)": 18
+     }
+    },
+    "29-30": {
+     "precinct_name": "Dearborn 29",
+     "registered_voters": 1974,
+     "ballots_cast": 1179,
+     "results": {
+      "Paul Brown (D)": 691,
+      "Amir Makled (D)": 689,
+      "Lena Epstein (R)": 314,
+      "Michael Schostak (R)": 320,
+      "Andrew Chadderdon (L)": 37,
+      "Kyle Maas (UST)": 17
+     }
+    },
+    "31-32": {
+     "precinct_name": "Dearborn 31 & 32",
+     "registered_voters": 3326,
+     "ballots_cast": 2076,
+     "results": {
+      "Paul Brown (D)": 1176,
+      "Amir Makled (D)": 1438,
+      "Lena Epstein (R)": 403,
+      "Michael Schostak (R)": 422,
+      "Andrew Chadderdon (L)": 34,
+      "Kyle Maas (UST)": 19
+     }
+    },
+    "33-34": {
+     "precinct_name": "Dearborn 33 & 34",
+     "registered_voters": 3192,
+     "ballots_cast": 2048,
+     "results": {
+      "Paul Brown (D)": 1185,
+      "Amir Makled (D)": 1419,
+      "Lena Epstein (R)": 352,
+      "Michael Schostak (R)": 376,
+      "Andrew Chadderdon (L)": 32,
+      "Kyle Maas (UST)": 20
+     }
+    },
+    "35-36": {
+     "precinct_name": "Dearborn 35",
+     "registered_voters": 2161,
+     "ballots_cast": 1489,
+     "results": {
+      "Paul Brown (D)": 869,
+      "Amir Makled (D)": 961,
+      "Lena Epstein (R)": 299,
+      "Michael Schostak (R)": 322,
+      "Andrew Chadderdon (L)": 28,
+      "Kyle Maas (UST)": 19
+     }
+    },
+    "37-38": {
+     "precinct_name": "Dearborn 37 & 38",
+     "registered_voters": 3505,
+     "ballots_cast": 2267,
+     "results": {
+      "Paul Brown (D)": 1307,
+      "Amir Makled (D)": 1482,
+      "Lena Epstein (R)": 487,
+      "Michael Schostak (R)": 500,
+      "Andrew Chadderdon (L)": 47,
+      "Kyle Maas (UST)": 36
+     }
+    },
+    "40-41": {
+     "precinct_name": "Dearborn 40 & 41",
+     "registered_voters": 2871,
+     "ballots_cast": 1951,
+     "results": {
+      "Paul Brown (D)": 1064,
+      "Amir Makled (D)": 1301,
+      "Lena Epstein (R)": 424,
+      "Michael Schostak (R)": 442,
+      "Andrew Chadderdon (L)": 31,
+      "Kyle Maas (UST)": 28
+     }
+    },
+    "42-43": {
+     "precinct_name": "Dearborn 42",
+     "registered_voters": 2657,
+     "ballots_cast": 1749,
+     "results": {
+      "Paul Brown (D)": 993,
+      "Amir Makled (D)": 1132,
+      "Lena Epstein (R)": 378,
+      "Michael Schostak (R)": 407,
+      "Andrew Chadderdon (L)": 32,
+      "Kyle Maas (UST)": 31
+     }
+    },
+    "44": {
+     "precinct_name": "Dearborn 44",
+     "registered_voters": 1484,
+     "ballots_cast": 1057,
+     "results": {
+      "Paul Brown (D)": 606,
+      "Amir Makled (D)": 596,
+      "Lena Epstein (R)": 280,
+      "Michael Schostak (R)": 277,
+      "Andrew Chadderdon (L)": 29,
+      "Kyle Maas (UST)": 18
+     }
+    },
+    "45": {
+     "precinct_name": "Dearborn 45",
+     "registered_voters": 1798,
+     "ballots_cast": 1136,
+     "results": {
+      "Paul Brown (D)": 671,
+      "Amir Makled (D)": 685,
+      "Lena Epstein (R)": 275,
+      "Michael Schostak (R)": 286,
+      "Andrew Chadderdon (L)": 30,
+      "Kyle Maas (UST)": 14
+     }
+    },
+    "46": {
+     "precinct_name": "Dearborn 46",
+     "registered_voters": 1741,
+     "ballots_cast": 1076,
+     "results": {
+      "Paul Brown (D)": 638,
+      "Amir Makled (D)": 652,
+      "Lena Epstein (R)": 270,
+      "Michael Schostak (R)": 266,
+      "Andrew Chadderdon (L)": 21,
+      "Kyle Maas (UST)": 20
+     }
+    },
+    "47-48": {
+     "precinct_name": "Dearborn 47",
+     "registered_voters": 2446,
+     "ballots_cast": 1531,
+     "results": {
+      "Paul Brown (D)": 852,
+      "Amir Makled (D)": 860,
+      "Lena Epstein (R)": 442,
+      "Michael Schostak (R)": 461,
+      "Andrew Chadderdon (L)": 35,
+      "Kyle Maas (UST)": 28
+     }
+    },
+    "49-50": {
+     "precinct_name": "Dearborn 49 & 50",
+     "registered_voters": 3593,
+     "ballots_cast": 2011,
+     "results": {
+      "Paul Brown (D)": 1165,
+      "Amir Makled (D)": 1149,
+      "Lena Epstein (R)": 546,
+      "Michael Schostak (R)": 558,
+      "Andrew Chadderdon (L)": 60,
+      "Kyle Maas (UST)": 48
+     }
+    }
+   }
+  },
+  "msu_trustees": {
+   "race_name": "MSU Board of Trustees",
+   "category": "Education Boards",
+   "seats": 2,
+   "candidates": [
+    "Brianna Scott (D)",
+    "Kelly Tebay Zemke (D)",
+    "Julie Maday (R)",
+    "Roger Victory (R)",
+    "Daniel R. Patterson (L)",
+    "Will Tyler White (L)",
+    "Janet Sanger (UST)",
+    "John Sanger (UST)",
+    "John Anthony La Pietra (G)",
+    "Yaz Ozbek (WCP)"
+   ],
+   "colors": {
+    "Brianna Scott (D)": "#2563eb",
+    "Kelly Tebay Zemke (D)": "#60a5fa",
+    "Julie Maday (R)": "#dc2626",
+    "Roger Victory (R)": "#f87171",
+    "Daniel R. Patterson (L)": "#eab308",
+    "Will Tyler White (L)": "#fde047",
+    "Janet Sanger (UST)": "#7c3aed",
+    "John Sanger (UST)": "#a78bfa",
+    "John Anthony La Pietra (G)": "#16a34a",
+    "Yaz Ozbek (WCP)": "#ea580c"
+   },
+   "precincts": {
+    "1": {
+     "precinct_name": "Dearborn 1",
+     "registered_voters": 1990,
+     "ballots_cast": 1079,
+     "results": {
+      "Brianna Scott (D)": 755,
+      "Kelly Tebay Zemke (D)": 662,
+      "Julie Maday (R)": 42,
+      "Roger Victory (R)": 37,
+      "Daniel R. Patterson (L)": 10,
+      "Will Tyler White (L)": 5,
+      "Janet Sanger (UST)": 5,
+      "John Sanger (UST)": 10,
+      "John Anthony La Pietra (G)": 10,
+      "Yaz Ozbek (WCP)": 29
+     }
+    },
+    "2": {
+     "precinct_name": "Dearborn 2",
+     "registered_voters": 2132,
+     "ballots_cast": 965,
+     "results": {
+      "Brianna Scott (D)": 640,
+      "Kelly Tebay Zemke (D)": 583,
+      "Julie Maday (R)": 42,
+      "Roger Victory (R)": 33,
+      "Daniel R. Patterson (L)": 12,
+      "Will Tyler White (L)": 6,
+      "Janet Sanger (UST)": 3,
+      "John Sanger (UST)": 2,
+      "John Anthony La Pietra (G)": 23,
+      "Yaz Ozbek (WCP)": 23
+     }
+    },
+    "3": {
+     "precinct_name": "Dearborn 3",
+     "registered_voters": 2642,
+     "ballots_cast": 1349,
+     "results": {
+      "Brianna Scott (D)": 966,
+      "Kelly Tebay Zemke (D)": 913,
+      "Julie Maday (R)": 74,
+      "Roger Victory (R)": 70,
+      "Daniel R. Patterson (L)": 9,
+      "Will Tyler White (L)": 8,
+      "Janet Sanger (UST)": 6,
+      "John Sanger (UST)": 7,
+      "John Anthony La Pietra (G)": 13,
+      "Yaz Ozbek (WCP)": 30
+     }
+    },
+    "4-5": {
+     "precinct_name": "Dearborn 4",
+     "registered_voters": 3321,
+     "ballots_cast": 1581,
+     "results": {
+      "Brianna Scott (D)": 1136,
+      "Kelly Tebay Zemke (D)": 1009,
+      "Julie Maday (R)": 54,
+      "Roger Victory (R)": 58,
+      "Daniel R. Patterson (L)": 15,
+      "Will Tyler White (L)": 13,
+      "Janet Sanger (UST)": 10,
+      "John Sanger (UST)": 8,
+      "John Anthony La Pietra (G)": 39,
+      "Yaz Ozbek (WCP)": 44
+     }
+    },
+    "6": {
+     "precinct_name": "Dearborn 6",
+     "registered_voters": 2204,
+     "ballots_cast": 1141,
+     "results": {
+      "Brianna Scott (D)": 774,
+      "Kelly Tebay Zemke (D)": 707,
+      "Julie Maday (R)": 36,
+      "Roger Victory (R)": 29,
+      "Daniel R. Patterson (L)": 7,
+      "Will Tyler White (L)": 8,
+      "Janet Sanger (UST)": 8,
+      "John Sanger (UST)": 9,
+      "John Anthony La Pietra (G)": 21,
+      "Yaz Ozbek (WCP)": 27
+     }
+    },
+    "7": {
+     "precinct_name": "Dearborn 7",
+     "registered_voters": 2775,
+     "ballots_cast": 1345,
+     "results": {
+      "Brianna Scott (D)": 941,
+      "Kelly Tebay Zemke (D)": 819,
+      "Julie Maday (R)": 57,
+      "Roger Victory (R)": 48,
+      "Daniel R. Patterson (L)": 13,
+      "Will Tyler White (L)": 7,
+      "Janet Sanger (UST)": 5,
+      "John Sanger (UST)": 6,
+      "John Anthony La Pietra (G)": 26,
+      "Yaz Ozbek (WCP)": 38
+     }
+    },
+    "8-9": {
+     "precinct_name": "Dearborn 8 & 9",
+     "registered_voters": 3709,
+     "ballots_cast": 1926,
+     "results": {
+      "Brianna Scott (D)": 1402,
+      "Kelly Tebay Zemke (D)": 1240,
+      "Julie Maday (R)": 78,
+      "Roger Victory (R)": 61,
+      "Daniel R. Patterson (L)": 12,
+      "Will Tyler White (L)": 11,
+      "Janet Sanger (UST)": 13,
+      "John Sanger (UST)": 10,
+      "John Anthony La Pietra (G)": 34,
+      "Yaz Ozbek (WCP)": 57
+     }
+    },
+    "10": {
+     "precinct_name": "Dearborn 10",
+     "registered_voters": 1802,
+     "ballots_cast": 826,
+     "results": {
+      "Brianna Scott (D)": 564,
+      "Kelly Tebay Zemke (D)": 522,
+      "Julie Maday (R)": 47,
+      "Roger Victory (R)": 44,
+      "Daniel R. Patterson (L)": 6,
+      "Will Tyler White (L)": 5,
+      "Janet Sanger (UST)": 8,
+      "John Sanger (UST)": 6,
+      "John Anthony La Pietra (G)": 8,
+      "Yaz Ozbek (WCP)": 26
+     }
+    },
+    "11-12": {
+     "precinct_name": "Dearborn 11 & 12",
+     "registered_voters": 3552,
+     "ballots_cast": 1823,
+     "results": {
+      "Brianna Scott (D)": 1246,
+      "Kelly Tebay Zemke (D)": 1125,
+      "Julie Maday (R)": 103,
+      "Roger Victory (R)": 104,
+      "Daniel R. Patterson (L)": 12,
+      "Will Tyler White (L)": 13,
+      "Janet Sanger (UST)": 12,
+      "John Sanger (UST)": 9,
+      "John Anthony La Pietra (G)": 34,
+      "Yaz Ozbek (WCP)": 60
+     }
+    },
+    "13": {
+     "precinct_name": "Dearborn 13",
+     "registered_voters": 584,
+     "ballots_cast": 369,
+     "results": {
+      "Brianna Scott (D)": 263,
+      "Kelly Tebay Zemke (D)": 255,
+      "Julie Maday (R)": 78,
+      "Roger Victory (R)": 76,
+      "Daniel R. Patterson (L)": 6,
+      "Will Tyler White (L)": 4,
+      "Janet Sanger (UST)": 1,
+      "John Sanger (UST)": 1,
+      "John Anthony La Pietra (G)": 1,
+      "Yaz Ozbek (WCP)": 3
+     }
+    },
+    "15-16": {
+     "precinct_name": "Dearborn 15 & 16",
+     "registered_voters": 4119,
+     "ballots_cast": 2128,
+     "results": {
+      "Brianna Scott (D)": 1528,
+      "Kelly Tebay Zemke (D)": 1365,
+      "Julie Maday (R)": 123,
+      "Roger Victory (R)": 106,
+      "Daniel R. Patterson (L)": 21,
+      "Will Tyler White (L)": 6,
+      "Janet Sanger (UST)": 11,
+      "John Sanger (UST)": 9,
+      "John Anthony La Pietra (G)": 41,
+      "Yaz Ozbek (WCP)": 42
+     }
+    },
+    "17": {
+     "precinct_name": "Dearborn 17",
+     "registered_voters": 2489,
+     "ballots_cast": 1281,
+     "results": {
+      "Brianna Scott (D)": 902,
+      "Kelly Tebay Zemke (D)": 824,
+      "Julie Maday (R)": 122,
+      "Roger Victory (R)": 108,
+      "Daniel R. Patterson (L)": 9,
+      "Will Tyler White (L)": 8,
+      "Janet Sanger (UST)": 10,
+      "John Sanger (UST)": 5,
+      "John Anthony La Pietra (G)": 20,
+      "Yaz Ozbek (WCP)": 33
+     }
+    },
+    "18": {
+     "precinct_name": "Dearborn 18",
+     "registered_voters": 2904,
+     "ballots_cast": 1438,
+     "results": {
+      "Brianna Scott (D)": 983,
+      "Kelly Tebay Zemke (D)": 855,
+      "Julie Maday (R)": 106,
+      "Roger Victory (R)": 88,
+      "Daniel R. Patterson (L)": 10,
+      "Will Tyler White (L)": 6,
+      "Janet Sanger (UST)": 16,
+      "John Sanger (UST)": 4,
+      "John Anthony La Pietra (G)": 21,
+      "Yaz Ozbek (WCP)": 42
+     }
+    },
+    "19": {
+     "precinct_name": "Dearborn 19",
+     "registered_voters": 1684,
+     "ballots_cast": 937,
+     "results": {
+      "Brianna Scott (D)": 641,
+      "Kelly Tebay Zemke (D)": 603,
+      "Julie Maday (R)": 45,
+      "Roger Victory (R)": 41,
+      "Daniel R. Patterson (L)": 11,
+      "Will Tyler White (L)": 2,
+      "Janet Sanger (UST)": 6,
+      "John Sanger (UST)": 6,
+      "John Anthony La Pietra (G)": 18,
+      "Yaz Ozbek (WCP)": 21
+     }
+    },
+    "20": {
+     "precinct_name": "Dearborn 20",
+     "registered_voters": 1453,
+     "ballots_cast": 677,
+     "results": {
+      "Brianna Scott (D)": 485,
+      "Kelly Tebay Zemke (D)": 408,
+      "Julie Maday (R)": 20,
+      "Roger Victory (R)": 18,
+      "Daniel R. Patterson (L)": 4,
+      "Will Tyler White (L)": 1,
+      "Janet Sanger (UST)": 4,
+      "John Sanger (UST)": 6,
+      "John Anthony La Pietra (G)": 7,
+      "Yaz Ozbek (WCP)": 11
+     }
+    },
+    "21": {
+     "precinct_name": "Dearborn 21",
+     "registered_voters": 1878,
+     "ballots_cast": 949,
+     "results": {
+      "Brianna Scott (D)": 667,
+      "Kelly Tebay Zemke (D)": 609,
+      "Julie Maday (R)": 27,
+      "Roger Victory (R)": 26,
+      "Daniel R. Patterson (L)": 7,
+      "Will Tyler White (L)": 6,
+      "Janet Sanger (UST)": 5,
+      "John Sanger (UST)": 4,
+      "John Anthony La Pietra (G)": 8,
+      "Yaz Ozbek (WCP)": 21
+     }
+    },
+    "22-23": {
+     "precinct_name": "Dearborn 22",
+     "registered_voters": 2287,
+     "ballots_cast": 1373,
+     "results": {
+      "Brianna Scott (D)": 992,
+      "Kelly Tebay Zemke (D)": 912,
+      "Julie Maday (R)": 183,
+      "Roger Victory (R)": 179,
+      "Daniel R. Patterson (L)": 5,
+      "Will Tyler White (L)": 3,
+      "Janet Sanger (UST)": 9,
+      "John Sanger (UST)": 9,
+      "John Anthony La Pietra (G)": 29,
+      "Yaz Ozbek (WCP)": 38
+     }
+    },
+    "24": {
+     "precinct_name": "Dearborn 24",
+     "registered_voters": 1116,
+     "ballots_cast": 691,
+     "results": {
+      "Brianna Scott (D)": 414,
+      "Kelly Tebay Zemke (D)": 387,
+      "Julie Maday (R)": 156,
+      "Roger Victory (R)": 161,
+      "Daniel R. Patterson (L)": 11,
+      "Will Tyler White (L)": 4,
+      "Janet Sanger (UST)": 7,
+      "John Sanger (UST)": 7,
+      "John Anthony La Pietra (G)": 11,
+      "Yaz Ozbek (WCP)": 19
+     }
+    },
+    "25-26": {
+     "precinct_name": "Dearborn 25 & 26",
+     "registered_voters": 3750,
+     "ballots_cast": 2325,
+     "results": {
+      "Brianna Scott (D)": 1386,
+      "Kelly Tebay Zemke (D)": 1327,
+      "Julie Maday (R)": 546,
+      "Roger Victory (R)": 525,
+      "Daniel R. Patterson (L)": 24,
+      "Will Tyler White (L)": 18,
+      "Janet Sanger (UST)": 26,
+      "John Sanger (UST)": 21,
+      "John Anthony La Pietra (G)": 45,
+      "Yaz Ozbek (WCP)": 54
+     }
+    },
+    "27": {
+     "precinct_name": "Dearborn 27",
+     "registered_voters": 1676,
+     "ballots_cast": 1027,
+     "results": {
+      "Brianna Scott (D)": 608,
+      "Kelly Tebay Zemke (D)": 579,
+      "Julie Maday (R)": 249,
+      "Roger Victory (R)": 250,
+      "Daniel R. Patterson (L)": 17,
+      "Will Tyler White (L)": 7,
+      "Janet Sanger (UST)": 9,
+      "John Sanger (UST)": 6,
+      "John Anthony La Pietra (G)": 20,
+      "Yaz Ozbek (WCP)": 26
+     }
+    },
+    "28": {
+     "precinct_name": "Dearborn 28",
+     "registered_voters": 1052,
+     "ballots_cast": 660,
+     "results": {
+      "Brianna Scott (D)": 374,
+      "Kelly Tebay Zemke (D)": 364,
+      "Julie Maday (R)": 174,
+      "Roger Victory (R)": 179,
+      "Daniel R. Patterson (L)": 5,
+      "Will Tyler White (L)": 6,
+      "Janet Sanger (UST)": 6,
+      "John Sanger (UST)": 7,
+      "John Anthony La Pietra (G)": 6,
+      "Yaz Ozbek (WCP)": 23
+     }
+    },
+    "29-30": {
+     "precinct_name": "Dearborn 29",
+     "registered_voters": 1974,
+     "ballots_cast": 1179,
+     "results": {
+      "Brianna Scott (D)": 687,
+      "Kelly Tebay Zemke (D)": 639,
+      "Julie Maday (R)": 318,
+      "Roger Victory (R)": 301,
+      "Daniel R. Patterson (L)": 25,
+      "Will Tyler White (L)": 19,
+      "Janet Sanger (UST)": 12,
+      "John Sanger (UST)": 5,
+      "John Anthony La Pietra (G)": 21,
+      "Yaz Ozbek (WCP)": 27
+     }
+    },
+    "31-32": {
+     "precinct_name": "Dearborn 31 & 32",
+     "registered_voters": 3326,
+     "ballots_cast": 2076,
+     "results": {
+      "Brianna Scott (D)": 1182,
+      "Kelly Tebay Zemke (D)": 1132,
+      "Julie Maday (R)": 409,
+      "Roger Victory (R)": 422,
+      "Daniel R. Patterson (L)": 26,
+      "Will Tyler White (L)": 29,
+      "Janet Sanger (UST)": 16,
+      "John Sanger (UST)": 10,
+      "John Anthony La Pietra (G)": 56,
+      "Yaz Ozbek (WCP)": 39
+     }
+    },
+    "33-34": {
+     "precinct_name": "Dearborn 33 & 34",
+     "registered_voters": 3192,
+     "ballots_cast": 2048,
+     "results": {
+      "Brianna Scott (D)": 1211,
+      "Kelly Tebay Zemke (D)": 1158,
+      "Julie Maday (R)": 362,
+      "Roger Victory (R)": 357,
+      "Daniel R. Patterson (L)": 15,
+      "Will Tyler White (L)": 22,
+      "Janet Sanger (UST)": 14,
+      "John Sanger (UST)": 7,
+      "John Anthony La Pietra (G)": 49,
+      "Yaz Ozbek (WCP)": 53
+     }
+    },
+    "35-36": {
+     "precinct_name": "Dearborn 35",
+     "registered_voters": 2161,
+     "ballots_cast": 1489,
+     "results": {
+      "Brianna Scott (D)": 865,
+      "Kelly Tebay Zemke (D)": 817,
+      "Julie Maday (R)": 307,
+      "Roger Victory (R)": 301,
+      "Daniel R. Patterson (L)": 31,
+      "Will Tyler White (L)": 14,
+      "Janet Sanger (UST)": 17,
+      "John Sanger (UST)": 10,
+      "John Anthony La Pietra (G)": 26,
+      "Yaz Ozbek (WCP)": 29
+     }
+    },
+    "37-38": {
+     "precinct_name": "Dearborn 37 & 38",
+     "registered_voters": 3505,
+     "ballots_cast": 2267,
+     "results": {
+      "Brianna Scott (D)": 1327,
+      "Kelly Tebay Zemke (D)": 1263,
+      "Julie Maday (R)": 495,
+      "Roger Victory (R)": 488,
+      "Daniel R. Patterson (L)": 32,
+      "Will Tyler White (L)": 18,
+      "Janet Sanger (UST)": 16,
+      "John Sanger (UST)": 11,
+      "John Anthony La Pietra (G)": 32,
+      "Yaz Ozbek (WCP)": 40
+     }
+    },
+    "40-41": {
+     "precinct_name": "Dearborn 40 & 41",
+     "registered_voters": 2871,
+     "ballots_cast": 1951,
+     "results": {
+      "Brianna Scott (D)": 1084,
+      "Kelly Tebay Zemke (D)": 1046,
+      "Julie Maday (R)": 444,
+      "Roger Victory (R)": 439,
+      "Daniel R. Patterson (L)": 26,
+      "Will Tyler White (L)": 16,
+      "Janet Sanger (UST)": 8,
+      "John Sanger (UST)": 14,
+      "John Anthony La Pietra (G)": 53,
+      "Yaz Ozbek (WCP)": 36
+     }
+    },
+    "42-43": {
+     "precinct_name": "Dearborn 42",
+     "registered_voters": 2657,
+     "ballots_cast": 1749,
+     "results": {
+      "Brianna Scott (D)": 1022,
+      "Kelly Tebay Zemke (D)": 984,
+      "Julie Maday (R)": 381,
+      "Roger Victory (R)": 386,
+      "Daniel R. Patterson (L)": 27,
+      "Will Tyler White (L)": 11,
+      "Janet Sanger (UST)": 15,
+      "John Sanger (UST)": 8,
+      "John Anthony La Pietra (G)": 33,
+      "Yaz Ozbek (WCP)": 38
+     }
+    },
+    "44": {
+     "precinct_name": "Dearborn 44",
+     "registered_voters": 1484,
+     "ballots_cast": 1057,
+     "results": {
+      "Brianna Scott (D)": 599,
+      "Kelly Tebay Zemke (D)": 582,
+      "Julie Maday (R)": 271,
+      "Roger Victory (R)": 263,
+      "Daniel R. Patterson (L)": 16,
+      "Will Tyler White (L)": 12,
+      "Janet Sanger (UST)": 9,
+      "John Sanger (UST)": 9,
+      "John Anthony La Pietra (G)": 23,
+      "Yaz Ozbek (WCP)": 19
+     }
+    },
+    "45": {
+     "precinct_name": "Dearborn 45",
+     "registered_voters": 1798,
+     "ballots_cast": 1136,
+     "results": {
+      "Brianna Scott (D)": 661,
+      "Kelly Tebay Zemke (D)": 632,
+      "Julie Maday (R)": 278,
+      "Roger Victory (R)": 272,
+      "Daniel R. Patterson (L)": 22,
+      "Will Tyler White (L)": 7,
+      "Janet Sanger (UST)": 12,
+      "John Sanger (UST)": 9,
+      "John Anthony La Pietra (G)": 19,
+      "Yaz Ozbek (WCP)": 22
+     }
+    },
+    "46": {
+     "precinct_name": "Dearborn 46",
+     "registered_voters": 1741,
+     "ballots_cast": 1076,
+     "results": {
+      "Brianna Scott (D)": 632,
+      "Kelly Tebay Zemke (D)": 604,
+      "Julie Maday (R)": 264,
+      "Roger Victory (R)": 260,
+      "Daniel R. Patterson (L)": 14,
+      "Will Tyler White (L)": 11,
+      "Janet Sanger (UST)": 13,
+      "John Sanger (UST)": 5,
+      "John Anthony La Pietra (G)": 21,
+      "Yaz Ozbek (WCP)": 30
+     }
+    },
+    "47-48": {
+     "precinct_name": "Dearborn 47",
+     "registered_voters": 2446,
+     "ballots_cast": 1531,
+     "results": {
+      "Brianna Scott (D)": 840,
+      "Kelly Tebay Zemke (D)": 788,
+      "Julie Maday (R)": 443,
+      "Roger Victory (R)": 434,
+      "Daniel R. Patterson (L)": 24,
+      "Will Tyler White (L)": 17,
+      "Janet Sanger (UST)": 15,
+      "John Sanger (UST)": 6,
+      "John Anthony La Pietra (G)": 26,
+      "Yaz Ozbek (WCP)": 44
+     }
+    },
+    "49-50": {
+     "precinct_name": "Dearborn 49 & 50",
+     "registered_voters": 3593,
+     "ballots_cast": 2011,
+     "results": {
+      "Brianna Scott (D)": 1156,
+      "Kelly Tebay Zemke (D)": 1075,
+      "Julie Maday (R)": 545,
+      "Roger Victory (R)": 547,
+      "Daniel R. Patterson (L)": 27,
+      "Will Tyler White (L)": 36,
+      "Janet Sanger (UST)": 31,
+      "John Sanger (UST)": 25,
+      "John Anthony La Pietra (G)": 42,
+      "Yaz Ozbek (WCP)": 46
+     }
+    }
+   }
+  },
+  "wsu_governors": {
+   "race_name": "WSU Board of Governors",
+   "category": "Education Boards",
+   "seats": 2,
+   "candidates": [
+    "Shereef Akeel (D)",
+    "Richard Mack (D)",
+    "Andy Anuzis (R)",
+    "Christa Murphy (R)",
+    "Alex Avery (L)",
+    "Jami Van Alstine (L)",
+    "Jeff McDonald (UST)",
+    "Paul M. Ragan (G)",
+    "Suzanne Roehrig (WCP)",
+    "Kathleen Oakford (NLP)"
+   ],
+   "colors": {
+    "Shereef Akeel (D)": "#2563eb",
+    "Richard Mack (D)": "#60a5fa",
+    "Andy Anuzis (R)": "#dc2626",
+    "Christa Murphy (R)": "#f87171",
+    "Alex Avery (L)": "#eab308",
+    "Jami Van Alstine (L)": "#fde047",
+    "Jeff McDonald (UST)": "#7c3aed",
+    "Paul M. Ragan (G)": "#16a34a",
+    "Suzanne Roehrig (WCP)": "#ea580c",
+    "Kathleen Oakford (NLP)": "#0d9488"
+   },
+   "precincts": {
+    "1": {
+     "precinct_name": "Dearborn 1",
+     "registered_voters": 1990,
+     "ballots_cast": 1079,
+     "results": {
+      "Shereef Akeel (D)": 889,
+      "Richard Mack (D)": 742,
+      "Andy Anuzis (R)": 37,
+      "Christa Murphy (R)": 34,
+      "Alex Avery (L)": 4,
+      "Jami Van Alstine (L)": 2,
+      "Jeff McDonald (UST)": 3,
+      "Paul M. Ragan (G)": 10,
+      "Suzanne Roehrig (WCP)": 9,
+      "Kathleen Oakford (NLP)": 7
+     }
+    },
+    "2": {
+     "precinct_name": "Dearborn 2",
+     "registered_voters": 2132,
+     "ballots_cast": 965,
+     "results": {
+      "Shereef Akeel (D)": 760,
+      "Richard Mack (D)": 627,
+      "Andy Anuzis (R)": 37,
+      "Christa Murphy (R)": 36,
+      "Alex Avery (L)": 4,
+      "Jami Van Alstine (L)": 5,
+      "Jeff McDonald (UST)": 6,
+      "Paul M. Ragan (G)": 9,
+      "Suzanne Roehrig (WCP)": 13,
+      "Kathleen Oakford (NLP)": 4
+     }
+    },
+    "3": {
+     "precinct_name": "Dearborn 3",
+     "registered_voters": 2642,
+     "ballots_cast": 1349,
+     "results": {
+      "Shereef Akeel (D)": 1094,
+      "Richard Mack (D)": 942,
+      "Andy Anuzis (R)": 67,
+      "Christa Murphy (R)": 68,
+      "Alex Avery (L)": 7,
+      "Jami Van Alstine (L)": 6,
+      "Jeff McDonald (UST)": 9,
+      "Paul M. Ragan (G)": 12,
+      "Suzanne Roehrig (WCP)": 10,
+      "Kathleen Oakford (NLP)": 6
+     }
+    },
+    "4-5": {
+     "precinct_name": "Dearborn 4",
+     "registered_voters": 3321,
+     "ballots_cast": 1581,
+     "results": {
+      "Shereef Akeel (D)": 1300,
+      "Richard Mack (D)": 1115,
+      "Andy Anuzis (R)": 49,
+      "Christa Murphy (R)": 51,
+      "Alex Avery (L)": 9,
+      "Jami Van Alstine (L)": 4,
+      "Jeff McDonald (UST)": 9,
+      "Paul M. Ragan (G)": 21,
+      "Suzanne Roehrig (WCP)": 27,
+      "Kathleen Oakford (NLP)": 10
+     }
+    },
+    "6": {
+     "precinct_name": "Dearborn 6",
+     "registered_voters": 2204,
+     "ballots_cast": 1141,
+     "results": {
+      "Shereef Akeel (D)": 959,
+      "Richard Mack (D)": 743,
+      "Andy Anuzis (R)": 30,
+      "Christa Murphy (R)": 35,
+      "Alex Avery (L)": 5,
+      "Jami Van Alstine (L)": 4,
+      "Jeff McDonald (UST)": 7,
+      "Paul M. Ragan (G)": 12,
+      "Suzanne Roehrig (WCP)": 5,
+      "Kathleen Oakford (NLP)": 4
+     }
+    },
+    "7": {
+     "precinct_name": "Dearborn 7",
+     "registered_voters": 2775,
+     "ballots_cast": 1345,
+     "results": {
+      "Shereef Akeel (D)": 1103,
+      "Richard Mack (D)": 906,
+      "Andy Anuzis (R)": 49,
+      "Christa Murphy (R)": 48,
+      "Alex Avery (L)": 4,
+      "Jami Van Alstine (L)": 4,
+      "Jeff McDonald (UST)": 4,
+      "Paul M. Ragan (G)": 16,
+      "Suzanne Roehrig (WCP)": 18,
+      "Kathleen Oakford (NLP)": 3
+     }
+    },
+    "8-9": {
+     "precinct_name": "Dearborn 8 & 9",
+     "registered_voters": 3709,
+     "ballots_cast": 1926,
+     "results": {
+      "Shereef Akeel (D)": 1619,
+      "Richard Mack (D)": 1348,
+      "Andy Anuzis (R)": 66,
+      "Christa Murphy (R)": 64,
+      "Alex Avery (L)": 12,
+      "Jami Van Alstine (L)": 4,
+      "Jeff McDonald (UST)": 12,
+      "Paul M. Ragan (G)": 22,
+      "Suzanne Roehrig (WCP)": 28,
+      "Kathleen Oakford (NLP)": 5
+     }
+    },
+    "10": {
+     "precinct_name": "Dearborn 10",
+     "registered_voters": 1802,
+     "ballots_cast": 826,
+     "results": {
+      "Shereef Akeel (D)": 644,
+      "Richard Mack (D)": 540,
+      "Andy Anuzis (R)": 45,
+      "Christa Murphy (R)": 47,
+      "Alex Avery (L)": 5,
+      "Jami Van Alstine (L)": 1,
+      "Jeff McDonald (UST)": 7,
+      "Paul M. Ragan (G)": 5,
+      "Suzanne Roehrig (WCP)": 21,
+      "Kathleen Oakford (NLP)": 2
+     }
+    },
+    "11-12": {
+     "precinct_name": "Dearborn 11 & 12",
+     "registered_voters": 3552,
+     "ballots_cast": 1823,
+     "results": {
+      "Shereef Akeel (D)": 1417,
+      "Richard Mack (D)": 1199,
+      "Andy Anuzis (R)": 103,
+      "Christa Murphy (R)": 108,
+      "Alex Avery (L)": 8,
+      "Jami Van Alstine (L)": 5,
+      "Jeff McDonald (UST)": 11,
+      "Paul M. Ragan (G)": 24,
+      "Suzanne Roehrig (WCP)": 26,
+      "Kathleen Oakford (NLP)": 8
+     }
+    },
+    "13": {
+     "precinct_name": "Dearborn 13",
+     "registered_voters": 584,
+     "ballots_cast": 369,
+     "results": {
+      "Shereef Akeel (D)": 252,
+      "Richard Mack (D)": 261,
+      "Andy Anuzis (R)": 73,
+      "Christa Murphy (R)": 84,
+      "Alex Avery (L)": 4,
+      "Jami Van Alstine (L)": 4,
+      "Jeff McDonald (UST)": 2,
+      "Paul M. Ragan (G)": 2,
+      "Suzanne Roehrig (WCP)": 4,
+      "Kathleen Oakford (NLP)": 4
+     }
+    },
+    "15-16": {
+     "precinct_name": "Dearborn 15 & 16",
+     "registered_voters": 4119,
+     "ballots_cast": 2128,
+     "results": {
+      "Shereef Akeel (D)": 1717,
+      "Richard Mack (D)": 1478,
+      "Andy Anuzis (R)": 99,
+      "Christa Murphy (R)": 101,
+      "Alex Avery (L)": 11,
+      "Jami Van Alstine (L)": 9,
+      "Jeff McDonald (UST)": 14,
+      "Paul M. Ragan (G)": 25,
+      "Suzanne Roehrig (WCP)": 26,
+      "Kathleen Oakford (NLP)": 14
+     }
+    },
+    "17": {
+     "precinct_name": "Dearborn 17",
+     "registered_voters": 2489,
+     "ballots_cast": 1281,
+     "results": {
+      "Shereef Akeel (D)": 991,
+      "Richard Mack (D)": 866,
+      "Andy Anuzis (R)": 113,
+      "Christa Murphy (R)": 114,
+      "Alex Avery (L)": 4,
+      "Jami Van Alstine (L)": 3,
+      "Jeff McDonald (UST)": 7,
+      "Paul M. Ragan (G)": 15,
+      "Suzanne Roehrig (WCP)": 24,
+      "Kathleen Oakford (NLP)": 4
+     }
+    },
+    "18": {
+     "precinct_name": "Dearborn 18",
+     "registered_voters": 2904,
+     "ballots_cast": 1438,
+     "results": {
+      "Shereef Akeel (D)": 1104,
+      "Richard Mack (D)": 923,
+      "Andy Anuzis (R)": 98,
+      "Christa Murphy (R)": 92,
+      "Alex Avery (L)": 4,
+      "Jami Van Alstine (L)": 1,
+      "Jeff McDonald (UST)": 7,
+      "Paul M. Ragan (G)": 18,
+      "Suzanne Roehrig (WCP)": 22,
+      "Kathleen Oakford (NLP)": 10
+     }
+    },
+    "19": {
+     "precinct_name": "Dearborn 19",
+     "registered_voters": 1684,
+     "ballots_cast": 937,
+     "results": {
+      "Shereef Akeel (D)": 745,
+      "Richard Mack (D)": 627,
+      "Andy Anuzis (R)": 39,
+      "Christa Murphy (R)": 42,
+      "Alex Avery (L)": 4,
+      "Jami Van Alstine (L)": 2,
+      "Jeff McDonald (UST)": 5,
+      "Paul M. Ragan (G)": 12,
+      "Suzanne Roehrig (WCP)": 18,
+      "Kathleen Oakford (NLP)": 5
+     }
+    },
+    "20": {
+     "precinct_name": "Dearborn 20",
+     "registered_voters": 1453,
+     "ballots_cast": 677,
+     "results": {
+      "Shereef Akeel (D)": 563,
+      "Richard Mack (D)": 468,
+      "Andy Anuzis (R)": 16,
+      "Christa Murphy (R)": 17,
+      "Alex Avery (L)": 1,
+      "Jami Van Alstine (L)": 0,
+      "Jeff McDonald (UST)": 0,
+      "Paul M. Ragan (G)": 2,
+      "Suzanne Roehrig (WCP)": 4,
+      "Kathleen Oakford (NLP)": 3
+     }
+    },
+    "21": {
+     "precinct_name": "Dearborn 21",
+     "registered_voters": 1878,
+     "ballots_cast": 949,
+     "results": {
+      "Shereef Akeel (D)": 766,
+      "Richard Mack (D)": 642,
+      "Andy Anuzis (R)": 27,
+      "Christa Murphy (R)": 27,
+      "Alex Avery (L)": 2,
+      "Jami Van Alstine (L)": 4,
+      "Jeff McDonald (UST)": 8,
+      "Paul M. Ragan (G)": 6,
+      "Suzanne Roehrig (WCP)": 15,
+      "Kathleen Oakford (NLP)": 3
+     }
+    },
+    "22-23": {
+     "precinct_name": "Dearborn 22",
+     "registered_voters": 2287,
+     "ballots_cast": 1373,
+     "results": {
+      "Shereef Akeel (D)": 1034,
+      "Richard Mack (D)": 931,
+      "Andy Anuzis (R)": 175,
+      "Christa Murphy (R)": 176,
+      "Alex Avery (L)": 6,
+      "Jami Van Alstine (L)": 9,
+      "Jeff McDonald (UST)": 8,
+      "Paul M. Ragan (G)": 29,
+      "Suzanne Roehrig (WCP)": 31,
+      "Kathleen Oakford (NLP)": 5
+     }
+    },
+    "24": {
+     "precinct_name": "Dearborn 24",
+     "registered_voters": 1116,
+     "ballots_cast": 691,
+     "results": {
+      "Shereef Akeel (D)": 413,
+      "Richard Mack (D)": 413,
+      "Andy Anuzis (R)": 153,
+      "Christa Murphy (R)": 165,
+      "Alex Avery (L)": 9,
+      "Jami Van Alstine (L)": 6,
+      "Jeff McDonald (UST)": 5,
+      "Paul M. Ragan (G)": 9,
+      "Suzanne Roehrig (WCP)": 17,
+      "Kathleen Oakford (NLP)": 4
+     }
+    },
+    "25-26": {
+     "precinct_name": "Dearborn 25 & 26",
+     "registered_voters": 3750,
+     "ballots_cast": 2325,
+     "results": {
+      "Shereef Akeel (D)": 1436,
+      "Richard Mack (D)": 1367,
+      "Andy Anuzis (R)": 525,
+      "Christa Murphy (R)": 536,
+      "Alex Avery (L)": 19,
+      "Jami Van Alstine (L)": 21,
+      "Jeff McDonald (UST)": 26,
+      "Paul M. Ragan (G)": 30,
+      "Suzanne Roehrig (WCP)": 64,
+      "Kathleen Oakford (NLP)": 7
+     }
+    },
+    "27": {
+     "precinct_name": "Dearborn 27",
+     "registered_voters": 1676,
+     "ballots_cast": 1027,
+     "results": {
+      "Shereef Akeel (D)": 627,
+      "Richard Mack (D)": 590,
+      "Andy Anuzis (R)": 240,
+      "Christa Murphy (R)": 253,
+      "Alex Avery (L)": 10,
+      "Jami Van Alstine (L)": 8,
+      "Jeff McDonald (UST)": 7,
+      "Paul M. Ragan (G)": 6,
+      "Suzanne Roehrig (WCP)": 27,
+      "Kathleen Oakford (NLP)": 8
+     }
+    },
+    "28": {
+     "precinct_name": "Dearborn 28",
+     "registered_voters": 1052,
+     "ballots_cast": 660,
+     "results": {
+      "Shereef Akeel (D)": 367,
+      "Richard Mack (D)": 357,
+      "Andy Anuzis (R)": 177,
+      "Christa Murphy (R)": 183,
+      "Alex Avery (L)": 10,
+      "Jami Van Alstine (L)": 4,
+      "Jeff McDonald (UST)": 10,
+      "Paul M. Ragan (G)": 4,
+      "Suzanne Roehrig (WCP)": 19,
+      "Kathleen Oakford (NLP)": 2
+     }
+    },
+    "29-30": {
+     "precinct_name": "Dearborn 29",
+     "registered_voters": 1974,
+     "ballots_cast": 1179,
+     "results": {
+      "Shereef Akeel (D)": 693,
+      "Richard Mack (D)": 671,
+      "Andy Anuzis (R)": 302,
+      "Christa Murphy (R)": 319,
+      "Alex Avery (L)": 20,
+      "Jami Van Alstine (L)": 9,
+      "Jeff McDonald (UST)": 11,
+      "Paul M. Ragan (G)": 13,
+      "Suzanne Roehrig (WCP)": 20,
+      "Kathleen Oakford (NLP)": 7
+     }
+    },
+    "31-32": {
+     "precinct_name": "Dearborn 31 & 32",
+     "registered_voters": 3326,
+     "ballots_cast": 2076,
+     "results": {
+      "Shereef Akeel (D)": 1341,
+      "Richard Mack (D)": 1152,
+      "Andy Anuzis (R)": 402,
+      "Christa Murphy (R)": 415,
+      "Alex Avery (L)": 26,
+      "Jami Van Alstine (L)": 19,
+      "Jeff McDonald (UST)": 9,
+      "Paul M. Ragan (G)": 30,
+      "Suzanne Roehrig (WCP)": 21,
+      "Kathleen Oakford (NLP)": 8
+     }
+    },
+    "33-34": {
+     "precinct_name": "Dearborn 33 & 34",
+     "registered_voters": 3192,
+     "ballots_cast": 2048,
+     "results": {
+      "Shereef Akeel (D)": 1334,
+      "Richard Mack (D)": 1186,
+      "Andy Anuzis (R)": 342,
+      "Christa Murphy (R)": 368,
+      "Alex Avery (L)": 22,
+      "Jami Van Alstine (L)": 6,
+      "Jeff McDonald (UST)": 9,
+      "Paul M. Ragan (G)": 30,
+      "Suzanne Roehrig (WCP)": 28,
+      "Kathleen Oakford (NLP)": 5
+     }
+    },
+    "35-36": {
+     "precinct_name": "Dearborn 35",
+     "registered_voters": 2161,
+     "ballots_cast": 1489,
+     "results": {
+      "Shereef Akeel (D)": 916,
+      "Richard Mack (D)": 849,
+      "Andy Anuzis (R)": 288,
+      "Christa Murphy (R)": 310,
+      "Alex Avery (L)": 22,
+      "Jami Van Alstine (L)": 12,
+      "Jeff McDonald (UST)": 15,
+      "Paul M. Ragan (G)": 20,
+      "Suzanne Roehrig (WCP)": 26,
+      "Kathleen Oakford (NLP)": 5
+     }
+    },
+    "37-38": {
+     "precinct_name": "Dearborn 37 & 38",
+     "registered_voters": 3505,
+     "ballots_cast": 2267,
+     "results": {
+      "Shereef Akeel (D)": 1420,
+      "Richard Mack (D)": 1282,
+      "Andy Anuzis (R)": 472,
+      "Christa Murphy (R)": 504,
+      "Alex Avery (L)": 28,
+      "Jami Van Alstine (L)": 16,
+      "Jeff McDonald (UST)": 15,
+      "Paul M. Ragan (G)": 27,
+      "Suzanne Roehrig (WCP)": 38,
+      "Kathleen Oakford (NLP)": 8
+     }
+    },
+    "40-41": {
+     "precinct_name": "Dearborn 40 & 41",
+     "registered_voters": 2871,
+     "ballots_cast": 1951,
+     "results": {
+      "Shereef Akeel (D)": 1249,
+      "Richard Mack (D)": 1065,
+      "Andy Anuzis (R)": 402,
+      "Christa Murphy (R)": 446,
+      "Alex Avery (L)": 21,
+      "Jami Van Alstine (L)": 9,
+      "Jeff McDonald (UST)": 11,
+      "Paul M. Ragan (G)": 18,
+      "Suzanne Roehrig (WCP)": 27,
+      "Kathleen Oakford (NLP)": 7
+     }
+    },
+    "42-43": {
+     "precinct_name": "Dearborn 42",
+     "registered_voters": 2657,
+     "ballots_cast": 1749,
+     "results": {
+      "Shereef Akeel (D)": 1074,
+      "Richard Mack (D)": 1009,
+      "Andy Anuzis (R)": 368,
+      "Christa Murphy (R)": 383,
+      "Alex Avery (L)": 20,
+      "Jami Van Alstine (L)": 13,
+      "Jeff McDonald (UST)": 16,
+      "Paul M. Ragan (G)": 23,
+      "Suzanne Roehrig (WCP)": 31,
+      "Kathleen Oakford (NLP)": 4
+     }
+    },
+    "44": {
+     "precinct_name": "Dearborn 44",
+     "registered_voters": 1484,
+     "ballots_cast": 1057,
+     "results": {
+      "Shereef Akeel (D)": 590,
+      "Richard Mack (D)": 586,
+      "Andy Anuzis (R)": 259,
+      "Christa Murphy (R)": 278,
+      "Alex Avery (L)": 12,
+      "Jami Van Alstine (L)": 13,
+      "Jeff McDonald (UST)": 13,
+      "Paul M. Ragan (G)": 14,
+      "Suzanne Roehrig (WCP)": 28,
+      "Kathleen Oakford (NLP)": 6
+     }
+    },
+    "45": {
+     "precinct_name": "Dearborn 45",
+     "registered_voters": 1798,
+     "ballots_cast": 1136,
+     "results": {
+      "Shereef Akeel (D)": 669,
+      "Richard Mack (D)": 655,
+      "Andy Anuzis (R)": 271,
+      "Christa Murphy (R)": 283,
+      "Alex Avery (L)": 21,
+      "Jami Van Alstine (L)": 12,
+      "Jeff McDonald (UST)": 9,
+      "Paul M. Ragan (G)": 16,
+      "Suzanne Roehrig (WCP)": 19,
+      "Kathleen Oakford (NLP)": 4
+     }
+    },
+    "46": {
+     "precinct_name": "Dearborn 46",
+     "registered_voters": 1741,
+     "ballots_cast": 1076,
+     "results": {
+      "Shereef Akeel (D)": 639,
+      "Richard Mack (D)": 611,
+      "Andy Anuzis (R)": 258,
+      "Christa Murphy (R)": 263,
+      "Alex Avery (L)": 11,
+      "Jami Van Alstine (L)": 13,
+      "Jeff McDonald (UST)": 13,
+      "Paul M. Ragan (G)": 16,
+      "Suzanne Roehrig (WCP)": 28,
+      "Kathleen Oakford (NLP)": 5
+     }
+    },
+    "47-48": {
+     "precinct_name": "Dearborn 47",
+     "registered_voters": 2446,
+     "ballots_cast": 1531,
+     "results": {
+      "Shereef Akeel (D)": 820,
+      "Richard Mack (D)": 837,
+      "Andy Anuzis (R)": 418,
+      "Christa Murphy (R)": 456,
+      "Alex Avery (L)": 26,
+      "Jami Van Alstine (L)": 15,
+      "Jeff McDonald (UST)": 16,
+      "Paul M. Ragan (G)": 17,
+      "Suzanne Roehrig (WCP)": 33,
+      "Kathleen Oakford (NLP)": 11
+     }
+    },
+    "49-50": {
+     "precinct_name": "Dearborn 49 & 50",
+     "registered_voters": 3593,
+     "ballots_cast": 2011,
+     "results": {
+      "Shereef Akeel (D)": 1112,
+      "Richard Mack (D)": 1142,
+      "Andy Anuzis (R)": 531,
+      "Christa Murphy (R)": 561,
+      "Alex Avery (L)": 26,
+      "Jami Van Alstine (L)": 17,
+      "Jeff McDonald (UST)": 30,
+      "Paul M. Ragan (G)": 30,
+      "Suzanne Roehrig (WCP)": 62,
+      "Kathleen Oakford (NLP)": 14
+     }
+    }
+   }
+  },
+  "county_executive": {
+   "race_name": "Wayne County Executive",
+   "category": "County",
+   "seats": 1,
+   "candidates": [
+    "Warren C. Evans (D)",
+    "Michael A. Evans (R)",
+    "John Olumba (NPA)"
+   ],
+   "colors": {
+    "Warren C. Evans (D)": "#2563eb",
+    "Michael A. Evans (R)": "#dc2626",
+    "John Olumba (NPA)": "#64748b"
+   },
+   "precincts": {
+    "1": {
+     "precinct_name": "Dearborn 1",
+     "registered_voters": 1990,
+     "ballots_cast": 1079,
+     "results": {
+      "Warren C. Evans (D)": 854,
+      "Michael A. Evans (R)": 45,
+      "John Olumba (NPA)": 14
+     }
+    },
+    "2": {
+     "precinct_name": "Dearborn 2",
+     "registered_voters": 2132,
+     "ballots_cast": 965,
+     "results": {
+      "Warren C. Evans (D)": 745,
+      "Michael A. Evans (R)": 43,
+      "John Olumba (NPA)": 13
+     }
+    },
+    "3": {
+     "precinct_name": "Dearborn 3",
+     "registered_voters": 2642,
+     "ballots_cast": 1349,
+     "results": {
+      "Warren C. Evans (D)": 1087,
+      "Michael A. Evans (R)": 71,
+      "John Olumba (NPA)": 15
+     }
+    },
+    "4-5": {
+     "precinct_name": "Dearborn 4",
+     "registered_voters": 3321,
+     "ballots_cast": 1581,
+     "results": {
+      "Warren C. Evans (D)": 1277,
+      "Michael A. Evans (R)": 61,
+      "John Olumba (NPA)": 26
+     }
+    },
+    "6": {
+     "precinct_name": "Dearborn 6",
+     "registered_voters": 2204,
+     "ballots_cast": 1141,
+     "results": {
+      "Warren C. Evans (D)": 917,
+      "Michael A. Evans (R)": 34,
+      "John Olumba (NPA)": 17
+     }
+    },
+    "7": {
+     "precinct_name": "Dearborn 7",
+     "registered_voters": 2775,
+     "ballots_cast": 1345,
+     "results": {
+      "Warren C. Evans (D)": 1075,
+      "Michael A. Evans (R)": 51,
+      "John Olumba (NPA)": 15
+     }
+    },
+    "8-9": {
+     "precinct_name": "Dearborn 8 & 9",
+     "registered_voters": 3709,
+     "ballots_cast": 1926,
+     "results": {
+      "Warren C. Evans (D)": 1580,
+      "Michael A. Evans (R)": 80,
+      "John Olumba (NPA)": 25
+     }
+    },
+    "10": {
+     "precinct_name": "Dearborn 10",
+     "registered_voters": 1802,
+     "ballots_cast": 826,
+     "results": {
+      "Warren C. Evans (D)": 628,
+      "Michael A. Evans (R)": 61,
+      "John Olumba (NPA)": 12
+     }
+    },
+    "11-12": {
+     "precinct_name": "Dearborn 11 & 12",
+     "registered_voters": 3552,
+     "ballots_cast": 1823,
+     "results": {
+      "Warren C. Evans (D)": 1391,
+      "Michael A. Evans (R)": 115,
+      "John Olumba (NPA)": 20
+     }
+    },
+    "13": {
+     "precinct_name": "Dearborn 13",
+     "registered_voters": 584,
+     "ballots_cast": 369,
+     "results": {
+      "Warren C. Evans (D)": 284,
+      "Michael A. Evans (R)": 71,
+      "John Olumba (NPA)": 5
+     }
+    },
+    "15-16": {
+     "precinct_name": "Dearborn 15 & 16",
+     "registered_voters": 4119,
+     "ballots_cast": 2128,
+     "results": {
+      "Warren C. Evans (D)": 1704,
+      "Michael A. Evans (R)": 116,
+      "John Olumba (NPA)": 31
+     }
+    },
+    "17": {
+     "precinct_name": "Dearborn 17",
+     "registered_voters": 2489,
+     "ballots_cast": 1281,
+     "results": {
+      "Warren C. Evans (D)": 988,
+      "Michael A. Evans (R)": 115,
+      "John Olumba (NPA)": 24
+     }
+    },
+    "18": {
+     "precinct_name": "Dearborn 18",
+     "registered_voters": 2904,
+     "ballots_cast": 1438,
+     "results": {
+      "Warren C. Evans (D)": 1095,
+      "Michael A. Evans (R)": 92,
+      "John Olumba (NPA)": 23
+     }
+    },
+    "19": {
+     "precinct_name": "Dearborn 19",
+     "registered_voters": 1684,
+     "ballots_cast": 937,
+     "results": {
+      "Warren C. Evans (D)": 718,
+      "Michael A. Evans (R)": 53,
+      "John Olumba (NPA)": 16
+     }
+    },
+    "20": {
+     "precinct_name": "Dearborn 20",
+     "registered_voters": 1453,
+     "ballots_cast": 677,
+     "results": {
+      "Warren C. Evans (D)": 527,
+      "Michael A. Evans (R)": 17,
+      "John Olumba (NPA)": 5
+     }
+    },
+    "21": {
+     "precinct_name": "Dearborn 21",
+     "registered_voters": 1878,
+     "ballots_cast": 949,
+     "results": {
+      "Warren C. Evans (D)": 730,
+      "Michael A. Evans (R)": 28,
+      "John Olumba (NPA)": 12
+     }
+    },
+    "22-23": {
+     "precinct_name": "Dearborn 22",
+     "registered_voters": 2287,
+     "ballots_cast": 1373,
+     "results": {
+      "Warren C. Evans (D)": 1080,
+      "Michael A. Evans (R)": 175,
+      "John Olumba (NPA)": 27
+     }
+    },
+    "24": {
+     "precinct_name": "Dearborn 24",
+     "registered_voters": 1116,
+     "ballots_cast": 691,
+     "results": {
+      "Warren C. Evans (D)": 462,
+      "Michael A. Evans (R)": 165,
+      "John Olumba (NPA)": 14
+     }
+    },
+    "25-26": {
+     "precinct_name": "Dearborn 25 & 26",
+     "registered_voters": 3750,
+     "ballots_cast": 2325,
+     "results": {
+      "Warren C. Evans (D)": 1561,
+      "Michael A. Evans (R)": 557,
+      "John Olumba (NPA)": 39
+     }
+    },
+    "27": {
+     "precinct_name": "Dearborn 27",
+     "registered_voters": 1676,
+     "ballots_cast": 1027,
+     "results": {
+      "Warren C. Evans (D)": 674,
+      "Michael A. Evans (R)": 272,
+      "John Olumba (NPA)": 23
+     }
+    },
+    "28": {
+     "precinct_name": "Dearborn 28",
+     "registered_voters": 1052,
+     "ballots_cast": 660,
+     "results": {
+      "Warren C. Evans (D)": 419,
+      "Michael A. Evans (R)": 181,
+      "John Olumba (NPA)": 16
+     }
+    },
+    "29-30": {
+     "precinct_name": "Dearborn 29",
+     "registered_voters": 1974,
+     "ballots_cast": 1179,
+     "results": {
+      "Warren C. Evans (D)": 756,
+      "Michael A. Evans (R)": 320,
+      "John Olumba (NPA)": 29
+     }
+    },
+    "31-32": {
+     "precinct_name": "Dearborn 31 & 32",
+     "registered_voters": 3326,
+     "ballots_cast": 2076,
+     "results": {
+      "Warren C. Evans (D)": 1453,
+      "Michael A. Evans (R)": 406,
+      "John Olumba (NPA)": 29
+     }
+    },
+    "33-34": {
+     "precinct_name": "Dearborn 33 & 34",
+     "registered_voters": 3192,
+     "ballots_cast": 2048,
+     "results": {
+      "Warren C. Evans (D)": 1442,
+      "Michael A. Evans (R)": 365,
+      "John Olumba (NPA)": 25
+     }
+    },
+    "35-36": {
+     "precinct_name": "Dearborn 35",
+     "registered_voters": 2161,
+     "ballots_cast": 1489,
+     "results": {
+      "Warren C. Evans (D)": 1021,
+      "Michael A. Evans (R)": 308,
+      "John Olumba (NPA)": 31
+     }
+    },
+    "37-38": {
+     "precinct_name": "Dearborn 37 & 38",
+     "registered_voters": 3505,
+     "ballots_cast": 2267,
+     "results": {
+      "Warren C. Evans (D)": 1535,
+      "Michael A. Evans (R)": 510,
+      "John Olumba (NPA)": 31
+     }
+    },
+    "40-41": {
+     "precinct_name": "Dearborn 40 & 41",
+     "registered_voters": 2871,
+     "ballots_cast": 1951,
+     "results": {
+      "Warren C. Evans (D)": 1376,
+      "Michael A. Evans (R)": 418,
+      "John Olumba (NPA)": 26
+     }
+    },
+    "42-43": {
+     "precinct_name": "Dearborn 42",
+     "registered_voters": 2657,
+     "ballots_cast": 1749,
+     "results": {
+      "Warren C. Evans (D)": 1182,
+      "Michael A. Evans (R)": 388,
+      "John Olumba (NPA)": 26
+     }
+    },
+    "44": {
+     "precinct_name": "Dearborn 44",
+     "registered_voters": 1484,
+     "ballots_cast": 1057,
+     "results": {
+      "Warren C. Evans (D)": 678,
+      "Michael A. Evans (R)": 274,
+      "John Olumba (NPA)": 19
+     }
+    },
+    "45": {
+     "precinct_name": "Dearborn 45",
+     "registered_voters": 1798,
+     "ballots_cast": 1136,
+     "results": {
+      "Warren C. Evans (D)": 736,
+      "Michael A. Evans (R)": 294,
+      "John Olumba (NPA)": 18
+     }
+    },
+    "46": {
+     "precinct_name": "Dearborn 46",
+     "registered_voters": 1741,
+     "ballots_cast": 1076,
+     "results": {
+      "Warren C. Evans (D)": 693,
+      "Michael A. Evans (R)": 289,
+      "John Olumba (NPA)": 27
+     }
+    },
+    "47-48": {
+     "precinct_name": "Dearborn 47",
+     "registered_voters": 2446,
+     "ballots_cast": 1531,
+     "results": {
+      "Warren C. Evans (D)": 926,
+      "Michael A. Evans (R)": 460,
+      "John Olumba (NPA)": 34
+     }
+    },
+    "49-50": {
+     "precinct_name": "Dearborn 49 & 50",
+     "registered_voters": 3593,
+     "ballots_cast": 2011,
+     "results": {
+      "Warren C. Evans (D)": 1243,
+      "Michael A. Evans (R)": 579,
+      "John Olumba (NPA)": 52
+     }
+    }
+   }
+  },
+  "dps_board": {
+   "race_name": "Dearborn Schools Board",
+   "category": "School Board",
+   "seats": 2,
+   "candidates": [
+    "Mallak Anani",
+    "Mohamed Ali Hammoud",
+    "Adel A. Mozip",
+    "Mary K. Petlichkoff",
+    "Nasri Sobh"
+   ],
+   "colors": {
+    "Mallak Anani": "#06b6d4",
+    "Mohamed Ali Hammoud": "#ec4899",
+    "Adel A. Mozip": "#f59e0b",
+    "Mary K. Petlichkoff": "#8b5cf6",
+    "Nasri Sobh": "#10b981"
+   },
+   "precincts": {
+    "1": {
+     "precinct_name": "Dearborn 1",
+     "registered_voters": 1990,
+     "ballots_cast": 1079,
+     "results": {
+      "Mallak Anani": 415,
+      "Mohamed Ali Hammoud": 573,
+      "Adel A. Mozip": 544,
+      "Mary K. Petlichkoff": 76,
+      "Nasri Sobh": 239
+     }
+    },
+    "2": {
+     "precinct_name": "Dearborn 2",
+     "registered_voters": 2132,
+     "ballots_cast": 965,
+     "results": {
+      "Mallak Anani": 405,
+      "Mohamed Ali Hammoud": 500,
+      "Adel A. Mozip": 442,
+      "Mary K. Petlichkoff": 100,
+      "Nasri Sobh": 283
+     }
+    },
+    "3": {
+     "precinct_name": "Dearborn 3",
+     "registered_voters": 2642,
+     "ballots_cast": 1349,
+     "results": {
+      "Mallak Anani": 590,
+      "Mohamed Ali Hammoud": 627,
+      "Adel A. Mozip": 650,
+      "Mary K. Petlichkoff": 183,
+      "Nasri Sobh": 496
+     }
+    },
+    "4-5": {
+     "precinct_name": "Dearborn 4",
+     "registered_voters": 3321,
+     "ballots_cast": 1581,
+     "results": {
+      "Mallak Anani": 651,
+      "Mohamed Ali Hammoud": 753,
+      "Adel A. Mozip": 699,
+      "Mary K. Petlichkoff": 190,
+      "Nasri Sobh": 547
+     }
+    },
+    "6": {
+     "precinct_name": "Dearborn 6",
+     "registered_voters": 2204,
+     "ballots_cast": 1141,
+     "results": {
+      "Mallak Anani": 506,
+      "Mohamed Ali Hammoud": 565,
+      "Adel A. Mozip": 534,
+      "Mary K. Petlichkoff": 71,
+      "Nasri Sobh": 424
+     }
+    },
+    "7": {
+     "precinct_name": "Dearborn 7",
+     "registered_voters": 2775,
+     "ballots_cast": 1345,
+     "results": {
+      "Mallak Anani": 687,
+      "Mohamed Ali Hammoud": 725,
+      "Adel A. Mozip": 646,
+      "Mary K. Petlichkoff": 102,
+      "Nasri Sobh": 432
+     }
+    },
+    "8-9": {
+     "precinct_name": "Dearborn 8 & 9",
+     "registered_voters": 3709,
+     "ballots_cast": 1926,
+     "results": {
+      "Mallak Anani": 738,
+      "Mohamed Ali Hammoud": 988,
+      "Adel A. Mozip": 939,
+      "Mary K. Petlichkoff": 202,
+      "Nasri Sobh": 617
+     }
+    },
+    "10": {
+     "precinct_name": "Dearborn 10",
+     "registered_voters": 1802,
+     "ballots_cast": 826,
+     "results": {
+      "Mallak Anani": 290,
+      "Mohamed Ali Hammoud": 352,
+      "Adel A. Mozip": 359,
+      "Mary K. Petlichkoff": 106,
+      "Nasri Sobh": 239
+     }
+    },
+    "11-12": {
+     "precinct_name": "Dearborn 11 & 12",
+     "registered_voters": 3552,
+     "ballots_cast": 1823,
+     "results": {
+      "Mallak Anani": 707,
+      "Mohamed Ali Hammoud": 787,
+      "Adel A. Mozip": 864,
+      "Mary K. Petlichkoff": 179,
+      "Nasri Sobh": 528
+     }
+    },
+    "13": {
+     "precinct_name": "Dearborn 13",
+     "registered_voters": 584,
+     "ballots_cast": 369,
+     "results": {
+      "Mallak Anani": 83,
+      "Mohamed Ali Hammoud": 120,
+      "Adel A. Mozip": 78,
+      "Mary K. Petlichkoff": 188,
+      "Nasri Sobh": 57
+     }
+    },
+    "15-16": {
+     "precinct_name": "Dearborn 15 & 16",
+     "registered_voters": 4119,
+     "ballots_cast": 2128,
+     "results": {
+      "Mallak Anani": 736,
+      "Mohamed Ali Hammoud": 859,
+      "Adel A. Mozip": 1205,
+      "Mary K. Petlichkoff": 262,
+      "Nasri Sobh": 561
+     }
+    },
+    "17": {
+     "precinct_name": "Dearborn 17",
+     "registered_voters": 2489,
+     "ballots_cast": 1281,
+     "results": {
+      "Mallak Anani": 501,
+      "Mohamed Ali Hammoud": 557,
+      "Adel A. Mozip": 546,
+      "Mary K. Petlichkoff": 180,
+      "Nasri Sobh": 449
+     }
+    },
+    "18": {
+     "precinct_name": "Dearborn 18",
+     "registered_voters": 2904,
+     "ballots_cast": 1438,
+     "results": {
+      "Mallak Anani": 494,
+      "Mohamed Ali Hammoud": 594,
+      "Adel A. Mozip": 776,
+      "Mary K. Petlichkoff": 175,
+      "Nasri Sobh": 264
+     }
+    },
+    "19": {
+     "precinct_name": "Dearborn 19",
+     "registered_voters": 1684,
+     "ballots_cast": 937,
+     "results": {
+      "Mallak Anani": 356,
+      "Mohamed Ali Hammoud": 423,
+      "Adel A. Mozip": 615,
+      "Mary K. Petlichkoff": 107,
+      "Nasri Sobh": 184
+     }
+    },
+    "20": {
+     "precinct_name": "Dearborn 20",
+     "registered_voters": 1453,
+     "ballots_cast": 677,
+     "results": {
+      "Mallak Anani": 198,
+      "Mohamed Ali Hammoud": 256,
+      "Adel A. Mozip": 564,
+      "Mary K. Petlichkoff": 36,
+      "Nasri Sobh": 82
+     }
+    },
+    "21": {
+     "precinct_name": "Dearborn 21",
+     "registered_voters": 1878,
+     "ballots_cast": 949,
+     "results": {
+      "Mallak Anani": 294,
+      "Mohamed Ali Hammoud": 320,
+      "Adel A. Mozip": 689,
+      "Mary K. Petlichkoff": 76,
+      "Nasri Sobh": 151
+     }
+    },
+    "22-23": {
+     "precinct_name": "Dearborn 22",
+     "registered_voters": 2287,
+     "ballots_cast": 1373,
+     "results": {
+      "Mallak Anani": 515,
+      "Mohamed Ali Hammoud": 503,
+      "Adel A. Mozip": 477,
+      "Mary K. Petlichkoff": 416,
+      "Nasri Sobh": 450
+     }
+    },
+    "24": {
+     "precinct_name": "Dearborn 24",
+     "registered_voters": 1116,
+     "ballots_cast": 691,
+     "results": {
+      "Mallak Anani": 231,
+      "Mohamed Ali Hammoud": 209,
+      "Adel A. Mozip": 177,
+      "Mary K. Petlichkoff": 299,
+      "Nasri Sobh": 140
+     }
+    },
+    "25-26": {
+     "precinct_name": "Dearborn 25 & 26",
+     "registered_voters": 3750,
+     "ballots_cast": 2325,
+     "results": {
+      "Mallak Anani": 661,
+      "Mohamed Ali Hammoud": 739,
+      "Adel A. Mozip": 875,
+      "Mary K. Petlichkoff": 938,
+      "Nasri Sobh": 520
+     }
+    },
+    "27": {
+     "precinct_name": "Dearborn 27",
+     "registered_voters": 1676,
+     "ballots_cast": 1027,
+     "results": {
+      "Mallak Anani": 307,
+      "Mohamed Ali Hammoud": 265,
+      "Adel A. Mozip": 281,
+      "Mary K. Petlichkoff": 446,
+      "Nasri Sobh": 253
+     }
+    },
+    "28": {
+     "precinct_name": "Dearborn 28",
+     "registered_voters": 1052,
+     "ballots_cast": 660,
+     "results": {
+      "Mallak Anani": 182,
+      "Mohamed Ali Hammoud": 160,
+      "Adel A. Mozip": 160,
+      "Mary K. Petlichkoff": 293,
+      "Nasri Sobh": 171
+     }
+    },
+    "29-30": {
+     "precinct_name": "Dearborn 29",
+     "registered_voters": 1974,
+     "ballots_cast": 1179,
+     "results": {
+      "Mallak Anani": 345,
+      "Mohamed Ali Hammoud": 331,
+      "Adel A. Mozip": 336,
+      "Mary K. Petlichkoff": 495,
+      "Nasri Sobh": 226
+     }
+    },
+    "31-32": {
+     "precinct_name": "Dearborn 31 & 32",
+     "registered_voters": 3326,
+     "ballots_cast": 2076,
+     "results": {
+      "Mallak Anani": 716,
+      "Mohamed Ali Hammoud": 755,
+      "Adel A. Mozip": 565,
+      "Mary K. Petlichkoff": 703,
+      "Nasri Sobh": 614
+     }
+    },
+    "33-34": {
+     "precinct_name": "Dearborn 33 & 34",
+     "registered_voters": 3192,
+     "ballots_cast": 2048,
+     "results": {
+      "Mallak Anani": 816,
+      "Mohamed Ali Hammoud": 769,
+      "Adel A. Mozip": 563,
+      "Mary K. Petlichkoff": 690,
+      "Nasri Sobh": 816
+     }
+    },
+    "35-36": {
+     "precinct_name": "Dearborn 35",
+     "registered_voters": 2161,
+     "ballots_cast": 1489,
+     "results": {
+      "Mallak Anani": 553,
+      "Mohamed Ali Hammoud": 467,
+      "Adel A. Mozip": 443,
+      "Mary K. Petlichkoff": 598,
+      "Nasri Sobh": 432
+     }
+    },
+    "37-38": {
+     "precinct_name": "Dearborn 37 & 38",
+     "registered_voters": 3505,
+     "ballots_cast": 2267,
+     "results": {
+      "Mallak Anani": 778,
+      "Mohamed Ali Hammoud": 845,
+      "Adel A. Mozip": 640,
+      "Mary K. Petlichkoff": 812,
+      "Nasri Sobh": 712
+     }
+    },
+    "40-41": {
+     "precinct_name": "Dearborn 40 & 41",
+     "registered_voters": 2871,
+     "ballots_cast": 1951,
+     "results": {
+      "Mallak Anani": 797,
+      "Mohamed Ali Hammoud": 722,
+      "Adel A. Mozip": 515,
+      "Mary K. Petlichkoff": 707,
+      "Nasri Sobh": 747
+     }
+    },
+    "42-43": {
+     "precinct_name": "Dearborn 42",
+     "registered_voters": 2657,
+     "ballots_cast": 1749,
+     "results": {
+      "Mallak Anani": 677,
+      "Mohamed Ali Hammoud": 573,
+      "Adel A. Mozip": 459,
+      "Mary K. Petlichkoff": 709,
+      "Nasri Sobh": 500
+     }
+    },
+    "44": {
+     "precinct_name": "Dearborn 44",
+     "registered_voters": 1484,
+     "ballots_cast": 1057,
+     "results": {
+      "Mallak Anani": 290,
+      "Mohamed Ali Hammoud": 319,
+      "Adel A. Mozip": 340,
+      "Mary K. Petlichkoff": 510,
+      "Nasri Sobh": 226
+     }
+    },
+    "45": {
+     "precinct_name": "Dearborn 45",
+     "registered_voters": 1798,
+     "ballots_cast": 1136,
+     "results": {
+      "Mallak Anani": 314,
+      "Mohamed Ali Hammoud": 282,
+      "Adel A. Mozip": 379,
+      "Mary K. Petlichkoff": 496,
+      "Nasri Sobh": 271
+     }
+    },
+    "46": {
+     "precinct_name": "Dearborn 46",
+     "registered_voters": 1741,
+     "ballots_cast": 1076,
+     "results": {
+      "Mallak Anani": 261,
+      "Mohamed Ali Hammoud": 313,
+      "Adel A. Mozip": 310,
+      "Mary K. Petlichkoff": 547,
+      "Nasri Sobh": 268
+     }
+    },
+    "47-48": {
+     "precinct_name": "Dearborn 47",
+     "registered_voters": 2446,
+     "ballots_cast": 1531,
+     "results": {
+      "Mallak Anani": 415,
+      "Mohamed Ali Hammoud": 434,
+      "Adel A. Mozip": 393,
+      "Mary K. Petlichkoff": 725,
+      "Nasri Sobh": 378
+     }
+    },
+    "49-50": {
+     "precinct_name": "Dearborn 49 & 50",
+     "registered_voters": 3593,
+     "ballots_cast": 2011,
+     "results": {
+      "Mallak Anani": 523,
+      "Mohamed Ali Hammoud": 593,
+      "Adel A. Mozip": 489,
+      "Mary K. Petlichkoff": 896,
+      "Nasri Sobh": 369
+     }
+    }
+   }
+  },
+  "dps_board_partial": {
+   "race_name": "Dearborn Schools Board (Partial Term)",
+   "category": "School Board",
+   "seats": 1,
+   "candidates": [
+    "Ali K. Bazzi",
+    "Nofila J. Haidar"
+   ],
+   "colors": {
+    "Ali K. Bazzi": "#06b6d4",
+    "Nofila J. Haidar": "#ec4899"
+   },
+   "precincts": {
+    "1": {
+     "precinct_name": "Dearborn 1",
+     "registered_voters": 1990,
+     "ballots_cast": 1079,
+     "results": {
+      "Ali K. Bazzi": 413,
+      "Nofila J. Haidar": 338
+     }
+    },
+    "2": {
+     "precinct_name": "Dearborn 2",
+     "registered_voters": 2132,
+     "ballots_cast": 965,
+     "results": {
+      "Ali K. Bazzi": 325,
+      "Nofila J. Haidar": 362
+     }
+    },
+    "3": {
+     "precinct_name": "Dearborn 3",
+     "registered_voters": 2642,
+     "ballots_cast": 1349,
+     "results": {
+      "Ali K. Bazzi": 685,
+      "Nofila J. Haidar": 316
+     }
+    },
+    "4-5": {
+     "precinct_name": "Dearborn 4",
+     "registered_voters": 3321,
+     "ballots_cast": 1581,
+     "results": {
+      "Ali K. Bazzi": 633,
+      "Nofila J. Haidar": 500
+     }
+    },
+    "6": {
+     "precinct_name": "Dearborn 6",
+     "registered_voters": 2204,
+     "ballots_cast": 1141,
+     "results": {
+      "Ali K. Bazzi": 506,
+      "Nofila J. Haidar": 374
+     }
+    },
+    "7": {
+     "precinct_name": "Dearborn 7",
+     "registered_voters": 2775,
+     "ballots_cast": 1345,
+     "results": {
+      "Ali K. Bazzi": 583,
+      "Nofila J. Haidar": 441
+     }
+    },
+    "8-9": {
+     "precinct_name": "Dearborn 8 & 9",
+     "registered_voters": 3709,
+     "ballots_cast": 1926,
+     "results": {
+      "Ali K. Bazzi": 851,
+      "Nofila J. Haidar": 532
+     }
+    },
+    "10": {
+     "precinct_name": "Dearborn 10",
+     "registered_voters": 1802,
+     "ballots_cast": 826,
+     "results": {
+      "Ali K. Bazzi": 344,
+      "Nofila J. Haidar": 194
+     }
+    },
+    "11-12": {
+     "precinct_name": "Dearborn 11 & 12",
+     "registered_voters": 3552,
+     "ballots_cast": 1823,
+     "results": {
+      "Ali K. Bazzi": 726,
+      "Nofila J. Haidar": 504
+     }
+    },
+    "13": {
+     "precinct_name": "Dearborn 13",
+     "registered_voters": 584,
+     "ballots_cast": 369,
+     "results": {
+      "Ali K. Bazzi": 107,
+      "Nofila J. Haidar": 96
+     }
+    },
+    "15-16": {
+     "precinct_name": "Dearborn 15 & 16",
+     "registered_voters": 4119,
+     "ballots_cast": 2128,
+     "results": {
+      "Ali K. Bazzi": 852,
+      "Nofila J. Haidar": 643
+     }
+    },
+    "17": {
+     "precinct_name": "Dearborn 17",
+     "registered_voters": 2489,
+     "ballots_cast": 1281,
+     "results": {
+      "Ali K. Bazzi": 510,
+      "Nofila J. Haidar": 411
+     }
+    },
+    "18": {
+     "precinct_name": "Dearborn 18",
+     "registered_voters": 2904,
+     "ballots_cast": 1438,
+     "results": {
+      "Ali K. Bazzi": 424,
+      "Nofila J. Haidar": 471
+     }
+    },
+    "19": {
+     "precinct_name": "Dearborn 19",
+     "registered_voters": 1684,
+     "ballots_cast": 937,
+     "results": {
+      "Ali K. Bazzi": 425,
+      "Nofila J. Haidar": 264
+     }
+    },
+    "20": {
+     "precinct_name": "Dearborn 20",
+     "registered_voters": 1453,
+     "ballots_cast": 677,
+     "results": {
+      "Ali K. Bazzi": 175,
+      "Nofila J. Haidar": 262
+     }
+    },
+    "21": {
+     "precinct_name": "Dearborn 21",
+     "registered_voters": 1878,
+     "ballots_cast": 949,
+     "results": {
+      "Ali K. Bazzi": 331,
+      "Nofila J. Haidar": 281
+     }
+    },
+    "22-23": {
+     "precinct_name": "Dearborn 22",
+     "registered_voters": 2287,
+     "ballots_cast": 1373,
+     "results": {
+      "Ali K. Bazzi": 468,
+      "Nofila J. Haidar": 457
+     }
+    },
+    "24": {
+     "precinct_name": "Dearborn 24",
+     "registered_voters": 1116,
+     "ballots_cast": 691,
+     "results": {
+      "Ali K. Bazzi": 258,
+      "Nofila J. Haidar": 180
+     }
+    },
+    "25-26": {
+     "precinct_name": "Dearborn 25 & 26",
+     "registered_voters": 3750,
+     "ballots_cast": 2325,
+     "results": {
+      "Ali K. Bazzi": 850,
+      "Nofila J. Haidar": 607
+     }
+    },
+    "27": {
+     "precinct_name": "Dearborn 27",
+     "registered_voters": 1676,
+     "ballots_cast": 1027,
+     "results": {
+      "Ali K. Bazzi": 321,
+      "Nofila J. Haidar": 302
+     }
+    },
+    "28": {
+     "precinct_name": "Dearborn 28",
+     "registered_voters": 1052,
+     "ballots_cast": 660,
+     "results": {
+      "Ali K. Bazzi": 243,
+      "Nofila J. Haidar": 138
+     }
+    },
+    "29-30": {
+     "precinct_name": "Dearborn 29",
+     "registered_voters": 1974,
+     "ballots_cast": 1179,
+     "results": {
+      "Ali K. Bazzi": 378,
+      "Nofila J. Haidar": 328
+     }
+    },
+    "31-32": {
+     "precinct_name": "Dearborn 31 & 32",
+     "registered_voters": 3326,
+     "ballots_cast": 2076,
+     "results": {
+      "Ali K. Bazzi": 843,
+      "Nofila J. Haidar": 486
+     }
+    },
+    "33-34": {
+     "precinct_name": "Dearborn 33 & 34",
+     "registered_voters": 3192,
+     "ballots_cast": 2048,
+     "results": {
+      "Ali K. Bazzi": 803,
+      "Nofila J. Haidar": 561
+     }
+    },
+    "35-36": {
+     "precinct_name": "Dearborn 35",
+     "registered_voters": 2161,
+     "ballots_cast": 1489,
+     "results": {
+      "Ali K. Bazzi": 643,
+      "Nofila J. Haidar": 338
+     }
+    },
+    "37-38": {
+     "precinct_name": "Dearborn 37 & 38",
+     "registered_voters": 3505,
+     "ballots_cast": 2267,
+     "results": {
+      "Ali K. Bazzi": 851,
+      "Nofila J. Haidar": 609
+     }
+    },
+    "40-41": {
+     "precinct_name": "Dearborn 40 & 41",
+     "registered_voters": 2871,
+     "ballots_cast": 1951,
+     "results": {
+      "Ali K. Bazzi": 825,
+      "Nofila J. Haidar": 465
+     }
+    },
+    "42-43": {
+     "precinct_name": "Dearborn 42",
+     "registered_voters": 2657,
+     "ballots_cast": 1749,
+     "results": {
+      "Ali K. Bazzi": 581,
+      "Nofila J. Haidar": 518
+     }
+    },
+    "44": {
+     "precinct_name": "Dearborn 44",
+     "registered_voters": 1484,
+     "ballots_cast": 1057,
+     "results": {
+      "Ali K. Bazzi": 393,
+      "Nofila J. Haidar": 251
+     }
+    },
+    "45": {
+     "precinct_name": "Dearborn 45",
+     "registered_voters": 1798,
+     "ballots_cast": 1136,
+     "results": {
+      "Ali K. Bazzi": 350,
+      "Nofila J. Haidar": 317
+     }
+    },
+    "46": {
+     "precinct_name": "Dearborn 46",
+     "registered_voters": 1741,
+     "ballots_cast": 1076,
+     "results": {
+      "Ali K. Bazzi": 416,
+      "Nofila J. Haidar": 260
+     }
+    },
+    "47-48": {
+     "precinct_name": "Dearborn 47",
+     "registered_voters": 2446,
+     "ballots_cast": 1531,
+     "results": {
+      "Ali K. Bazzi": 528,
+      "Nofila J. Haidar": 413
+     }
+    },
+    "49-50": {
+     "precinct_name": "Dearborn 49 & 50",
+     "registered_voters": 3593,
+     "ballots_cast": 2011,
+     "results": {
+      "Ali K. Bazzi": 678,
+      "Nofila J. Haidar": 498
+     }
+    }
+   }
+  },
+  "proposal_2026_1": {
+   "race_name": "Proposal 26-1: Constitutional Convention",
+   "category": "Proposals",
+   "seats": 1,
+   "candidates": [
+    "Yes",
+    "No"
+   ],
+   "colors": {
+    "Yes": "#22c55e",
+    "No": "#ef4444"
+   },
+   "precincts": {
+    "1": {
+     "precinct_name": "Dearborn 1",
+     "registered_voters": 1990,
+     "ballots_cast": 1079,
+     "results": {
+      "Yes": 180,
+      "No": 574
+     }
+    },
+    "2": {
+     "precinct_name": "Dearborn 2",
+     "registered_voters": 2132,
+     "ballots_cast": 965,
+     "results": {
+      "Yes": 172,
+      "No": 473
+     }
+    },
+    "3": {
+     "precinct_name": "Dearborn 3",
+     "registered_voters": 2642,
+     "ballots_cast": 1349,
+     "results": {
+      "Yes": 271,
+      "No": 693
+     }
+    },
+    "4-5": {
+     "precinct_name": "Dearborn 4",
+     "registered_voters": 3321,
+     "ballots_cast": 1581,
+     "results": {
+      "Yes": 324,
+      "No": 780
+     }
+    },
+    "6": {
+     "precinct_name": "Dearborn 6",
+     "registered_voters": 2204,
+     "ballots_cast": 1141,
+     "results": {
+      "Yes": 222,
+      "No": 616
+     }
+    },
+    "7": {
+     "precinct_name": "Dearborn 7",
+     "registered_voters": 2775,
+     "ballots_cast": 1345,
+     "results": {
+      "Yes": 291,
+      "No": 693
+     }
+    },
+    "8-9": {
+     "precinct_name": "Dearborn 8 & 9",
+     "registered_voters": 3709,
+     "ballots_cast": 1926,
+     "results": {
+      "Yes": 394,
+      "No": 952
+     }
+    },
+    "10": {
+     "precinct_name": "Dearborn 10",
+     "registered_voters": 1802,
+     "ballots_cast": 826,
+     "results": {
+      "Yes": 158,
+      "No": 378
+     }
+    },
+    "11-12": {
+     "precinct_name": "Dearborn 11 & 12",
+     "registered_voters": 3552,
+     "ballots_cast": 1823,
+     "results": {
+      "Yes": 382,
+      "No": 853
+     }
+    },
+    "13": {
+     "precinct_name": "Dearborn 13",
+     "registered_voters": 584,
+     "ballots_cast": 369,
+     "results": {
+      "Yes": 113,
+      "No": 188
+     }
+    },
+    "15-16": {
+     "precinct_name": "Dearborn 15 & 16",
+     "registered_voters": 4119,
+     "ballots_cast": 2128,
+     "results": {
+      "Yes": 469,
+      "No": 1055
+     }
+    },
+    "17": {
+     "precinct_name": "Dearborn 17",
+     "registered_voters": 2489,
+     "ballots_cast": 1281,
+     "results": {
+      "Yes": 299,
+      "No": 636
+     }
+    },
+    "18": {
+     "precinct_name": "Dearborn 18",
+     "registered_voters": 2904,
+     "ballots_cast": 1438,
+     "results": {
+      "Yes": 289,
+      "No": 693
+     }
+    },
+    "19": {
+     "precinct_name": "Dearborn 19",
+     "registered_voters": 1684,
+     "ballots_cast": 937,
+     "results": {
+      "Yes": 153,
+      "No": 531
+     }
+    },
+    "20": {
+     "precinct_name": "Dearborn 20",
+     "registered_voters": 1453,
+     "ballots_cast": 677,
+     "results": {
+      "Yes": 112,
+      "No": 339
+     }
+    },
+    "21": {
+     "precinct_name": "Dearborn 21",
+     "registered_voters": 1878,
+     "ballots_cast": 949,
+     "results": {
+      "Yes": 177,
+      "No": 455
+     }
+    },
+    "22-23": {
+     "precinct_name": "Dearborn 22",
+     "registered_voters": 2287,
+     "ballots_cast": 1373,
+     "results": {
+      "Yes": 332,
+      "No": 785
+     }
+    },
+    "24": {
+     "precinct_name": "Dearborn 24",
+     "registered_voters": 1116,
+     "ballots_cast": 691,
+     "results": {
+      "Yes": 171,
+      "No": 406
+     }
+    },
+    "25-26": {
+     "precinct_name": "Dearborn 25 & 26",
+     "registered_voters": 3750,
+     "ballots_cast": 2325,
+     "results": {
+      "Yes": 527,
+      "No": 1359
+     }
+    },
+    "27": {
+     "precinct_name": "Dearborn 27",
+     "registered_voters": 1676,
+     "ballots_cast": 1027,
+     "results": {
+      "Yes": 216,
+      "No": 617
+     }
+    },
+    "28": {
+     "precinct_name": "Dearborn 28",
+     "registered_voters": 1052,
+     "ballots_cast": 660,
+     "results": {
+      "Yes": 137,
+      "No": 396
+     }
+    },
+    "29-30": {
+     "precinct_name": "Dearborn 29",
+     "registered_voters": 1974,
+     "ballots_cast": 1179,
+     "results": {
+      "Yes": 247,
+      "No": 739
+     }
+    },
+    "31-32": {
+     "precinct_name": "Dearborn 31 & 32",
+     "registered_voters": 3326,
+     "ballots_cast": 2076,
+     "results": {
+      "Yes": 441,
+      "No": 1166
+     }
+    },
+    "33-34": {
+     "precinct_name": "Dearborn 33 & 34",
+     "registered_voters": 3192,
+     "ballots_cast": 2048,
+     "results": {
+      "Yes": 400,
+      "No": 1162
+     }
+    },
+    "35-36": {
+     "precinct_name": "Dearborn 35",
+     "registered_voters": 2161,
+     "ballots_cast": 1489,
+     "results": {
+      "Yes": 324,
+      "No": 916
+     }
+    },
+    "37-38": {
+     "precinct_name": "Dearborn 37 & 38",
+     "registered_voters": 3505,
+     "ballots_cast": 2267,
+     "results": {
+      "Yes": 454,
+      "No": 1373
+     }
+    },
+    "40-41": {
+     "precinct_name": "Dearborn 40 & 41",
+     "registered_voters": 2871,
+     "ballots_cast": 1951,
+     "results": {
+      "Yes": 373,
+      "No": 1168
+     }
+    },
+    "42-43": {
+     "precinct_name": "Dearborn 42",
+     "registered_voters": 2657,
+     "ballots_cast": 1749,
+     "results": {
+      "Yes": 374,
+      "No": 1059
+     }
+    },
+    "44": {
+     "precinct_name": "Dearborn 44",
+     "registered_voters": 1484,
+     "ballots_cast": 1057,
+     "results": {
+      "Yes": 202,
+      "No": 685
+     }
+    },
+    "45": {
+     "precinct_name": "Dearborn 45",
+     "registered_voters": 1798,
+     "ballots_cast": 1136,
+     "results": {
+      "Yes": 240,
+      "No": 715
+     }
+    },
+    "46": {
+     "precinct_name": "Dearborn 46",
+     "registered_voters": 1741,
+     "ballots_cast": 1076,
+     "results": {
+      "Yes": 261,
+      "No": 631
+     }
+    },
+    "47-48": {
+     "precinct_name": "Dearborn 47",
+     "registered_voters": 2446,
+     "ballots_cast": 1531,
+     "results": {
+      "Yes": 320,
+      "No": 945
+     }
+    },
+    "49-50": {
+     "precinct_name": "Dearborn 49 & 50",
+     "registered_voters": 3593,
+     "ballots_cast": 2011,
+     "results": {
+      "Yes": 484,
+      "No": 1193
+     }
+    }
+   }
+  },
+  "proposal_2026_2": {
+   "race_name": "Proposal 26-2: Campaign Contributions",
+   "category": "Proposals",
+   "seats": 1,
+   "candidates": [
+    "Yes",
+    "No"
+   ],
+   "colors": {
+    "Yes": "#22c55e",
+    "No": "#ef4444"
+   },
+   "precincts": {
+    "1": {
+     "precinct_name": "Dearborn 1",
+     "registered_voters": 1990,
+     "ballots_cast": 1079,
+     "results": {
+      "Yes": 620,
+      "No": 136
+     }
+    },
+    "2": {
+     "precinct_name": "Dearborn 2",
+     "registered_voters": 2132,
+     "ballots_cast": 965,
+     "results": {
+      "Yes": 529,
+      "No": 109
+     }
+    },
+    "3": {
+     "precinct_name": "Dearborn 3",
+     "registered_voters": 2642,
+     "ballots_cast": 1349,
+     "results": {
+      "Yes": 823,
+      "No": 141
+     }
+    },
+    "4-5": {
+     "precinct_name": "Dearborn 4",
+     "registered_voters": 3321,
+     "ballots_cast": 1581,
+     "results": {
+      "Yes": 933,
+      "No": 175
+     }
+    },
+    "6": {
+     "precinct_name": "Dearborn 6",
+     "registered_voters": 2204,
+     "ballots_cast": 1141,
+     "results": {
+      "Yes": 647,
+      "No": 200
+     }
+    },
+    "7": {
+     "precinct_name": "Dearborn 7",
+     "registered_voters": 2775,
+     "ballots_cast": 1345,
+     "results": {
+      "Yes": 818,
+      "No": 181
+     }
+    },
+    "8-9": {
+     "precinct_name": "Dearborn 8 & 9",
+     "registered_voters": 3709,
+     "ballots_cast": 1926,
+     "results": {
+      "Yes": 1164,
+      "No": 224
+     }
+    },
+    "10": {
+     "precinct_name": "Dearborn 10",
+     "registered_voters": 1802,
+     "ballots_cast": 826,
+     "results": {
+      "Yes": 443,
+      "No": 124
+     }
+    },
+    "11-12": {
+     "precinct_name": "Dearborn 11 & 12",
+     "registered_voters": 3552,
+     "ballots_cast": 1823,
+     "results": {
+      "Yes": 964,
+      "No": 264
+     }
+    },
+    "13": {
+     "precinct_name": "Dearborn 13",
+     "registered_voters": 584,
+     "ballots_cast": 369,
+     "results": {
+      "Yes": 262,
+      "No": 47
+     }
+    },
+    "15-16": {
+     "precinct_name": "Dearborn 15 & 16",
+     "registered_voters": 4119,
+     "ballots_cast": 2128,
+     "results": {
+      "Yes": 1140,
+      "No": 369
+     }
+    },
+    "17": {
+     "precinct_name": "Dearborn 17",
+     "registered_voters": 2489,
+     "ballots_cast": 1281,
+     "results": {
+      "Yes": 778,
+      "No": 182
+     }
+    },
+    "18": {
+     "precinct_name": "Dearborn 18",
+     "registered_voters": 2904,
+     "ballots_cast": 1438,
+     "results": {
+      "Yes": 786,
+      "No": 204
+     }
+    },
+    "19": {
+     "precinct_name": "Dearborn 19",
+     "registered_voters": 1684,
+     "ballots_cast": 937,
+     "results": {
+      "Yes": 576,
+      "No": 128
+     }
+    },
+    "20": {
+     "precinct_name": "Dearborn 20",
+     "registered_voters": 1453,
+     "ballots_cast": 677,
+     "results": {
+      "Yes": 330,
+      "No": 122
+     }
+    },
+    "21": {
+     "precinct_name": "Dearborn 21",
+     "registered_voters": 1878,
+     "ballots_cast": 949,
+     "results": {
+      "Yes": 467,
+      "No": 158
+     }
+    },
+    "22-23": {
+     "precinct_name": "Dearborn 22",
+     "registered_voters": 2287,
+     "ballots_cast": 1373,
+     "results": {
+      "Yes": 990,
+      "No": 164
+     }
+    },
+    "24": {
+     "precinct_name": "Dearborn 24",
+     "registered_voters": 1116,
+     "ballots_cast": 691,
+     "results": {
+      "Yes": 496,
+      "No": 85
+     }
+    },
+    "25-26": {
+     "precinct_name": "Dearborn 25 & 26",
+     "registered_voters": 3750,
+     "ballots_cast": 2325,
+     "results": {
+      "Yes": 1580,
+      "No": 362
+     }
+    },
+    "27": {
+     "precinct_name": "Dearborn 27",
+     "registered_voters": 1676,
+     "ballots_cast": 1027,
+     "results": {
+      "Yes": 721,
+      "No": 143
+     }
+    },
+    "28": {
+     "precinct_name": "Dearborn 28",
+     "registered_voters": 1052,
+     "ballots_cast": 660,
+     "results": {
+      "Yes": 472,
+      "No": 84
+     }
+    },
+    "29-30": {
+     "precinct_name": "Dearborn 29",
+     "registered_voters": 1974,
+     "ballots_cast": 1179,
+     "results": {
+      "Yes": 844,
+      "No": 160
+     }
+    },
+    "31-32": {
+     "precinct_name": "Dearborn 31 & 32",
+     "registered_voters": 3326,
+     "ballots_cast": 2076,
+     "results": {
+      "Yes": 1415,
+      "No": 272
+     }
+    },
+    "33-34": {
+     "precinct_name": "Dearborn 33 & 34",
+     "registered_voters": 3192,
+     "ballots_cast": 2048,
+     "results": {
+      "Yes": 1351,
+      "No": 249
+     }
+    },
+    "35-36": {
+     "precinct_name": "Dearborn 35",
+     "registered_voters": 2161,
+     "ballots_cast": 1489,
+     "results": {
+      "Yes": 1084,
+      "No": 196
+     }
+    },
+    "37-38": {
+     "precinct_name": "Dearborn 37 & 38",
+     "registered_voters": 3505,
+     "ballots_cast": 2267,
+     "results": {
+      "Yes": 1561,
+      "No": 314
+     }
+    },
+    "40-41": {
+     "precinct_name": "Dearborn 40 & 41",
+     "registered_voters": 2871,
+     "ballots_cast": 1951,
+     "results": {
+      "Yes": 1369,
+      "No": 250
+     }
+    },
+    "42-43": {
+     "precinct_name": "Dearborn 42",
+     "registered_voters": 2657,
+     "ballots_cast": 1749,
+     "results": {
+      "Yes": 1235,
+      "No": 241
+     }
+    },
+    "44": {
+     "precinct_name": "Dearborn 44",
+     "registered_voters": 1484,
+     "ballots_cast": 1057,
+     "results": {
+      "Yes": 808,
+      "No": 111
+     }
+    },
+    "45": {
+     "precinct_name": "Dearborn 45",
+     "registered_voters": 1798,
+     "ballots_cast": 1136,
+     "results": {
+      "Yes": 830,
+      "No": 147
+     }
+    },
+    "46": {
+     "precinct_name": "Dearborn 46",
+     "registered_voters": 1741,
+     "ballots_cast": 1076,
+     "results": {
+      "Yes": 799,
+      "No": 127
+     }
+    },
+    "47-48": {
+     "precinct_name": "Dearborn 47",
+     "registered_voters": 2446,
+     "ballots_cast": 1531,
+     "results": {
+      "Yes": 1086,
+      "No": 222
+     }
+    },
+    "49-50": {
+     "precinct_name": "Dearborn 49 & 50",
+     "registered_voters": 3593,
+     "ballots_cast": 2011,
+     "results": {
+      "Yes": 1447,
+      "No": 274
+     }
+    }
+   }
+  },
+  "proposal_zoo": {
+   "race_name": "Detroit Zoo Millage Renewal",
+   "category": "Proposals",
+   "seats": 1,
+   "candidates": [
+    "Yes",
+    "No"
+   ],
+   "colors": {
+    "Yes": "#22c55e",
+    "No": "#ef4444"
+   },
+   "precincts": {
+    "1": {
+     "precinct_name": "Dearborn 1",
+     "registered_voters": 1990,
+     "ballots_cast": 1079,
+     "results": {
+      "Yes": 349,
+      "No": 351
+     }
+    },
+    "2": {
+     "precinct_name": "Dearborn 2",
+     "registered_voters": 2132,
+     "ballots_cast": 965,
+     "results": {
+      "Yes": 376,
+      "No": 256
+     }
+    },
+    "3": {
+     "precinct_name": "Dearborn 3",
+     "registered_voters": 2642,
+     "ballots_cast": 1349,
+     "results": {
+      "Yes": 621,
+      "No": 333
+     }
+    },
+    "4-5": {
+     "precinct_name": "Dearborn 4",
+     "registered_voters": 3321,
+     "ballots_cast": 1581,
+     "results": {
+      "Yes": 617,
+      "No": 458
+     }
+    },
+    "6": {
+     "precinct_name": "Dearborn 6",
+     "registered_voters": 2204,
+     "ballots_cast": 1141,
+     "results": {
+      "Yes": 455,
+      "No": 356
+     }
+    },
+    "7": {
+     "precinct_name": "Dearborn 7",
+     "registered_voters": 2775,
+     "ballots_cast": 1345,
+     "results": {
+      "Yes": 545,
+      "No": 429
+     }
+    },
+    "8-9": {
+     "precinct_name": "Dearborn 8 & 9",
+     "registered_voters": 3709,
+     "ballots_cast": 1926,
+     "results": {
+      "Yes": 820,
+      "No": 534
+     }
+    },
+    "10": {
+     "precinct_name": "Dearborn 10",
+     "registered_voters": 1802,
+     "ballots_cast": 826,
+     "results": {
+      "Yes": 320,
+      "No": 228
+     }
+    },
+    "11-12": {
+     "precinct_name": "Dearborn 11 & 12",
+     "registered_voters": 3552,
+     "ballots_cast": 1823,
+     "results": {
+      "Yes": 679,
+      "No": 544
+     }
+    },
+    "13": {
+     "precinct_name": "Dearborn 13",
+     "registered_voters": 584,
+     "ballots_cast": 369,
+     "results": {
+      "Yes": 283,
+      "No": 38
+     }
+    },
+    "15-16": {
+     "precinct_name": "Dearborn 15 & 16",
+     "registered_voters": 4119,
+     "ballots_cast": 2128,
+     "results": {
+      "Yes": 795,
+      "No": 727
+     }
+    },
+    "17": {
+     "precinct_name": "Dearborn 17",
+     "registered_voters": 2489,
+     "ballots_cast": 1281,
+     "results": {
+      "Yes": 572,
+      "No": 367
+     }
+    },
+    "18": {
+     "precinct_name": "Dearborn 18",
+     "registered_voters": 2904,
+     "ballots_cast": 1438,
+     "results": {
+      "Yes": 506,
+      "No": 478
+     }
+    },
+    "19": {
+     "precinct_name": "Dearborn 19",
+     "registered_voters": 1684,
+     "ballots_cast": 937,
+     "results": {
+      "Yes": 334,
+      "No": 283
+     }
+    },
+    "20": {
+     "precinct_name": "Dearborn 20",
+     "registered_voters": 1453,
+     "ballots_cast": 677,
+     "results": {
+      "Yes": 140,
+      "No": 287
+     }
+    },
+    "21": {
+     "precinct_name": "Dearborn 21",
+     "registered_voters": 1878,
+     "ballots_cast": 949,
+     "results": {
+      "Yes": 236,
+      "No": 339
+     }
+    },
+    "22-23": {
+     "precinct_name": "Dearborn 22",
+     "registered_voters": 2287,
+     "ballots_cast": 1373,
+     "results": {
+      "Yes": 847,
+      "No": 296
+     }
+    },
+    "24": {
+     "precinct_name": "Dearborn 24",
+     "registered_voters": 1116,
+     "ballots_cast": 691,
+     "results": {
+      "Yes": 457,
+      "No": 136
+     }
+    },
+    "25-26": {
+     "precinct_name": "Dearborn 25 & 26",
+     "registered_voters": 3750,
+     "ballots_cast": 2325,
+     "results": {
+      "Yes": 1324,
+      "No": 635
+     }
+    },
+    "27": {
+     "precinct_name": "Dearborn 27",
+     "registered_voters": 1676,
+     "ballots_cast": 1027,
+     "results": {
+      "Yes": 654,
+      "No": 219
+     }
+    },
+    "28": {
+     "precinct_name": "Dearborn 28",
+     "registered_voters": 1052,
+     "ballots_cast": 660,
+     "results": {
+      "Yes": 420,
+      "No": 138
+     }
+    },
+    "29-30": {
+     "precinct_name": "Dearborn 29",
+     "registered_voters": 1974,
+     "ballots_cast": 1179,
+     "results": {
+      "Yes": 763,
+      "No": 259
+     }
+    },
+    "31-32": {
+     "precinct_name": "Dearborn 31 & 32",
+     "registered_voters": 3326,
+     "ballots_cast": 2076,
+     "results": {
+      "Yes": 1226,
+      "No": 471
+     }
+    },
+    "33-34": {
+     "precinct_name": "Dearborn 33 & 34",
+     "registered_voters": 3192,
+     "ballots_cast": 2048,
+     "results": {
+      "Yes": 1123,
+      "No": 484
+     }
+    },
+    "35-36": {
+     "precinct_name": "Dearborn 35",
+     "registered_voters": 2161,
+     "ballots_cast": 1489,
+     "results": {
+      "Yes": 956,
+      "No": 338
+     }
+    },
+    "37-38": {
+     "precinct_name": "Dearborn 37 & 38",
+     "registered_voters": 3505,
+     "ballots_cast": 2267,
+     "results": {
+      "Yes": 1330,
+      "No": 555
+     }
+    },
+    "40-41": {
+     "precinct_name": "Dearborn 40 & 41",
+     "registered_voters": 2871,
+     "ballots_cast": 1951,
+     "results": {
+      "Yes": 1121,
+      "No": 497
+     }
+    },
+    "42-43": {
+     "precinct_name": "Dearborn 42",
+     "registered_voters": 2657,
+     "ballots_cast": 1749,
+     "results": {
+      "Yes": 1062,
+      "No": 417
+     }
+    },
+    "44": {
+     "precinct_name": "Dearborn 44",
+     "registered_voters": 1484,
+     "ballots_cast": 1057,
+     "results": {
+      "Yes": 713,
+      "No": 215
+     }
+    },
+    "45": {
+     "precinct_name": "Dearborn 45",
+     "registered_voters": 1798,
+     "ballots_cast": 1136,
+     "results": {
+      "Yes": 754,
+      "No": 230
+     }
+    },
+    "46": {
+     "precinct_name": "Dearborn 46",
+     "registered_voters": 1741,
+     "ballots_cast": 1076,
+     "results": {
+      "Yes": 705,
+      "No": 229
+     }
+    },
+    "47-48": {
+     "precinct_name": "Dearborn 47",
+     "registered_voters": 2446,
+     "ballots_cast": 1531,
+     "results": {
+      "Yes": 956,
+      "No": 365
+     }
+    },
+    "49-50": {
+     "precinct_name": "Dearborn 49 & 50",
+     "registered_voters": 3593,
+     "ballots_cast": 2011,
+     "results": {
+      "Yes": 1302,
+      "No": 416
+     }
+    }
+   }
+  },
+  "proposal_museum": {
+   "race_name": "Historical Museum Millage",
+   "category": "Proposals",
+   "seats": 1,
+   "candidates": [
+    "Yes",
+    "No"
+   ],
+   "colors": {
+    "Yes": "#22c55e",
+    "No": "#ef4444"
+   },
+   "precincts": {
+    "1": {
+     "precinct_name": "Dearborn 1",
+     "registered_voters": 1990,
+     "ballots_cast": 1079,
+     "results": {
+      "Yes": 405,
+      "No": 291
+     }
+    },
+    "2": {
+     "precinct_name": "Dearborn 2",
+     "registered_voters": 2132,
+     "ballots_cast": 965,
+     "results": {
+      "Yes": 387,
+      "No": 251
+     }
+    },
+    "3": {
+     "precinct_name": "Dearborn 3",
+     "registered_voters": 2642,
+     "ballots_cast": 1349,
+     "results": {
+      "Yes": 615,
+      "No": 326
+     }
+    },
+    "4-5": {
+     "precinct_name": "Dearborn 4",
+     "registered_voters": 3321,
+     "ballots_cast": 1581,
+     "results": {
+      "Yes": 686,
+      "No": 387
+     }
+    },
+    "6": {
+     "precinct_name": "Dearborn 6",
+     "registered_voters": 2204,
+     "ballots_cast": 1141,
+     "results": {
+      "Yes": 461,
+      "No": 344
+     }
+    },
+    "7": {
+     "precinct_name": "Dearborn 7",
+     "registered_voters": 2775,
+     "ballots_cast": 1345,
+     "results": {
+      "Yes": 565,
+      "No": 423
+     }
+    },
+    "8-9": {
+     "precinct_name": "Dearborn 8 & 9",
+     "registered_voters": 3709,
+     "ballots_cast": 1926,
+     "results": {
+      "Yes": 861,
+      "No": 500
+     }
+    },
+    "10": {
+     "precinct_name": "Dearborn 10",
+     "registered_voters": 1802,
+     "ballots_cast": 826,
+     "results": {
+      "Yes": 330,
+      "No": 223
+     }
+    },
+    "11-12": {
+     "precinct_name": "Dearborn 11 & 12",
+     "registered_voters": 3552,
+     "ballots_cast": 1823,
+     "results": {
+      "Yes": 665,
+      "No": 576
+     }
+    },
+    "13": {
+     "precinct_name": "Dearborn 13",
+     "registered_voters": 584,
+     "ballots_cast": 369,
+     "results": {
+      "Yes": 271,
+      "No": 49
+     }
+    },
+    "15-16": {
+     "precinct_name": "Dearborn 15 & 16",
+     "registered_voters": 4119,
+     "ballots_cast": 2128,
+     "results": {
+      "Yes": 815,
+      "No": 717
+     }
+    },
+    "17": {
+     "precinct_name": "Dearborn 17",
+     "registered_voters": 2489,
+     "ballots_cast": 1281,
+     "results": {
+      "Yes": 566,
+      "No": 376
+     }
+    },
+    "18": {
+     "precinct_name": "Dearborn 18",
+     "registered_voters": 2904,
+     "ballots_cast": 1438,
+     "results": {
+      "Yes": 585,
+      "No": 401
+     }
+    },
+    "19": {
+     "precinct_name": "Dearborn 19",
+     "registered_voters": 1684,
+     "ballots_cast": 937,
+     "results": {
+      "Yes": 338,
+      "No": 285
+     }
+    },
+    "20": {
+     "precinct_name": "Dearborn 20",
+     "registered_voters": 1453,
+     "ballots_cast": 677,
+     "results": {
+      "Yes": 181,
+      "No": 241
+     }
+    },
+    "21": {
+     "precinct_name": "Dearborn 21",
+     "registered_voters": 1878,
+     "ballots_cast": 949,
+     "results": {
+      "Yes": 268,
+      "No": 320
+     }
+    },
+    "22-23": {
+     "precinct_name": "Dearborn 22",
+     "registered_voters": 2287,
+     "ballots_cast": 1373,
+     "results": {
+      "Yes": 815,
+      "No": 329
+     }
+    },
+    "24": {
+     "precinct_name": "Dearborn 24",
+     "registered_voters": 1116,
+     "ballots_cast": 691,
+     "results": {
+      "Yes": 438,
+      "No": 159
+     }
+    },
+    "25-26": {
+     "precinct_name": "Dearborn 25 & 26",
+     "registered_voters": 3750,
+     "ballots_cast": 2325,
+     "results": {
+      "Yes": 1163,
+      "No": 799
+     }
+    },
+    "27": {
+     "precinct_name": "Dearborn 27",
+     "registered_voters": 1676,
+     "ballots_cast": 1027,
+     "results": {
+      "Yes": 553,
+      "No": 314
+     }
+    },
+    "28": {
+     "precinct_name": "Dearborn 28",
+     "registered_voters": 1052,
+     "ballots_cast": 660,
+     "results": {
+      "Yes": 368,
+      "No": 196
+     }
+    },
+    "29-30": {
+     "precinct_name": "Dearborn 29",
+     "registered_voters": 1974,
+     "ballots_cast": 1179,
+     "results": {
+      "Yes": 648,
+      "No": 373
+     }
+    },
+    "31-32": {
+     "precinct_name": "Dearborn 31 & 32",
+     "registered_voters": 3326,
+     "ballots_cast": 2076,
+     "results": {
+      "Yes": 1090,
+      "No": 610
+     }
+    },
+    "33-34": {
+     "precinct_name": "Dearborn 33 & 34",
+     "registered_voters": 3192,
+     "ballots_cast": 2048,
+     "results": {
+      "Yes": 974,
+      "No": 634
+     }
+    },
+    "35-36": {
+     "precinct_name": "Dearborn 35",
+     "registered_voters": 2161,
+     "ballots_cast": 1489,
+     "results": {
+      "Yes": 855,
+      "No": 446
+     }
+    },
+    "37-38": {
+     "precinct_name": "Dearborn 37 & 38",
+     "registered_voters": 3505,
+     "ballots_cast": 2267,
+     "results": {
+      "Yes": 1169,
+      "No": 720
+     }
+    },
+    "40-41": {
+     "precinct_name": "Dearborn 40 & 41",
+     "registered_voters": 2871,
+     "ballots_cast": 1951,
+     "results": {
+      "Yes": 1013,
+      "No": 603
+     }
+    },
+    "42-43": {
+     "precinct_name": "Dearborn 42",
+     "registered_voters": 2657,
+     "ballots_cast": 1749,
+     "results": {
+      "Yes": 930,
+      "No": 537
+     }
+    },
+    "44": {
+     "precinct_name": "Dearborn 44",
+     "registered_voters": 1484,
+     "ballots_cast": 1057,
+     "results": {
+      "Yes": 653,
+      "No": 274
+     }
+    },
+    "45": {
+     "precinct_name": "Dearborn 45",
+     "registered_voters": 1798,
+     "ballots_cast": 1136,
+     "results": {
+      "Yes": 692,
+      "No": 291
+     }
+    },
+    "46": {
+     "precinct_name": "Dearborn 46",
+     "registered_voters": 1741,
+     "ballots_cast": 1076,
+     "results": {
+      "Yes": 619,
+      "No": 311
+     }
+    },
+    "47-48": {
+     "precinct_name": "Dearborn 47",
+     "registered_voters": 2446,
+     "ballots_cast": 1531,
+     "results": {
+      "Yes": 823,
+      "No": 501
+     }
+    },
+    "49-50": {
+     "precinct_name": "Dearborn 49 & 50",
+     "registered_voters": 3593,
+     "ballots_cast": 2011,
+     "results": {
+      "Yes": 1154,
+      "No": 574
+     }
+    }
+   }
+  },
+  "proposal_dps_bond": {
+   "race_name": "Dearborn Schools Bond",
+   "category": "Proposals",
+   "seats": 1,
+   "candidates": [
+    "Yes",
+    "No"
+   ],
+   "colors": {
+    "Yes": "#22c55e",
+    "No": "#ef4444"
+   },
+   "precincts": {
+    "1": {
+     "precinct_name": "Dearborn 1",
+     "registered_voters": 1990,
+     "ballots_cast": 1079,
+     "results": {
+      "Yes": 574,
+      "No": 227
+     }
+    },
+    "2": {
+     "precinct_name": "Dearborn 2",
+     "registered_voters": 2132,
+     "ballots_cast": 965,
+     "results": {
+      "Yes": 569,
+      "No": 153
+     }
+    },
+    "3": {
+     "precinct_name": "Dearborn 3",
+     "registered_voters": 2642,
+     "ballots_cast": 1349,
+     "results": {
+      "Yes": 794,
+      "No": 252
+     }
+    },
+    "4-5": {
+     "precinct_name": "Dearborn 4",
+     "registered_voters": 3321,
+     "ballots_cast": 1581,
+     "results": {
+      "Yes": 947,
+      "No": 245
+     }
+    },
+    "6": {
+     "precinct_name": "Dearborn 6",
+     "registered_voters": 2204,
+     "ballots_cast": 1141,
+     "results": {
+      "Yes": 720,
+      "No": 189
+     }
+    },
+    "7": {
+     "precinct_name": "Dearborn 7",
+     "registered_voters": 2775,
+     "ballots_cast": 1345,
+     "results": {
+      "Yes": 872,
+      "No": 246
+     }
+    },
+    "8-9": {
+     "precinct_name": "Dearborn 8 & 9",
+     "registered_voters": 3709,
+     "ballots_cast": 1926,
+     "results": {
+      "Yes": 1139,
+      "No": 336
+     }
+    },
+    "10": {
+     "precinct_name": "Dearborn 10",
+     "registered_voters": 1802,
+     "ballots_cast": 826,
+     "results": {
+      "Yes": 442,
+      "No": 165
+     }
+    },
+    "11-12": {
+     "precinct_name": "Dearborn 11 & 12",
+     "registered_voters": 3552,
+     "ballots_cast": 1823,
+     "results": {
+      "Yes": 946,
+      "No": 409
+     }
+    },
+    "13": {
+     "precinct_name": "Dearborn 13",
+     "registered_voters": 584,
+     "ballots_cast": 369,
+     "results": {
+      "Yes": 250,
+      "No": 67
+     }
+    },
+    "15-16": {
+     "precinct_name": "Dearborn 15 & 16",
+     "registered_voters": 4119,
+     "ballots_cast": 2128,
+     "results": {
+      "Yes": 1164,
+      "No": 502
+     }
+    },
+    "17": {
+     "precinct_name": "Dearborn 17",
+     "registered_voters": 2489,
+     "ballots_cast": 1281,
+     "results": {
+      "Yes": 778,
+      "No": 252
+     }
+    },
+    "18": {
+     "precinct_name": "Dearborn 18",
+     "registered_voters": 2904,
+     "ballots_cast": 1438,
+     "results": {
+      "Yes": 782,
+      "No": 301
+     }
+    },
+    "19": {
+     "precinct_name": "Dearborn 19",
+     "registered_voters": 1684,
+     "ballots_cast": 937,
+     "results": {
+      "Yes": 572,
+      "No": 196
+     }
+    },
+    "20": {
+     "precinct_name": "Dearborn 20",
+     "registered_voters": 1453,
+     "ballots_cast": 677,
+     "results": {
+      "Yes": 367,
+      "No": 135
+     }
+    },
+    "21": {
+     "precinct_name": "Dearborn 21",
+     "registered_voters": 1878,
+     "ballots_cast": 949,
+     "results": {
+      "Yes": 526,
+      "No": 187
+     }
+    },
+    "22-23": {
+     "precinct_name": "Dearborn 22",
+     "registered_voters": 2287,
+     "ballots_cast": 1373,
+     "results": {
+      "Yes": 851,
+      "No": 356
+     }
+    },
+    "24": {
+     "precinct_name": "Dearborn 24",
+     "registered_voters": 1116,
+     "ballots_cast": 691,
+     "results": {
+      "Yes": 396,
+      "No": 216
+     }
+    },
+    "25-26": {
+     "precinct_name": "Dearborn 25 & 26",
+     "registered_voters": 3750,
+     "ballots_cast": 2325,
+     "results": {
+      "Yes": 1256,
+      "No": 796
+     }
+    },
+    "27": {
+     "precinct_name": "Dearborn 27",
+     "registered_voters": 1676,
+     "ballots_cast": 1027,
+     "results": {
+      "Yes": 566,
+      "No": 331
+     }
+    },
+    "28": {
+     "precinct_name": "Dearborn 28",
+     "registered_voters": 1052,
+     "ballots_cast": 660,
+     "results": {
+      "Yes": 367,
+      "No": 225
+     }
+    },
+    "29-30": {
+     "precinct_name": "Dearborn 29",
+     "registered_voters": 1974,
+     "ballots_cast": 1179,
+     "results": {
+      "Yes": 661,
+      "No": 384
+     }
+    },
+    "31-32": {
+     "precinct_name": "Dearborn 31 & 32",
+     "registered_voters": 3326,
+     "ballots_cast": 2076,
+     "results": {
+      "Yes": 1193,
+      "No": 619
+     }
+    },
+    "33-34": {
+     "precinct_name": "Dearborn 33 & 34",
+     "registered_voters": 3192,
+     "ballots_cast": 2048,
+     "results": {
+      "Yes": 1128,
+      "No": 626
+     }
+    },
+    "35-36": {
+     "precinct_name": "Dearborn 35",
+     "registered_voters": 2161,
+     "ballots_cast": 1489,
+     "results": {
+      "Yes": 882,
+      "No": 494
+     }
+    },
+    "37-38": {
+     "precinct_name": "Dearborn 37 & 38",
+     "registered_voters": 3505,
+     "ballots_cast": 2267,
+     "results": {
+      "Yes": 1218,
+      "No": 789
+     }
+    },
+    "40-41": {
+     "precinct_name": "Dearborn 40 & 41",
+     "registered_voters": 2871,
+     "ballots_cast": 1951,
+     "results": {
+      "Yes": 1110,
+      "No": 615
+     }
+    },
+    "42-43": {
+     "precinct_name": "Dearborn 42",
+     "registered_voters": 2657,
+     "ballots_cast": 1749,
+     "results": {
+      "Yes": 1005,
+      "No": 543
+     }
+    },
+    "44": {
+     "precinct_name": "Dearborn 44",
+     "registered_voters": 1484,
+     "ballots_cast": 1057,
+     "results": {
+      "Yes": 601,
+      "No": 365
+     }
+    },
+    "45": {
+     "precinct_name": "Dearborn 45",
+     "registered_voters": 1798,
+     "ballots_cast": 1136,
+     "results": {
+      "Yes": 644,
+      "No": 375
+     }
+    },
+    "46": {
+     "precinct_name": "Dearborn 46",
+     "registered_voters": 1741,
+     "ballots_cast": 1076,
+     "results": {
+      "Yes": 594,
+      "No": 363
+     }
+    },
+    "47-48": {
+     "precinct_name": "Dearborn 47",
+     "registered_voters": 2446,
+     "ballots_cast": 1531,
+     "results": {
+      "Yes": 854,
+      "No": 523
+     }
+    },
+    "49-50": {
+     "precinct_name": "Dearborn 49 & 50",
+     "registered_voters": 3593,
+     "ballots_cast": 2011,
+     "results": {
+      "Yes": 1106,
+      "No": 685
+     }
+    }
+   }
+  }
+ }
+}
