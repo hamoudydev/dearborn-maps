@@ -1,6 +1,7 @@
 ---
 import boundaryData from '../data/boundary.json';
 import precinctData from '../data/precincts.json';
+import precincts2026 from '../data/precincts-2026.json';
 import election2025 from '../data/election-data-template.json';
 import election2026 from '../data/election-2026.json';
 
@@ -109,7 +110,7 @@ const { mapboxToken } = Astro.props;
   Data from <a href="https://dearborn.gov/sites/default/files/2026-11/11-3-26%20Election%20Precinct%20Breakdown.pdf" target="_blank">City of Dearborn</a> &amp; <a href="https://www.michigan.gov/sos" target="_blank">Michigan SOS</a>
 </div>
 
-<script is:inline define:vars={{ mapboxToken, boundaryData, precinctData, election2025, election2026 }}>
+<script is:inline define:vars={{ mapboxToken, boundaryData, precinctData, precincts2026, election2025, election2026 }}>
   const MAPBOX_TOKEN = mapboxToken;
 
   // ---------------------------------------------------------------------------
@@ -139,11 +140,27 @@ const { mapboxToken } = Astro.props;
     "no": "#e74c3c"
   };
 
-  // Year -> { label, races }. Each race: { race_name, category, seats, candidates, colors, precincts }.
+  // Precinct boundaries. 2025 results use combined precincts (e.g. "8-9");
+  // 2026 reports most of those separately.
+  const GEOMETRIES = {
+    merged: precinctData,
+    '2026': precincts2026
+  };
+
+  // Year -> { label, geometry, races, mergedUnits? }.
+  // Each race: { race_name, category, seats, candidates, colors, precincts }.
+  // mergedUnits maps a precinct to its combined "merged" unit, so the year can be
+  // summed onto the merged boundaries when compared against another year.
   const ELECTIONS = {
-    '2026': { label: 'Nov 2026 General', races: election2026.races },
+    '2026': {
+      label: 'Nov 2026 General',
+      geometry: '2026',
+      mergedUnits: election2026.merged_units,
+      races: election2026.races
+    },
     '2025': {
       label: 'Nov 2025 Municipal',
+      geometry: 'merged',
       races: Object.fromEntries(Object.entries(election2025.races).map(([key, race]) => [key, {
         ...race,
         category: race.race_name.startsWith('Proposal') ? 'Proposals' : 'City',
@@ -164,13 +181,45 @@ const { mapboxToken } = Astro.props;
 
   let map;
   let currentPopup = null;
+  let shownGeometry = null;
 
   function getRace(sel) {
     return ELECTIONS[sel.year]?.races[sel.race] || null;
   }
 
-  function getResults(sel, precinctId) {
-    return getRace(sel)?.precincts[precinctId]?.results || null;
+  // Boundaries currently drawn. Comparing two different years falls back to the
+  // merged boundaries so both sides cover the same area.
+  function activeGeometry() {
+    if (!compareMode) return ELECTIONS[current.year].geometry;
+    const g1 = ELECTIONS[compare1.year].geometry;
+    const g2 = ELECTIONS[compare2.year].geometry;
+    return g1 === g2 ? g1 : 'merged';
+  }
+
+  // Results and turnout for one drawn precinct, summing finer precincts if needed.
+  function getEntry(sel, unitId) {
+    const election = ELECTIONS[sel.year];
+    const race = getRace(sel);
+    if (!race) return null;
+    const geom = activeGeometry();
+    if (election.geometry === geom) return race.precincts[unitId] || null;
+    if (geom !== 'merged' || !election.mergedUnits) return null;
+
+    const members = Object.keys(race.precincts).filter(p => election.mergedUnits[p] === unitId);
+    if (members.length === 0) return null;
+    const entry = { results: {}, registered_voters: 0, ballots_cast: 0, members };
+    for (const p of members) {
+      const src = race.precincts[p];
+      entry.registered_voters += src.registered_voters || 0;
+      entry.ballots_cast += src.ballots_cast || 0;
+      for (const [c, v] of Object.entries(src.results)) entry.results[c] = (entry.results[c] || 0) + v;
+    }
+    entry.precinct_name = `Dearborn ${members.join(' & ')}`;
+    return entry;
+  }
+
+  function getResults(sel, unitId) {
+    return getEntry(sel, unitId)?.results || null;
   }
 
   function candidateColor(sel, candidate) {
@@ -380,7 +429,10 @@ const { mapboxToken } = Astro.props;
           <span class="legend-dot" style="background: #666666"></span>
           <span>Equal</span>
         </div>
-        <div class="legend-note" style="margin-top: 0.5rem;">Darker = larger difference</div>`;
+        <div class="legend-note" style="margin-top: 0.5rem;">Darker = larger difference</div>` +
+        (compare1.year !== compare2.year
+          ? '<div class="legend-note">Comparing different years: 2026 precincts are combined to match 2025 boundaries (e.g. 8 + 9).</div>'
+          : '');
       return;
     }
 
@@ -417,8 +469,13 @@ const { mapboxToken } = Astro.props;
 
   function updateMapColors() {
     if (!map || !map.getSource('precincts')) return;
+    const geom = activeGeometry();
+    if (geom !== shownGeometry) {
+      map.getSource('precincts').setData(GEOMETRIES[geom]);
+      shownGeometry = geom;
+    }
     const expr = ['case'];
-    precinctData.features.forEach(feature => {
+    GEOMETRIES[geom].features.forEach(feature => {
       const id = feature.properties.PRECINCT;
       const color = compareMode
         ? (compare1.candidate && compare2.candidate ? getComparisonColor(id) : '#333333')
@@ -440,11 +497,7 @@ const { mapboxToken } = Astro.props;
   // Popups
   // ---------------------------------------------------------------------------
 
-  function precinctMeta(sel, precinctId) {
-    return getRace(sel)?.precincts[precinctId] || null;
-  }
-
-  function showPopup(lngLat, precinctId) {
+  function showPopup(lngLat, precinctId, props = {}) {
     if (currentPopup) currentPopup.remove();
 
     if (compareMode && compare1.candidate && compare2.candidate) {
@@ -481,7 +534,7 @@ const { mapboxToken } = Astro.props;
     }
 
     const results = getResults(current, precinctId);
-    const meta = precinctMeta(current, precinctId);
+    const meta = getEntry(current, precinctId);
     let resultsHtml = '<div class="popup-note">No data available</div>';
     let pieChartHtml = '';
 
@@ -505,6 +558,7 @@ const { mapboxToken } = Astro.props;
     if (meta?.registered_voters) notes.push(`Registered voters: ${meta.registered_voters.toLocaleString()}`);
     if (meta?.ballots_cast) notes.push(`Ballots cast: ${meta.ballots_cast.toLocaleString()}`);
     if (meta?.precinct_name && meta.precinct_name.includes('&')) notes.push(`Includes ${escapeHtml(meta.precinct_name)}`);
+    if (props.Boundary_Note) notes.push(`Boundary: ${escapeHtml(props.Boundary_Note)}`);
 
     currentPopup = new mapboxgl.Popup({ maxWidth: '320px' })
       .setLngLat(lngLat)
@@ -550,7 +604,8 @@ const { mapboxToken } = Astro.props;
         paint: { 'line-color': '#533483', 'line-width': 2, 'line-opacity': 0.7, 'line-dasharray': [2, 2] }
       });
 
-      map.addSource('precincts', { type: 'geojson', data: precinctData });
+      shownGeometry = activeGeometry();
+      map.addSource('precincts', { type: 'geojson', data: GEOMETRIES[shownGeometry] });
       map.addLayer({
         id: 'precinct-fill', type: 'fill', source: 'precincts',
         paint: { 'fill-color': '#333333', 'fill-opacity': 0.7 }
@@ -572,7 +627,7 @@ const { mapboxToken } = Astro.props;
 
       refresh();
 
-      map.on('click', 'precinct-fill', (e) => showPopup(e.lngLat, e.features[0].properties.PRECINCT));
+      map.on('click', 'precinct-fill', (e) => showPopup(e.lngLat, e.features[0].properties.PRECINCT, e.features[0].properties));
       map.on('mouseenter', 'precinct-fill', () => { map.getCanvas().style.cursor = 'pointer'; });
       map.on('mouseleave', 'precinct-fill', () => { map.getCanvas().style.cursor = ''; });
     });
