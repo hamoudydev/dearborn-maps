@@ -2,6 +2,8 @@
 import boundaryData from '../data/boundary.json';
 import precinctData from '../data/precincts.json';
 import precincts2026 from '../data/precincts-2026.json';
+import precincts2024 from '../data/precincts-2024.json';
+import election2024 from '../data/election-2024.json';
 import election2025 from '../data/election-data-template.json';
 import election2026 from '../data/election-2026.json';
 
@@ -110,14 +112,14 @@ const { mapboxToken } = Astro.props;
   Data from <a href="https://dearborn.gov/sites/default/files/2026-11/11-3-26%20Election%20Precinct%20Breakdown.pdf" target="_blank">City of Dearborn</a> &amp; <a href="https://www.michigan.gov/sos" target="_blank">Michigan SOS</a>
 </div>
 
-<script is:inline define:vars={{ mapboxToken, boundaryData, precinctData, precincts2026, election2025, election2026 }}>
+<script is:inline define:vars={{ mapboxToken, boundaryData, precinctData, precincts2024, precincts2026, election2024, election2025, election2026 }}>
   const MAPBOX_TOKEN = mapboxToken;
 
   // ---------------------------------------------------------------------------
   // Elections
   // ---------------------------------------------------------------------------
 
-  // Colors for the 2025 municipal races (the 2026 file carries its own colors).
+  // Colors for the 2025 municipal races (the 2024 and 2026 files carry their own).
   const colors2025 = {
     "Abdullah Hammoud": "#2ecc71",
     "Nagi Almudhegi": "#e74c3c",
@@ -140,22 +142,25 @@ const { mapboxToken } = Astro.props;
     "no": "#e74c3c"
   };
 
-  // Precinct boundaries. 2025 results use combined precincts (e.g. "8-9");
-  // 2026 reports most of those separately.
+  // Precinct boundaries, finest first. Each level nests inside the next:
+  // 2024 (48 precincts) -> 2026 (42; six pairs consolidated) -> merged (33 combined
+  // units used by the 2025 data, e.g. "8-9").
   const GEOMETRIES = {
-    merged: precinctData,
-    '2026': precincts2026
+    '2024': precincts2024,
+    '2026': precincts2026,
+    merged: precinctData
   };
+  const GEOMETRY_ORDER = ['2024', '2026', 'merged'];
 
-  // Year -> { label, geometry, races, mergedUnits? }.
+  // Year -> { label, geometry, races, unitMaps? }.
   // Each race: { race_name, category, seats, candidates, colors, precincts }.
-  // mergedUnits maps a precinct to its combined "merged" unit, so the year can be
-  // summed onto the merged boundaries when compared against another year.
+  // unitMaps[geometry] maps each precinct to the coarser unit containing it, so the
+  // year can be summed onto that geometry when compared against another year.
   const ELECTIONS = {
     '2026': {
       label: 'Nov 2026 General',
       geometry: '2026',
-      mergedUnits: election2026.merged_units,
+      unitMaps: election2026.unit_maps,
       races: election2026.races
     },
     '2025': {
@@ -166,11 +171,17 @@ const { mapboxToken } = Astro.props;
         category: race.race_name.startsWith('Proposal') ? 'Proposals' : 'City',
         colors: Object.fromEntries(race.candidates.map(c => [c, colors2025[c] || '#888888']))
       }]))
+    },
+    '2024': {
+      label: 'Nov 2024 General',
+      geometry: '2024',
+      unitMaps: election2024.unit_maps,
+      races: election2024.races
     }
   };
   const YEARS = Object.keys(ELECTIONS).sort().reverse();
 
-  const DEFAULT_RACE = { '2026': 'governor', '2025': 'mayor' };
+  const DEFAULT_RACE = { '2026': 'governor', '2025': 'mayor', '2024': 'president' };
 
   // A "selection" is { year, race, candidate }; candidate === null means "precinct winner".
   let current = { year: '2026', race: 'governor', candidate: null };
@@ -187,13 +198,13 @@ const { mapboxToken } = Astro.props;
     return ELECTIONS[sel.year]?.races[sel.race] || null;
   }
 
-  // Boundaries currently drawn. Comparing two different years falls back to the
-  // merged boundaries so both sides cover the same area.
+  // Boundaries currently drawn. Comparing two years uses the coarser of their
+  // boundaries so both sides cover the same area.
   function activeGeometry() {
     if (!compareMode) return ELECTIONS[current.year].geometry;
-    const g1 = ELECTIONS[compare1.year].geometry;
-    const g2 = ELECTIONS[compare2.year].geometry;
-    return g1 === g2 ? g1 : 'merged';
+    const i1 = GEOMETRY_ORDER.indexOf(ELECTIONS[compare1.year].geometry);
+    const i2 = GEOMETRY_ORDER.indexOf(ELECTIONS[compare2.year].geometry);
+    return GEOMETRY_ORDER[Math.max(i1, i2)];
   }
 
   // Results and turnout for one drawn precinct, summing finer precincts if needed.
@@ -203,9 +214,10 @@ const { mapboxToken } = Astro.props;
     if (!race) return null;
     const geom = activeGeometry();
     if (election.geometry === geom) return race.precincts[unitId] || null;
-    if (geom !== 'merged' || !election.mergedUnits) return null;
+    const unitMap = election.unitMaps?.[geom];
+    if (!unitMap) return null;
 
-    const members = Object.keys(race.precincts).filter(p => election.mergedUnits[p] === unitId);
+    const members = Object.keys(race.precincts).filter(p => unitMap[p] === unitId);
     if (members.length === 0) return null;
     const entry = { results: {}, registered_voters: 0, ballots_cast: 0, members };
     for (const p of members) {
@@ -430,8 +442,8 @@ const { mapboxToken } = Astro.props;
           <span>Equal</span>
         </div>
         <div class="legend-note" style="margin-top: 0.5rem;">Darker = larger difference</div>` +
-        (compare1.year !== compare2.year
-          ? '<div class="legend-note">Comparing different years: 2026 precincts are combined to match 2025 boundaries (e.g. 8 + 9).</div>'
+        (ELECTIONS[compare1.year].geometry !== ELECTIONS[compare2.year].geometry
+          ? `<div class="legend-note">Precinct boundaries differ between these years, so precincts are combined to the ${activeGeometry() === 'merged' ? '2025' : '2026'} boundaries (e.g. ${activeGeometry() === 'merged' ? '8 + 9' : '4 + 5'}).</div>`
           : '');
       return;
     }

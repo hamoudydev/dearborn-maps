@@ -1,0 +1,860 @@
+{
+ "election_info": {
+  "election_name": "November 2024 General Election",
+  "election_date": "2024-11-05",
+  "jurisdiction": "City of Dearborn, Michigan",
+  "source": "https://dearborn.gov/sites/default/files/2024-11/November%202024%20Dearborn%20Elections%20Breakdown%20-%20Unofficial%20Results.pdf",
+  "notes": "Unofficial results (11/7/2024). Precinct totals (early voting + election day + absentee); unresolved write-ins omitted. Precinct 42 combines portions 42D and 42W. unit_maps map each 2024 precinct to the 2026 precincts and to the combined units used by the 2025 data."
+ },
+ "unit_maps": {
+  "2026": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4",
+   "5": "4",
+   "6": "6",
+   "7": "7",
+   "8": "8",
+   "9": "9",
+   "10": "10",
+   "11": "11",
+   "12": "12",
+   "13": "13",
+   "15": "15",
+   "16": "16",
+   "17": "17",
+   "18": "18",
+   "19": "19",
+   "20": "20",
+   "21": "21",
+   "22": "22",
+   "23": "22",
+   "24": "24",
+   "25": "25",
+   "26": "26",
+   "27": "27",
+   "28": "28",
+   "29": "29",
+   "30": "29",
+   "31": "31",
+   "32": "32",
+   "33": "33",
+   "34": "34",
+   "35": "35",
+   "36": "35",
+   "37": "37",
+   "38": "38",
+   "40": "40",
+   "41": "41",
+   "42": "42",
+   "43": "42",
+   "44": "44",
+   "45": "45",
+   "46": "46",
+   "47": "47",
+   "48": "47",
+   "49": "49",
+   "50": "50"
+  },
+  "merged": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4-5",
+   "5": "4-5",
+   "6": "6",
+   "7": "7",
+   "8": "8-9",
+   "9": "8-9",
+   "10": "10",
+   "11": "11-12",
+   "12": "11-12",
+   "13": "13",
+   "15": "15-16",
+   "16": "15-16",
+   "17": "17",
+   "18": "18",
+   "19": "19",
+   "20": "20",
+   "21": "21",
+   "22": "22-23",
+   "23": "22-23",
+   "24": "24",
+   "25": "25-26",
+   "26": "25-26",
+   "27": "27",
+   "28": "28",
+   "29": "29-30",
+   "30": "29-30",
+   "31": "31-32",
+   "32": "31-32",
+   "33": "33-34",
+   "34": "33-34",
+   "35": "35-36",
+   "36": "35-36",
+   "37": "37-38",
+   "38": "37-38",
+   "40": "40-41",
+   "41": "40-41",
+   "42": "42-43",
+   "43": "42-43",
+   "44": "44",
+   "45": "45",
+   "46": "46",
+   "47": "47-48",
+   "48": "47-48",
+   "49": "49-50",
+   "50": "49-50"
+  }
+ },
+ "races": {
+  "president": {
+   "race_name": "President",
+   "category": "Federal",
+   "seats": 1,
+   "candidates": [
+    "Kamala D. Harris (D)",
+    "Donald J. Trump (R)",
+    "Chase Oliver (L)",
+    "Randall Terry (UST)",
+    "Jill Stein (G)",
+    "Robert F. Kennedy Jr. (NLP)",
+    "Joseph Kishore (NPA)",
+    "Cornel West (NPA)"
+   ],
+   "colors": {
+    "Kamala D. Harris (D)": "#2563eb",
+    "Donald J. Trump (R)": "#dc2626",
+    "Chase Oliver (L)": "#eab308",
+    "Randall Terry (UST)": "#7c3aed",
+    "Jill Stein (G)": "#16a34a",
+    "Robert F. Kennedy Jr. (NLP)": "#0d9488",
+    "Joseph Kishore (NPA)": "#64748b",
+    "Cornel West (NPA)": "#94a3b8"
+   },
+   "precincts": {
+    "1": {
+     "precinct_name": "Dearborn 1",
+     "registered_voters": 1906,
+     "ballots_cast": 848,
+     "results": {
+      "Kamala D. Harris (D)": 120,
+      "Donald J. Trump (R)": 409,
+      "Chase Oliver (L)": 7,
+      "Randall Terry (UST)": 1,
+      "Jill Stein (G)": 262,
+      "Robert F. Kennedy Jr. (NLP)": 1,
+      "Joseph Kishore (NPA)": 1,
+      "Cornel West (NPA)": 7
+     }
+    },
+    "2": {
+     "precinct_name": "Dearborn 2",
+     "registered_voters": 2085,
+     "ballots_cast": 811,
+     "results": {
+      "Kamala D. Harris (D)": 121,
+      "Donald J. Trump (R)": 335,
+      "Chase Oliver (L)": 6,
+      "Randall Terry (UST)": 4,
+      "Jill Stein (G)": 292,
+      "Robert F. Kennedy Jr. (NLP)": 3,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 4
+     }
+    },
+    "3": {
+     "precinct_name": "Dearborn 3",
+     "registered_voters": 2584,
+     "ballots_cast": 1122,
+     "results": {
+      "Kamala D. Harris (D)": 202,
+      "Donald J. Trump (R)": 420,
+      "Chase Oliver (L)": 2,
+      "Randall Terry (UST)": 1,
+      "Jill Stein (G)": 411,
+      "Robert F. Kennedy Jr. (NLP)": 3,
+      "Joseph Kishore (NPA)": 2,
+      "Cornel West (NPA)": 14
+     }
+    },
+    "4": {
+     "precinct_name": "Dearborn 4",
+     "registered_voters": 1473,
+     "ballots_cast": 565,
+     "results": {
+      "Kamala D. Harris (D)": 83,
+      "Donald J. Trump (R)": 269,
+      "Chase Oliver (L)": 3,
+      "Randall Terry (UST)": 2,
+      "Jill Stein (G)": 178,
+      "Robert F. Kennedy Jr. (NLP)": 0,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 4
+     }
+    },
+    "5": {
+     "precinct_name": "Dearborn 5",
+     "registered_voters": 1654,
+     "ballots_cast": 666,
+     "results": {
+      "Kamala D. Harris (D)": 80,
+      "Donald J. Trump (R)": 317,
+      "Chase Oliver (L)": 5,
+      "Randall Terry (UST)": 1,
+      "Jill Stein (G)": 207,
+      "Robert F. Kennedy Jr. (NLP)": 6,
+      "Joseph Kishore (NPA)": 1,
+      "Cornel West (NPA)": 4
+     }
+    },
+    "6": {
+     "precinct_name": "Dearborn 6",
+     "registered_voters": 2137,
+     "ballots_cast": 910,
+     "results": {
+      "Kamala D. Harris (D)": 118,
+      "Donald J. Trump (R)": 371,
+      "Chase Oliver (L)": 3,
+      "Randall Terry (UST)": 0,
+      "Jill Stein (G)": 340,
+      "Robert F. Kennedy Jr. (NLP)": 2,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 10
+     }
+    },
+    "7": {
+     "precinct_name": "Dearborn 7",
+     "registered_voters": 2688,
+     "ballots_cast": 1092,
+     "results": {
+      "Kamala D. Harris (D)": 144,
+      "Donald J. Trump (R)": 437,
+      "Chase Oliver (L)": 1,
+      "Randall Terry (UST)": 3,
+      "Jill Stein (G)": 401,
+      "Robert F. Kennedy Jr. (NLP)": 2,
+      "Joseph Kishore (NPA)": 1,
+      "Cornel West (NPA)": 12
+     }
+    },
+    "8": {
+     "precinct_name": "Dearborn 8",
+     "registered_voters": 1682,
+     "ballots_cast": 719,
+     "results": {
+      "Kamala D. Harris (D)": 111,
+      "Donald J. Trump (R)": 314,
+      "Chase Oliver (L)": 4,
+      "Randall Terry (UST)": 2,
+      "Jill Stein (G)": 224,
+      "Robert F. Kennedy Jr. (NLP)": 2,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 3
+     }
+    },
+    "9": {
+     "precinct_name": "Dearborn 9",
+     "registered_voters": 1850,
+     "ballots_cast": 737,
+     "results": {
+      "Kamala D. Harris (D)": 138,
+      "Donald J. Trump (R)": 309,
+      "Chase Oliver (L)": 2,
+      "Randall Terry (UST)": 0,
+      "Jill Stein (G)": 228,
+      "Robert F. Kennedy Jr. (NLP)": 0,
+      "Joseph Kishore (NPA)": 1,
+      "Cornel West (NPA)": 7
+     }
+    },
+    "10": {
+     "precinct_name": "Dearborn 10",
+     "registered_voters": 1743,
+     "ballots_cast": 694,
+     "results": {
+      "Kamala D. Harris (D)": 141,
+      "Donald J. Trump (R)": 315,
+      "Chase Oliver (L)": 5,
+      "Randall Terry (UST)": 2,
+      "Jill Stein (G)": 166,
+      "Robert F. Kennedy Jr. (NLP)": 5,
+      "Joseph Kishore (NPA)": 1,
+      "Cornel West (NPA)": 2
+     }
+    },
+    "11": {
+     "precinct_name": "Dearborn 11",
+     "registered_voters": 1555,
+     "ballots_cast": 642,
+     "results": {
+      "Kamala D. Harris (D)": 82,
+      "Donald J. Trump (R)": 282,
+      "Chase Oliver (L)": 6,
+      "Randall Terry (UST)": 2,
+      "Jill Stein (G)": 199,
+      "Robert F. Kennedy Jr. (NLP)": 1,
+      "Joseph Kishore (NPA)": 7,
+      "Cornel West (NPA)": 9
+     }
+    },
+    "12": {
+     "precinct_name": "Dearborn 12",
+     "registered_voters": 1831,
+     "ballots_cast": 805,
+     "results": {
+      "Kamala D. Harris (D)": 158,
+      "Donald J. Trump (R)": 363,
+      "Chase Oliver (L)": 2,
+      "Randall Terry (UST)": 2,
+      "Jill Stein (G)": 215,
+      "Robert F. Kennedy Jr. (NLP)": 3,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 1
+     }
+    },
+    "13": {
+     "precinct_name": "Dearborn 13",
+     "registered_voters": 587,
+     "ballots_cast": 431,
+     "results": {
+      "Kamala D. Harris (D)": 324,
+      "Donald J. Trump (R)": 98,
+      "Chase Oliver (L)": 0,
+      "Randall Terry (UST)": 0,
+      "Jill Stein (G)": 5,
+      "Robert F. Kennedy Jr. (NLP)": 0,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 0
+     }
+    },
+    "15": {
+     "precinct_name": "Dearborn 15",
+     "registered_voters": 2064,
+     "ballots_cast": 920,
+     "results": {
+      "Kamala D. Harris (D)": 141,
+      "Donald J. Trump (R)": 471,
+      "Chase Oliver (L)": 5,
+      "Randall Terry (UST)": 1,
+      "Jill Stein (G)": 244,
+      "Robert F. Kennedy Jr. (NLP)": 3,
+      "Joseph Kishore (NPA)": 1,
+      "Cornel West (NPA)": 3
+     }
+    },
+    "16": {
+     "precinct_name": "Dearborn 16",
+     "registered_voters": 1829,
+     "ballots_cast": 857,
+     "results": {
+      "Kamala D. Harris (D)": 170,
+      "Donald J. Trump (R)": 349,
+      "Chase Oliver (L)": 4,
+      "Randall Terry (UST)": 4,
+      "Jill Stein (G)": 262,
+      "Robert F. Kennedy Jr. (NLP)": 2,
+      "Joseph Kishore (NPA)": 2,
+      "Cornel West (NPA)": 14
+     }
+    },
+    "17": {
+     "precinct_name": "Dearborn 17",
+     "registered_voters": 2408,
+     "ballots_cast": 1070,
+     "results": {
+      "Kamala D. Harris (D)": 279,
+      "Donald J. Trump (R)": 464,
+      "Chase Oliver (L)": 3,
+      "Randall Terry (UST)": 2,
+      "Jill Stein (G)": 252,
+      "Robert F. Kennedy Jr. (NLP)": 1,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 15
+     }
+    },
+    "18": {
+     "precinct_name": "Dearborn 18",
+     "registered_voters": 2867,
+     "ballots_cast": 1264,
+     "results": {
+      "Kamala D. Harris (D)": 300,
+      "Donald J. Trump (R)": 571,
+      "Chase Oliver (L)": 1,
+      "Randall Terry (UST)": 3,
+      "Jill Stein (G)": 293,
+      "Robert F. Kennedy Jr. (NLP)": 12,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 6
+     }
+    },
+    "19": {
+     "precinct_name": "Dearborn 19",
+     "registered_voters": 1631,
+     "ballots_cast": 743,
+     "results": {
+      "Kamala D. Harris (D)": 154,
+      "Donald J. Trump (R)": 304,
+      "Chase Oliver (L)": 5,
+      "Randall Terry (UST)": 0,
+      "Jill Stein (G)": 205,
+      "Robert F. Kennedy Jr. (NLP)": 1,
+      "Joseph Kishore (NPA)": 1,
+      "Cornel West (NPA)": 7
+     }
+    },
+    "20": {
+     "precinct_name": "Dearborn 20",
+     "registered_voters": 1443,
+     "ballots_cast": 564,
+     "results": {
+      "Kamala D. Harris (D)": 67,
+      "Donald J. Trump (R)": 301,
+      "Chase Oliver (L)": 0,
+      "Randall Terry (UST)": 0,
+      "Jill Stein (G)": 144,
+      "Robert F. Kennedy Jr. (NLP)": 3,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 8
+     }
+    },
+    "21": {
+     "precinct_name": "Dearborn 21",
+     "registered_voters": 1811,
+     "ballots_cast": 735,
+     "results": {
+      "Kamala D. Harris (D)": 88,
+      "Donald J. Trump (R)": 364,
+      "Chase Oliver (L)": 2,
+      "Randall Terry (UST)": 1,
+      "Jill Stein (G)": 228,
+      "Robert F. Kennedy Jr. (NLP)": 0,
+      "Joseph Kishore (NPA)": 2,
+      "Cornel West (NPA)": 5
+     }
+    },
+    "22": {
+     "precinct_name": "Dearborn 22",
+     "registered_voters": 1123,
+     "ballots_cast": 639,
+     "results": {
+      "Kamala D. Harris (D)": 407,
+      "Donald J. Trump (R)": 149,
+      "Chase Oliver (L)": 0,
+      "Randall Terry (UST)": 1,
+      "Jill Stein (G)": 71,
+      "Robert F. Kennedy Jr. (NLP)": 2,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 1
+     }
+    },
+    "23": {
+     "precinct_name": "Dearborn 23",
+     "registered_voters": 1167,
+     "ballots_cast": 737,
+     "results": {
+      "Kamala D. Harris (D)": 330,
+      "Donald J. Trump (R)": 237,
+      "Chase Oliver (L)": 2,
+      "Randall Terry (UST)": 4,
+      "Jill Stein (G)": 139,
+      "Robert F. Kennedy Jr. (NLP)": 3,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 2
+     }
+    },
+    "24": {
+     "precinct_name": "Dearborn 24",
+     "registered_voters": 1121,
+     "ballots_cast": 752,
+     "results": {
+      "Kamala D. Harris (D)": 452,
+      "Donald J. Trump (R)": 245,
+      "Chase Oliver (L)": 3,
+      "Randall Terry (UST)": 0,
+      "Jill Stein (G)": 41,
+      "Robert F. Kennedy Jr. (NLP)": 3,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 1
+     }
+    },
+    "25": {
+     "precinct_name": "Dearborn 25",
+     "registered_voters": 1925,
+     "ballots_cast": 1246,
+     "results": {
+      "Kamala D. Harris (D)": 521,
+      "Donald J. Trump (R)": 552,
+      "Chase Oliver (L)": 3,
+      "Randall Terry (UST)": 0,
+      "Jill Stein (G)": 137,
+      "Robert F. Kennedy Jr. (NLP)": 4,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 8
+     }
+    },
+    "26": {
+     "precinct_name": "Dearborn 26",
+     "registered_voters": 1777,
+     "ballots_cast": 1191,
+     "results": {
+      "Kamala D. Harris (D)": 549,
+      "Donald J. Trump (R)": 462,
+      "Chase Oliver (L)": 5,
+      "Randall Terry (UST)": 0,
+      "Jill Stein (G)": 133,
+      "Robert F. Kennedy Jr. (NLP)": 7,
+      "Joseph Kishore (NPA)": 1,
+      "Cornel West (NPA)": 4
+     }
+    },
+    "27": {
+     "precinct_name": "Dearborn 27",
+     "registered_voters": 1672,
+     "ballots_cast": 1105,
+     "results": {
+      "Kamala D. Harris (D)": 548,
+      "Donald J. Trump (R)": 452,
+      "Chase Oliver (L)": 8,
+      "Randall Terry (UST)": 1,
+      "Jill Stein (G)": 70,
+      "Robert F. Kennedy Jr. (NLP)": 3,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 6
+     }
+    },
+    "28": {
+     "precinct_name": "Dearborn 28",
+     "registered_voters": 1042,
+     "ballots_cast": 688,
+     "results": {
+      "Kamala D. Harris (D)": 332,
+      "Donald J. Trump (R)": 306,
+      "Chase Oliver (L)": 1,
+      "Randall Terry (UST)": 1,
+      "Jill Stein (G)": 35,
+      "Robert F. Kennedy Jr. (NLP)": 2,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 5
+     }
+    },
+    "29": {
+     "precinct_name": "Dearborn 29",
+     "registered_voters": 1025,
+     "ballots_cast": 655,
+     "results": {
+      "Kamala D. Harris (D)": 349,
+      "Donald J. Trump (R)": 265,
+      "Chase Oliver (L)": 5,
+      "Randall Terry (UST)": 2,
+      "Jill Stein (G)": 27,
+      "Robert F. Kennedy Jr. (NLP)": 3,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 0
+     }
+    },
+    "30": {
+     "precinct_name": "Dearborn 30",
+     "registered_voters": 961,
+     "ballots_cast": 647,
+     "results": {
+      "Kamala D. Harris (D)": 310,
+      "Donald J. Trump (R)": 293,
+      "Chase Oliver (L)": 2,
+      "Randall Terry (UST)": 0,
+      "Jill Stein (G)": 26,
+      "Robert F. Kennedy Jr. (NLP)": 3,
+      "Joseph Kishore (NPA)": 1,
+      "Cornel West (NPA)": 2
+     }
+    },
+    "31": {
+     "precinct_name": "Dearborn 31",
+     "registered_voters": 1964,
+     "ballots_cast": 1159,
+     "results": {
+      "Kamala D. Harris (D)": 528,
+      "Donald J. Trump (R)": 425,
+      "Chase Oliver (L)": 5,
+      "Randall Terry (UST)": 0,
+      "Jill Stein (G)": 165,
+      "Robert F. Kennedy Jr. (NLP)": 5,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 3
+     }
+    },
+    "32": {
+     "precinct_name": "Dearborn 32",
+     "registered_voters": 1371,
+     "ballots_cast": 966,
+     "results": {
+      "Kamala D. Harris (D)": 315,
+      "Donald J. Trump (R)": 424,
+      "Chase Oliver (L)": 3,
+      "Randall Terry (UST)": 1,
+      "Jill Stein (G)": 181,
+      "Robert F. Kennedy Jr. (NLP)": 2,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 4
+     }
+    },
+    "33": {
+     "precinct_name": "Dearborn 33",
+     "registered_voters": 1619,
+     "ballots_cast": 1007,
+     "results": {
+      "Kamala D. Harris (D)": 301,
+      "Donald J. Trump (R)": 416,
+      "Chase Oliver (L)": 8,
+      "Randall Terry (UST)": 1,
+      "Jill Stein (G)": 237,
+      "Robert F. Kennedy Jr. (NLP)": 0,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 6
+     }
+    },
+    "34": {
+     "precinct_name": "Dearborn 34",
+     "registered_voters": 1500,
+     "ballots_cast": 978,
+     "results": {
+      "Kamala D. Harris (D)": 403,
+      "Donald J. Trump (R)": 361,
+      "Chase Oliver (L)": 3,
+      "Randall Terry (UST)": 2,
+      "Jill Stein (G)": 180,
+      "Robert F. Kennedy Jr. (NLP)": 9,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 4
+     }
+    },
+    "35": {
+     "precinct_name": "Dearborn 35",
+     "registered_voters": 1092,
+     "ballots_cast": 773,
+     "results": {
+      "Kamala D. Harris (D)": 353,
+      "Donald J. Trump (R)": 287,
+      "Chase Oliver (L)": 7,
+      "Randall Terry (UST)": 1,
+      "Jill Stein (G)": 108,
+      "Robert F. Kennedy Jr. (NLP)": 1,
+      "Joseph Kishore (NPA)": 1,
+      "Cornel West (NPA)": 2
+     }
+    },
+    "36": {
+     "precinct_name": "Dearborn 36",
+     "registered_voters": 1106,
+     "ballots_cast": 775,
+     "results": {
+      "Kamala D. Harris (D)": 361,
+      "Donald J. Trump (R)": 300,
+      "Chase Oliver (L)": 3,
+      "Randall Terry (UST)": 1,
+      "Jill Stein (G)": 84,
+      "Robert F. Kennedy Jr. (NLP)": 3,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 3
+     }
+    },
+    "37": {
+     "precinct_name": "Dearborn 37",
+     "registered_voters": 1763,
+     "ballots_cast": 1114,
+     "results": {
+      "Kamala D. Harris (D)": 426,
+      "Donald J. Trump (R)": 485,
+      "Chase Oliver (L)": 2,
+      "Randall Terry (UST)": 1,
+      "Jill Stein (G)": 165,
+      "Robert F. Kennedy Jr. (NLP)": 2,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 5
+     }
+    },
+    "38": {
+     "precinct_name": "Dearborn 38",
+     "registered_voters": 1709,
+     "ballots_cast": 1098,
+     "results": {
+      "Kamala D. Harris (D)": 408,
+      "Donald J. Trump (R)": 485,
+      "Chase Oliver (L)": 6,
+      "Randall Terry (UST)": 1,
+      "Jill Stein (G)": 157,
+      "Robert F. Kennedy Jr. (NLP)": 3,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 4
+     }
+    },
+    "40": {
+     "precinct_name": "Dearborn 40",
+     "registered_voters": 1337,
+     "ballots_cast": 864,
+     "results": {
+      "Kamala D. Harris (D)": 251,
+      "Donald J. Trump (R)": 325,
+      "Chase Oliver (L)": 4,
+      "Randall Terry (UST)": 2,
+      "Jill Stein (G)": 237,
+      "Robert F. Kennedy Jr. (NLP)": 3,
+      "Joseph Kishore (NPA)": 1,
+      "Cornel West (NPA)": 6
+     }
+    },
+    "41": {
+     "precinct_name": "Dearborn 41",
+     "registered_voters": 1534,
+     "ballots_cast": 1092,
+     "results": {
+      "Kamala D. Harris (D)": 413,
+      "Donald J. Trump (R)": 488,
+      "Chase Oliver (L)": 6,
+      "Randall Terry (UST)": 1,
+      "Jill Stein (G)": 141,
+      "Robert F. Kennedy Jr. (NLP)": 8,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 8
+     }
+    },
+    "42": {
+     "precinct_name": "Dearborn 42",
+     "registered_voters": 1319,
+     "ballots_cast": 852,
+     "results": {
+      "Kamala D. Harris (D)": 399,
+      "Donald J. Trump (R)": 327,
+      "Chase Oliver (L)": 2,
+      "Randall Terry (UST)": 0,
+      "Jill Stein (G)": 102,
+      "Robert F. Kennedy Jr. (NLP)": 3,
+      "Joseph Kishore (NPA)": 1,
+      "Cornel West (NPA)": 2
+     }
+    },
+    "43": {
+     "precinct_name": "Dearborn 43",
+     "registered_voters": 1364,
+     "ballots_cast": 969,
+     "results": {
+      "Kamala D. Harris (D)": 470,
+      "Donald J. Trump (R)": 345,
+      "Chase Oliver (L)": 3,
+      "Randall Terry (UST)": 0,
+      "Jill Stein (G)": 113,
+      "Robert F. Kennedy Jr. (NLP)": 4,
+      "Joseph Kishore (NPA)": 1,
+      "Cornel West (NPA)": 5
+     }
+    },
+    "44": {
+     "precinct_name": "Dearborn 44",
+     "registered_voters": 1511,
+     "ballots_cast": 1102,
+     "results": {
+      "Kamala D. Harris (D)": 603,
+      "Donald J. Trump (R)": 399,
+      "Chase Oliver (L)": 2,
+      "Randall Terry (UST)": 0,
+      "Jill Stein (G)": 74,
+      "Robert F. Kennedy Jr. (NLP)": 4,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 1
+     }
+    },
+    "45": {
+     "precinct_name": "Dearborn 45",
+     "registered_voters": 1825,
+     "ballots_cast": 1247,
+     "results": {
+      "Kamala D. Harris (D)": 637,
+      "Donald J. Trump (R)": 517,
+      "Chase Oliver (L)": 3,
+      "Randall Terry (UST)": 2,
+      "Jill Stein (G)": 63,
+      "Robert F. Kennedy Jr. (NLP)": 3,
+      "Joseph Kishore (NPA)": 1,
+      "Cornel West (NPA)": 2
+     }
+    },
+    "46": {
+     "precinct_name": "Dearborn 46",
+     "registered_voters": 1730,
+     "ballots_cast": 1134,
+     "results": {
+      "Kamala D. Harris (D)": 588,
+      "Donald J. Trump (R)": 452,
+      "Chase Oliver (L)": 4,
+      "Randall Terry (UST)": 4,
+      "Jill Stein (G)": 68,
+      "Robert F. Kennedy Jr. (NLP)": 5,
+      "Joseph Kishore (NPA)": 1,
+      "Cornel West (NPA)": 1
+     }
+    },
+    "47": {
+     "precinct_name": "Dearborn 47",
+     "registered_voters": 1249,
+     "ballots_cast": 884,
+     "results": {
+      "Kamala D. Harris (D)": 434,
+      "Donald J. Trump (R)": 381,
+      "Chase Oliver (L)": 3,
+      "Randall Terry (UST)": 0,
+      "Jill Stein (G)": 48,
+      "Robert F. Kennedy Jr. (NLP)": 4,
+      "Joseph Kishore (NPA)": 1,
+      "Cornel West (NPA)": 3
+     }
+    },
+    "48": {
+     "precinct_name": "Dearborn 48",
+     "registered_voters": 1229,
+     "ballots_cast": 790,
+     "results": {
+      "Kamala D. Harris (D)": 327,
+      "Donald J. Trump (R)": 395,
+      "Chase Oliver (L)": 4,
+      "Randall Terry (UST)": 0,
+      "Jill Stein (G)": 45,
+      "Robert F. Kennedy Jr. (NLP)": 3,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 5
+     }
+    },
+    "49": {
+     "precinct_name": "Dearborn 49",
+     "registered_voters": 1969,
+     "ballots_cast": 1234,
+     "results": {
+      "Kamala D. Harris (D)": 597,
+      "Donald J. Trump (R)": 541,
+      "Chase Oliver (L)": 6,
+      "Randall Terry (UST)": 2,
+      "Jill Stein (G)": 58,
+      "Robert F. Kennedy Jr. (NLP)": 9,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 9
+     }
+    },
+    "50": {
+     "precinct_name": "Dearborn 50",
+     "registered_voters": 1606,
+     "ballots_cast": 1030,
+     "results": {
+      "Kamala D. Harris (D)": 556,
+      "Donald J. Trump (R)": 419,
+      "Chase Oliver (L)": 5,
+      "Randall Terry (UST)": 0,
+      "Jill Stein (G)": 36,
+      "Robert F. Kennedy Jr. (NLP)": 3,
+      "Joseph Kishore (NPA)": 0,
+      "Cornel West (NPA)": 2
+     }
+    }
+   }
+  }
+ }
+}

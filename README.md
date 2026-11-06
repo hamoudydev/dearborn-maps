@@ -20,6 +20,8 @@ Displays voting precincts and election results with interactive comparison featu
 - Precinct boundaries with election results
 - **Nov 2026 General**: statewide, federal, legislative, education-board, county, school-board and ballot-proposal races (all parties; judicial races and straight-party ticket omitted)
 - **Nov 2025 Municipal**: Mayor, City Clerk, City Council, Proposal 1
+- **Nov 2024 General**: President (all candidates)
+- Each year is drawn on its own precinct boundaries; comparisons across years combine precincts to the coarser year's boundaries
 - Color by precinct winner (margin intensity) or by any single candidate's vote share
 - Compare mode across races and years, by vote share or raw votes
 - Citywide vote totals by candidate
